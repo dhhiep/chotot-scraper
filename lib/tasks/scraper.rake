@@ -1,0 +1,62 @@
+namespace :chotot do
+  task scrape: :environment do
+    # Global variable
+    dup_counter = 0
+    uuid = "%05d" % rand(1...99_999)
+    page = 1
+    summary(uuid, 'Chotot - Scraper script is starting')
+
+    loop do
+      url = "https://gateway.chotot.com/v1/public/ad-listing?region=13&cg=8000&w=1&limit=20&st=s,k&f=p&o=#{page * 20}&page=#{page}"
+      list_item = HTTParty.get(url)['ads'] rescue nil
+      break unless list_item
+      summary(uuid, "Analyzing page #{page}", false)
+      list_item.each do |item|
+        list_id = item['list_id']
+        if List.by_lid(list_id)
+          # List item existed in DB, mean the account was created
+          if dup_counter > 3
+            summary(uuid, "List Duplicated from page #{page}")
+            abort 'List Duplicated'
+          else
+            dup_counter += 1
+          end
+        else
+          account = Account.create_by_oid(item['account_oid'])
+          if account
+            List.create(
+              list_id: list_id,
+              account: account,
+              category: Category.first_or_create,
+              ad_id: item['ad_id'],
+              category_name: item['category'],
+              area_name: item['area_name']
+            )
+          end
+        end
+
+        sleep 0.5
+      end
+
+      summary(uuid, "page #{page}")
+
+      page += 1
+      sleep 5
+    end
+
+    summary(uuid, 'Chotot - Scraper script is finished')
+  end
+
+  def summary(uuid, prefix = '', store = true)
+    parts = []
+    parts << prefix.upcase
+    parts << "Time: #{Time.now}"
+    parts << "Category: #{Category.count}"
+    parts << "List: #{List.count}"
+    parts << "Account: #{Account.count}"
+    text = parts.join(' | ')
+
+    Summary.create(uuid: uuid, description: text) if store
+    puts "\e[31;49;1m - - - #{text} - - - \e[0m"
+  end
+end
