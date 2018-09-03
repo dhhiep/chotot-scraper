@@ -1,2 +1,12 @@
-<h1>Logs#index</h1>
-<p>Find me in app/views/logs/index.html.erb</p>
+<% url = "#{request.protocol}#{request.host_with_port}#{request.fullpath}" %>
+<table id="logs-table" class="table" data-source="<%= url %>" style='width: 100%'>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Description</th>
+      <th>Created At</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
