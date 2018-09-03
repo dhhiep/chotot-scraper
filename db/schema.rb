@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_03_091646) do
+ActiveRecord::Schema.define(version: 2018_09_03_175539) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 2018_09_03_091646) do
     t.integer "wse_status", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "hide", default: false
     t.index ["account_id"], name: "index_accounts_on_account_id"
     t.index ["account_oid"], name: "index_accounts_on_account_oid"
     t.index ["status"], name: "index_accounts_on_status"

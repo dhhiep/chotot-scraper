@@ -1,9 +1,11 @@
 namespace :chotot do
+  # rake chotot:scrape PAGE=1 RETRY=4
   task scrape: :environment do
     # Global variable
     dup_counter = 0
     uuid = "%05d" % rand(1...99_999)
-    page = 1
+    page = ENV['PAGE'] ? ENV['PAGE'].to_i : 1
+    max_retry = ENV['RETRY'] ? ENV['RETRY'].to_i : 1
     summary(uuid, 'Chotot - Scraper script is starting')
 
     loop do
@@ -15,7 +17,7 @@ namespace :chotot do
         list_id = item['list_id']
         if List.by_lid(list_id)
           # List item existed in DB, mean the account was created
-          if dup_counter > 3
+          if dup_counter > max_retry
             summary(uuid, "List Duplicated from page #{page}")
             abort 'List Duplicated'
           else
@@ -57,6 +59,6 @@ namespace :chotot do
     text = parts.join(' | ')
 
     Summary.create(uuid: uuid, description: text) if store
-    puts "\e[31;49;1m - - - #{text} - - - \e[0m"
+    puts "\e[31;49;1m - - - RAKE ID: ##{uuid} - #{text} - - - \e[0m"
   end
 end

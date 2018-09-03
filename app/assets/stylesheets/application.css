@@ -11,6 +11,9 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
+ *= require datatable/dataTables.bootstrap4
+ *= require datatable/custom
+ *= require font-awesome
  *= require_self
  */
 

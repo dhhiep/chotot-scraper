@@ -1,0 +1,25 @@
+.dataTables_paginate {
+  .active {
+    .page-link {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+  }
+  .page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+  }
+  .page-item.disabled .page-link {
+      color: #6c757d;
+      pointer-events: none;
+      cursor: auto;
+      background-color: #fff;
+      border-color: #dee2e6;
+  }
+}

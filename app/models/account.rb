@@ -4,6 +4,8 @@ class Account < ApplicationRecord
   enum status: { status_new: 0, status_inserted: 1 }
   enum wse_status: { wse_unknown: 0, wse_valid: 1, wse_duplicate: 2, wse_invalid: 3 }
 
+  scope :active, -> { where(hide: false) }
+
   def self.by_oid(oid)
     find_by_account_oid(oid)
   end

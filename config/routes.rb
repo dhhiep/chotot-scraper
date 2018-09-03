@@ -12,7 +12,12 @@ Rails.application.routes.draw do
     # post "forgot-password", to: "devise/passwords#create"
   end
 
-  resources :accounts, only: [:index]
+  resources :accounts, only: [:index] do
+    member do
+      post :mark_review
+    end
+  end
+
   resources :lists, only: [:index]
   resources :categories, only: [:index]
   resources :logs, only: [:index]

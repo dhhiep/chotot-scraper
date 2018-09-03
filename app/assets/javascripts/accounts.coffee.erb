@@ -1,0 +1,38 @@
+$ ->
+  $('#accounts-table').dataTable
+    responsive: true
+    processing: true
+    autoWidth: false
+    oLanguage:
+      sProcessing: '<%= image_tag("Spinner.gif") %>'
+    serverSide: true
+    searchDelay: 800
+    ajax: $('#accounts-table').data('source')
+    pagingType: 'full_numbers'
+    columns: [
+      {data: 'id'}
+      {data: 'full_name'}
+      {data: 'phone'}
+      {data: 'status'}
+      {data: 'action_edit', searchable: false, sortable: false}
+    ]
+
+  markAccountWasReviewed = (id) ->
+    $.ajax
+      type: 'POST'
+      url: '/accounts/' + id + '/mark_review'
+      dataType: 'script'
+
+  window.copyToClipboard = (element, id, str) ->
+    markAccountWasReviewed(id)
+    $(element).html('Copied')
+    $temp = $('<input>')
+    $('body').append $temp
+    $temp.val(str).select()
+    document.execCommand 'copy'
+    $temp.remove()
+
+    # Update text
+    setTimeout ->
+      $(element).html("<i class='fa fa-copy'></i>")
+    , 1000
