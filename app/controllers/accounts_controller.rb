@@ -12,6 +12,10 @@ class AccountsController < ApplicationController
     @account.status_inserted!
   end
 
+  def hide
+    @account.hide!
+  end
+
   private
 
   def load_resource

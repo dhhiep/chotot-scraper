@@ -30,6 +30,12 @@ class Account < ApplicationRecord
     HTTParty.get(url)
   end
 
+  def hide!
+    update(hide: true)
+  end
+
+  private
+
   def self.whitelist_params
     %w[
       account_id account_oid address create_time deviation email email_verified

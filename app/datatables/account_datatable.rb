@@ -12,8 +12,8 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
       id: { source: "Account.id", cond: :eq },
       full_name: { source: "Account.full_name" },
       phone: { source: "Account.phone" },
+      address: { source: "Account.address", :searchable => true, :orderable => false },
       status: { source: "Account.status", :searchable => false },
-      wse_status: { source: "Account.wse_status", :searchable => false },
       action_edit: { source: "", :searchable => false, :orderable => false }
     }
   end
@@ -24,6 +24,7 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
         id: record.id,
         full_name: record.full_name,
         phone: phone_with_copy_to_clipboard(record.id, record.phone).html_safe,
+        address: record.address,
         status: account_combine_status(record),
         action_edit: action_edit(record)
       }
