@@ -20,6 +20,10 @@ ActiveSupport::TimeWithZone.class_eval do
   def to_display
     strftime("%d/%m/%Y %I:%M %p")
   end
+
+  def to_display_with_timezone
+    in_time_zone('Asia/Ho_Chi_Minh').strftime("%d/%m/%Y %H:%M")
+  end
 end
 
 ActiveSupport::TimeZone.class_eval do

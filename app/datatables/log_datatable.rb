@@ -14,7 +14,7 @@ class LogDatatable < AjaxDatatablesRails::ActiveRecord
       {
         uuid: record.uuid,
         description: record.description,
-        created_at: record.created_at.to_display
+        created_at: record.created_at.to_display_with_timezone
       }
     end
   end

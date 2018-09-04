@@ -63,7 +63,7 @@ namespace :chotot do
     parts << prefix.upcase
     parts << "Category: #{category.name}"
     parts << "Offset: #{offset}"
-    parts << "Time: #{Time.now}"
+    parts << "Time: #{Time.now.in_time_zone('Asia/Ho_Chi_Minh').strftime("%d/%m/%Y %H:%M")}"
     parts << "List: #{List.count}"
     parts << "Account: #{Account.count}"
     parts << "Duplicate: #{dup_counter}"
