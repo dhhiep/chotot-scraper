@@ -26,6 +26,8 @@ namespace :chotot do
       list_item.each do |item|
         list_id = item['list_id']
         account = Account.create_by_oid(item['account_oid'])
+
+        # Check and create list
         if List.by_lid(list_id)
           # List item existed in DB, mean the account was created
           if dup_counter > max_retry
@@ -34,17 +36,15 @@ namespace :chotot do
           else
             dup_counter += 1
           end
-        else
-          if account
+        elsif account
             List.create(
-              list_id: list_id,
-              account: account,
-              category: category,
-              ad_id: item['ad_id'],
-              category_name: item['category'],
-              area_name: item['area_name']
-            )
-          end
+            list_id: list_id,
+            account: account,
+            category: category,
+            ad_id: item['ad_id'],
+            category_name: item['category'],
+            area_name: item['area_name']
+          )
         end
 
         sleep 0.7
