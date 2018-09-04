@@ -4,12 +4,12 @@ namespace :chotot do
     # Global variable
     page = ENV['PAGE'].present? ? ENV['PAGE'].to_i : 0
     max_retry = ENV['RETRY'].present? ? ENV['RETRY'].to_i : 10
-    category_id = ENV['CATEGORY_ID'].present? ? ENV['CATEGORY_ID'] : '5000'
+    category_id = ENV['CATEGORY_ID'].present? ? ENV['CATEGORY_ID'].to_i : 5000
 
     dup_counter = 0
     uuid = "%05d" % rand(1...99_999)
     offset = page * 20
-    category = Category.where(name: category_id).first_or_create
+    category = Category.where(ct_category_id: category_id).first_or_create
     summary(uuid, category, dup_counter, offset, 'Chotot - Scraper script is starting')
 
     loop do
