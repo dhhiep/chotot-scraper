@@ -11,7 +11,12 @@ namespace :chotot do
     loop do
       url = "https://gateway.chotot.com/v1/public/ad-listing?region=13&cg=8000&w=1&limit=20&st=s,k&f=p&o=#{page * 20}&page=#{page}"
       list_item = HTTParty.get(url)['ads'] rescue nil
-      break unless list_item
+      if list_item.blank?
+        summary(uuid, "List end at page #{page}")
+        abort "List end at page #{page}"
+        break
+      end
+      
       summary(uuid, "Analyzing page #{page}", false)
       list_item.each do |item|
         list_id = item['list_id']
