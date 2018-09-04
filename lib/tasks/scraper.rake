@@ -37,7 +37,7 @@ namespace :chotot do
             dup_counter += 1
           end
         elsif account
-            List.create(
+          List.create(
             list_id: list_id,
             account: account,
             category: category,
@@ -64,7 +64,7 @@ namespace :chotot do
     parts << prefix.upcase
     parts << "Category: #{category.name}"
     parts << "Offset: #{offset}"
-    parts << "Time: #{Time.now.in_time_zone('Asia/Ho_Chi_Minh').strftime("%d/%m/%Y %H:%M")}"
+    parts << "Time: #{Time.now.in_time_zone('Asia/Ho_Chi_Minh').strftime('%d/%m/%Y %H:%M')}"
     parts << "List: #{List.count}"
     parts << "Account: #{Account.count}"
     parts << "Duplicate: #{dup_counter}"
