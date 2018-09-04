@@ -4,9 +4,9 @@ namespace :chotot do
     # Global variable
     dup_counter = 0
     uuid = "%05d" % rand(1...99_999)
-    page = ENV['PAGE'] ? ENV['PAGE'].to_i : 1
+    page = ENV['PAGE'] ? ENV['PAGE'].to_i : 0
     offset = page * 20
-    max_retry = ENV['RETRY'] ? ENV['RETRY'].to_i : 1
+    max_retry = ENV['RETRY'] ? ENV['RETRY'].to_i : 10
     summary(uuid, offset, 'Chotot - Scraper script is starting')
 
     loop do
