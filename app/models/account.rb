@@ -42,6 +42,7 @@ class Account < ApplicationRecord
     end
     address_tmp
   end
+  
   def hide!
     update(hide: true)
   end
