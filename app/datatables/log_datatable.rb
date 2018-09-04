@@ -4,8 +4,7 @@ class LogDatatable < AjaxDatatablesRails::ActiveRecord
   def view_columns
     @view_columns ||= {
       uuid: { source: 'Summary.uuid', cond: :eq },
-      description: { source: 'Summary.description' },
-      created_at: { source: 'Summary.created_at' }
+      description: { source: 'Summary.description' }
     }
   end
 
@@ -13,8 +12,7 @@ class LogDatatable < AjaxDatatablesRails::ActiveRecord
     records.map do |record|
       {
         uuid: record.uuid,
-        description: record.description,
-        created_at: record.created_at.to_display_with_timezone
+        description: record.description
       }
     end
   end
