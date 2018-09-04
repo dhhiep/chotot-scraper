@@ -22,6 +22,7 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
   def data
     records.map do |record|
       {
+        DT_RowId: record.id,
         id: record.id,
         full_name: record.full_name,
         phone: phone_with_copy_to_clipboard(record.id, record.phone).html_safe,
