@@ -62,9 +62,8 @@ namespace :chotot do
     parts = []
     parts << prefix.upcase
     parts << "Category: #{category.name}"
-    parts << "Osset: #{offset}"
+    parts << "Offset: #{offset}"
     parts << "Time: #{Time.now}"
-    parts << "Category: #{Category.count}"
     parts << "List: #{List.count}"
     parts << "Account: #{Account.count}"
     parts << "Duplicate: #{dup_counter}"
