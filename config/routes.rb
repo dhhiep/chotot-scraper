@@ -14,6 +14,7 @@ Rails.application.routes.draw do
 
   resources :accounts, only: [:index] do
     member do
+      post :mark_wse_status
       post :mark_review
       post :hide
     end

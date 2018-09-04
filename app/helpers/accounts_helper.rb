@@ -19,7 +19,7 @@ module AccountsHelper
       when 'wse_valid'
         %w[success Valid]
       when 'wse_duplicate'
-        %w[warning Duplicated]
+        %w[warning Dup]
       when 'wse_invalid'
         %w[danger Invalid]
       end

@@ -1,4 +1,8 @@
 module ApplicationHelper
+  def helper
+    ActionController::Base.helpers
+  end
+
   def menu_items
     items = [
       { name: 'Accounts', path: accounts_path },

@@ -12,6 +12,19 @@ class AccountsController < ApplicationController
     @account.status_inserted!
   end
 
+  def mark_wse_status
+    case params[:status]
+    when 'unknown'
+      @account.wse_unknown!
+    when 'valid'
+      @account.wse_valid!
+    when 'duplicate'
+      @account.wse_duplicate!
+    when 'invalid'
+      @account.wse_invalid!
+    end
+  end
+
   def hide
     @account.hide!
   end

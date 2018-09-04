@@ -1,21 +1,24 @@
 class AccountDatatable < AjaxDatatablesRails::ActiveRecord
   extend Forwardable
   include AccountsHelper
+  include ApplicationHelper
+  include Rails.application.routes.url_helpers
 
+  # either define them one-by-one
   def_delegator :@view, :check_box_tag
   def_delegator :@view, :link_to
   def_delegator :@view, :mail_to
-  def_delegator :@view, :image_tag
+  def_delegator :@view, :edit_user_path
 
   def view_columns
     @view_columns ||= {
-      id: { source: "Account.id", cond: :eq },
-      full_name: { source: "Account.full_name" },
-      phone: { source: "Account.phone" },
-      address: { source: "Account.address", :searchable => true, :orderable => false },
-      status: { source: "Account.status", :searchable => false },
-      category: { source: "", :searchable => false, :orderable => false },
-      action_edit: { source: "", :searchable => false, :orderable => false }
+      id: { source: 'Account.id', cond: :eq },
+      full_name: { source: 'Account.full_name' },
+      phone: { source: 'Account.phone' },
+      address: { source: 'Account.address', searchable: true, orderable: false },
+      status: { source: 'Account.status', searchable: false },
+      category: { source: '', searchable: false, orderable: false },
+      action_edit: { source: '', searchable: false, orderable: false }
     }
   end
 
@@ -55,10 +58,12 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
 
   def action_edit(record)
     actions = []
-    # actions << account_actions
-    # actions << link_to("<span class='fa fa-info'></span>Details".html_safe, 'account_path(record)', class: "btn btn-primary btn-sm")
-    # actions << link_to("<span class='fa fa-file-text-o'></span>Print PDF".html_safe, generate_pdf_account_path(record), :method => :post, class: "btn btn-success btn-sm") if record.completed?
-    actions.join('').html_safe
+    actions << helper.link_to('VAL', mark_wse_status_account_path(record.id, status: :valid), class: 'act btn btn-sm btn-success', method: :post, remote: true)
+    actions << helper.link_to('DUP', mark_wse_status_account_path(record.id, status: :duplicate), class: 'act btn btn-sm btn-warning', method: :post, remote: true)
+    actions << helper.link_to('INV', mark_wse_status_account_path(record.id, status: :invalid), class: 'act btn btn-sm btn-danger', method: :post, remote: true)
+    special_actions = []
+    special_actions << helper.link_to('DEL', hide_account_path(record.id), class: 'btn btn-sm btn-secondary', method: :post, remote: true, data: { original_title: "Delete", confirm: 'Bạn có muốn xóa số phone này không?' })
+    [actions.join(''), special_actions.join('&nbsp;')].join(' | ').html_safe
   end
 
   def count_responses(record)
