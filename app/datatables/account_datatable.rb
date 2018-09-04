@@ -24,7 +24,7 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
         id: record.id,
         full_name: record.full_name,
         phone: phone_with_copy_to_clipboard(record.id, record.phone).html_safe,
-        address: record.address,
+        address: record.address_filtered,
         status: account_combine_status(record),
         action_edit: action_edit(record)
       }

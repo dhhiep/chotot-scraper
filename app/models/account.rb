@@ -30,6 +30,18 @@ class Account < ApplicationRecord
     HTTParty.get(url)
   end
 
+  def address_filtered
+    return '' if address.blank?
+    address_tmp = address
+    keywords = [
+      ', Tp.HCM', ', Việt Nam', ', HCM', ', Hồ Chí Minh', 'tp ho chi minh', ', Vietnam', ', TpHCM', 'tphcm', 'hcm',
+      ', tp. HCM', ', tphcm'
+    ]
+    keywords.each do |keyword|
+      address_tmp = address_tmp.gsub(keyword, '')
+    end
+    address_tmp
+  end
   def hide!
     update(hide: true)
   end
