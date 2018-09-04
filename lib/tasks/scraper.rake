@@ -37,13 +37,12 @@ namespace :chotot do
           end
         end
 
-        sleep 0.2
+        sleep 0.7 
       end
 
       summary(uuid, "page #{page}")
 
       page += 1
-      sleep 1
     end
 
     summary(uuid, 'Chotot - Scraper script is finished')
