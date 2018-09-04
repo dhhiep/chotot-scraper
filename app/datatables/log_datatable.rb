@@ -11,13 +11,19 @@ class LogDatatable < AjaxDatatablesRails::ActiveRecord
   def data
     records.map do |record|
       {
-        uuid: record.uuid,
+        uuid: log_details(record).html_safe,
         description: record.description
       }
     end
   end
 
   private
+
+  def log_details(record)
+    <<-HTML
+      <a href="/logs/#{record.uuid}">#{record.uuid}</a>
+    HTML
+  end
 
   def get_raw_records
     Summary.order(id: :desc)

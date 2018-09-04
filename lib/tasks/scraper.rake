@@ -62,10 +62,10 @@ namespace :chotot do
   def summary(uuid, category, dup_counter, offset, prefix = '', store = true)
     parts = []
     parts << prefix.upcase
-    parts << "Category: #{category.name}"
+    parts << "Category: #{category.name} (#{category.ct_category_id})"
     parts << "Offset: #{offset}"
     parts << "Time: #{Time.now.in_time_zone('Asia/Ho_Chi_Minh').strftime('%d/%m/%Y %H:%M')}"
-    parts << "List: #{List.count}"
+    # parts << "List: #{List.count}"
     parts << "Account: #{Account.count}"
     parts << "Duplicate: #{dup_counter}"
     text = parts.join(' | ')

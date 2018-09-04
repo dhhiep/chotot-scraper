@@ -1,6 +1,4 @@
 class LogsController < ApplicationController
-  before_action :load_resource
-
   def index
     respond_to do |format|
       format.html
@@ -8,10 +6,7 @@ class LogsController < ApplicationController
     end
   end
 
-  private
-
-  def load_resource
-    return if collection?
-    @log = Log.find(params[:id]) if params[:id].present?
+  def show
+    @logs = Summary.where(uuid: params[:id]).order(created_at: :desc)
   end
 end

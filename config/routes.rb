@@ -21,7 +21,7 @@ Rails.application.routes.draw do
 
   resources :lists, only: [:index]
   resources :categories, only: [:index]
-  resources :logs, only: [:index]
+  resources :logs, only: [:index, :show]
 
   root 'accounts#index'
 end

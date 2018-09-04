@@ -1,0 +1,15 @@
+%br/
+%table.table
+  %thead
+    %tr
+      %td
+        UUID
+      %td
+        Description
+  %tbody
+    - @logs.each do |log|
+      %tr
+        %td
+          = log.uuid
+        %td
+          = log.description
