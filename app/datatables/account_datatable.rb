@@ -49,7 +49,7 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
 
   def phone_with_copy_to_clipboard(id, phone)
     <<-HTML
-      <div style="width: 115px;">
+      <div style="width: 130px;">
         <a href="javascript:;" onclick="copyToClipboard(this, #{id}, '#{phone}')" style="margin-right: 5px;">
           <i class='fa fa-copy'></i>
         </a>
