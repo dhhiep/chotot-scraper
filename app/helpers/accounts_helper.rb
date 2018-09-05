@@ -3,9 +3,9 @@ module AccountsHelper
     badge, txt =
       case account.status
       when 'status_new'
-        %w[dark NEW]
+        %w[dark New]
       when 'status_inserted'
-        %w[success INS]
+        %w[success Ins]
       end
 
     "<span id='status_#{account.id}' class='badge badge-#{badge}'>#{txt}</span>".html_safe
@@ -15,13 +15,13 @@ module AccountsHelper
     badge, txt =
       case account.wse_status
       when 'wse_unknown'
-        %w[dark NEW]
+        %w[dark New]
       when 'wse_valid'
-        %w[success VAL]
+        %w[success Val]
       when 'wse_duplicate'
-        %w[warning DUP]
+        %w[warning Dup]
       when 'wse_invalid'
-        %w[danger INV]
+        %w[danger Inv]
       end
 
     "<span id='wse_status_#{account.id}' class='badge badge-#{badge}'>#{txt}</span>".html_safe
