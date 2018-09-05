@@ -34,15 +34,9 @@
 
 
     <!-- MAIN CONTENT -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div id="main_content">
-            <%= render 'shared/flashes' %>
-            <%= yield %>
-          </div>
-        </div>
-      </div>
+    <div id="main_content">
+      <%= render 'shared/flashes' %>
+      <%= yield %>
     </div>
     <!-- / MAIN CONTENT -->
 
