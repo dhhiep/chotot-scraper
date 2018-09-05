@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_05_095935) do
+ActiveRecord::Schema.define(version: 2018_09_05_171254) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 2018_09_05_095935) do
     t.boolean "hide", default: false
     t.string "category_names"
     t.datetime "inserted_at"
+    t.boolean "favorite", default: false
     t.index ["account_id"], name: "index_accounts_on_account_id"
     t.index ["account_oid"], name: "index_accounts_on_account_oid"
     t.index ["status"], name: "index_accounts_on_status"

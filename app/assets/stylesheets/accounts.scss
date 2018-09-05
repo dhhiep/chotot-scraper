@@ -9,4 +9,12 @@
       margin-left: 0;
     }
   }
+
+  .btn-favorite {
+    &.fv-active {
+      i {
+        color: #F39C12;
+      }
+    }
+  }
 }

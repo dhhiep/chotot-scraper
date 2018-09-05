@@ -1,0 +1,2 @@
+<% actions_html = account_actions_edit(@account).to_json.html_safe %>
+$('tr#<%= @account.id %>').find('.actions').parent().html(<%= actions_html %>)

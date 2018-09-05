@@ -5,6 +5,7 @@ class Account < ApplicationRecord
   enum wse_status: { wse_unknown: 0, wse_valid: 1, wse_duplicate: 2, wse_invalid: 3 }
 
   scope :active, -> { where(hide: false) }
+  scope :favorites, -> { where(favorite: true) }
 
   def self.by_oid(oid)
     find_by_account_oid(oid)
@@ -49,6 +50,10 @@ class Account < ApplicationRecord
 
   def hide!
     update(hide: true)
+  end
+
+  def toggle_favorite!
+    update(favorite: !favorite)
   end
 
   private

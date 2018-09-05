@@ -32,7 +32,7 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
         address: record.address_filtered,
         status: account_combine_status(record),
         category: record.category_names,
-        action_edit: action_edit(record).html_safe
+        action_edit: account_actions_edit(record).html_safe
       }
     end
   end
@@ -41,8 +41,9 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
 
   def get_raw_records
     @query = Account.active
-    if options[:type].presence == :completed
-      @query = @query.where('responses.completed_at IS NOT NULL')
+
+    if params[:type].presence == 'favorites'
+      @query = @query.favorites
     end
     @query
   end
@@ -54,21 +55,6 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
           <i class='fa fa-copy'></i>
         </a>
         #{phone}
-      </div>
-    HTML
-  end
-
-  def action_edit(record)
-    actions = []
-    actions << helper.link_to('VAL', mark_wse_status_account_path(record.id, status: :valid), class: 'act btn btn-sm btn-success', method: :post, remote: true)
-    actions << helper.link_to('DUP', mark_wse_status_account_path(record.id, status: :duplicate), class: 'act btn btn-sm btn-warning', method: :post, remote: true)
-    actions << helper.link_to('INV', mark_wse_status_account_path(record.id, status: :invalid), class: 'act btn btn-sm btn-danger', method: :post, remote: true)
-    special_actions = []
-    special_actions << helper.link_to('DEL', hide_account_path(record.id), class: 'btn btn-sm btn-secondary', method: :post, remote: true, data: { original_title: "Delete", confirm: 'Bạn có muốn xóa số phone này không?' })
-
-    <<-HTML
-      <div style="width: 195px;">
-        #{[actions.join(''), special_actions.join('&nbsp;')].join(' | ')}
       </div>
     HTML
   end

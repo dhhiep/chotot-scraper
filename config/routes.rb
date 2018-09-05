@@ -13,9 +13,14 @@ Rails.application.routes.draw do
   end
 
   resources :accounts, only: [:index] do
+    collection do
+      get :favorites, action: :index, type: "favorites"
+    end
+
     member do
       post :mark_wse_status
       post :mark_review
+      post :toggle_favorite
       post :hide
     end
   end

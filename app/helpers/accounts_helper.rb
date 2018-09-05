@@ -30,4 +30,20 @@ module AccountsHelper
   def account_combine_status(account)
     "#{account_status_badge(account)} / #{account_wse_status(account)}".html_safe
   end
+
+  def account_actions_edit(account)
+    actions = []
+    actions << helper.link_to('<i class="fa fa-star"></i>'.html_safe, toggle_favorite_account_path(account.id), class: "act btn btn-favorite btn btn-outline-primary #{account.favorite ? 'fv-active' : ''}", method: :post, remote: true)
+    actions << helper.link_to('VAL', mark_wse_status_account_path(account.id, status: :valid), class: 'act btn btn-sm btn-success', method: :post, remote: true)
+    actions << helper.link_to('DUP', mark_wse_status_account_path(account.id, status: :duplicate), class: 'act btn btn-sm btn-warning', method: :post, remote: true)
+    actions << helper.link_to('INV', mark_wse_status_account_path(account.id, status: :invalid), class: 'act btn btn-sm btn-danger', method: :post, remote: true)
+    special_actions = []
+    special_actions << helper.link_to('DEL', hide_account_path(account.id), class: 'btn btn-sm btn-secondary', method: :post, remote: true, data: { original_title: "Delete", confirm: 'Bạn có muốn xóa số phone này không?' })
+
+    <<-HTML
+      <div class="actions" style="width: 240px;">
+        #{[actions.join(''), special_actions.join('&nbsp;')].join(' | ')}
+      </div>
+    HTML
+  end
 end

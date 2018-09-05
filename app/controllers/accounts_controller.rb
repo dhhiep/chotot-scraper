@@ -30,6 +30,10 @@ class AccountsController < ApplicationController
     @account.hide!
   end
 
+  def toggle_favorite
+    @account.toggle_favorite!
+  end
+
   private
 
   def load_resource

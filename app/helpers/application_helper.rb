@@ -6,8 +6,9 @@ module ApplicationHelper
   def menu_items
     items = [
       { name: 'Accounts', path: accounts_path },
-      { name: 'Lists', path: lists_path },
-      { name: 'Categories', path: categories_path },
+      # { name: 'Lists', path: lists_path },
+      # { name: 'Categories', path: categories_path },
+      { name: 'Favorites', path: favorites_accounts_path },
       { name: 'Logs', path: logs_path }
     ]
 
