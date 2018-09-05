@@ -47,6 +47,7 @@ group :development, :test do
   gem 'pry'
   gem 'puma', '~> 3.11'
   gem 'letter_opener'
+  gem 'dotenv-rails'
 end
 
 group :development do
