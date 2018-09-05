@@ -17,7 +17,7 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
       phone: { source: 'Account.phone' },
       address: { source: 'Account.address', searchable: true, orderable: false },
       status: { source: 'Account.status', searchable: false },
-      category: { source: '', searchable: false, orderable: false },
+      category: { source: 'Account.category_names', searchable: true, orderable: true },
       action_edit: { source: '', searchable: false, orderable: false }
     }
   end
