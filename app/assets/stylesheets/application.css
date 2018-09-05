@@ -17,6 +17,10 @@
  *= require_self
  */
 
+#header{
+  padding: 0px 15px;
+}
+
 #main_content{
   padding: 30px 15px;
 }
