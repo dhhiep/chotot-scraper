@@ -18,7 +18,8 @@
  */
 
 #header{
-  padding: 0px 15px;
+  padding: 0px 5px;
+  max-width: 3000px;
 }
 
 #main_content{
