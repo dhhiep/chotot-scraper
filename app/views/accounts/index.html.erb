@@ -1,16 +1,18 @@
-<% url = "#{request.protocol}#{request.host_with_port}#{request.fullpath}" %>
-<table id="accounts-table" class="table" data-source="<%= url %>" style='width: 100%'>
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Name</th>
-      <th style="width: 115px;">Phone</th>
-      <th>Address</th>
-      <th>Status/WSE</th>
-      <th>Category</th>
-      <th style="width: 215px;">Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-  </tbody>
-</table>
+<div class="table-responsive">
+  <% url = "#{request.protocol}#{request.host_with_port}#{request.fullpath}" %>
+  <table id="accounts-table" class="table" data-source="<%= url %>" style='width: 100%'>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th style="width: 115px;">Phone</th>
+        <th>Address</th>
+        <th>Status/WSE</th>
+        <th>Category</th>
+        <th style="width: 215px;">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</div>
