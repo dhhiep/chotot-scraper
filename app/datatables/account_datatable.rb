@@ -13,11 +13,11 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
   def view_columns
     @view_columns ||= {
       id: { source: 'Account.id', cond: :eq },
-      full_name: { source: 'Account.full_name' },
+      full_name: { source: 'Account.full_name', searchable: false, orderable: false },
       phone: { source: 'Account.phone' },
       address: { source: 'Account.address', searchable: true, orderable: false },
       status: { source: 'Account.status', searchable: false },
-      category: { source: 'Account.category_names', searchable: true, orderable: true },
+      category: { source: 'Account.category_names', searchable: false, orderable: false },
       action_edit: { source: '', searchable: false, orderable: false }
     }
   end
