@@ -17,6 +17,7 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
       phone: { source: 'Account.phone' },
       address: { source: 'Account.address', searchable: true, orderable: false },
       status: { source: 'Account.status', searchable: false },
+      area_name: { source: 'Account.area_name', searchable: false, orderable: true },
       category: { source: 'Account.category_names', searchable: false, orderable: false },
       action_edit: { source: '', searchable: false, orderable: false }
     }
@@ -31,7 +32,8 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
         phone: phone_with_copy_to_clipboard(record.id, record.phone).html_safe,
         address: record.address_filtered,
         status: account_combine_status(record),
-        category: record.category_names,
+        area_name: record.area_name,
+        # category: record.category_names,
         action_edit: account_actions_edit(record).html_safe
       }
     end
@@ -41,7 +43,6 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
 
   def get_raw_records
     @query = Account.active
-
     if params[:type].presence == 'favorites'
       @query = @query.favorites
     end
