@@ -32,7 +32,7 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
         address: record.address_filtered,
         status: account_combine_status(record),
         category: record.category_names.join(', '),
-        action_edit: action_edit(record)
+        action_edit: action_edit(record).html_safe
       }
     end
   end
@@ -49,10 +49,12 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
 
   def phone_with_copy_to_clipboard(id, phone)
     <<-HTML
-      <a href="javascript:;" onclick="copyToClipboard(this, #{id}, '#{phone}')" style="margin-right: 5px;">
-        <i class='fa fa-copy'></i>
-      </a>
-      #{phone}
+      <div style="width: 115px;">
+        <a href="javascript:;" onclick="copyToClipboard(this, #{id}, '#{phone}')" style="margin-right: 5px;">
+          <i class='fa fa-copy'></i>
+        </a>
+        #{phone}
+      </div>
     HTML
   end
 
@@ -63,7 +65,12 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
     actions << helper.link_to('INV', mark_wse_status_account_path(record.id, status: :invalid), class: 'act btn btn-sm btn-danger', method: :post, remote: true)
     special_actions = []
     special_actions << helper.link_to('DEL', hide_account_path(record.id), class: 'btn btn-sm btn-secondary', method: :post, remote: true, data: { original_title: "Delete", confirm: 'Bạn có muốn xóa số phone này không?' })
-    [actions.join(''), special_actions.join('&nbsp;')].join(' | ').html_safe
+
+    <<-HTML
+      <div style="width: 195px;">
+        #{[actions.join(''), special_actions.join('&nbsp;')].join(' | ')}
+      </div>
+    HTML
   end
 
   def count_responses(record)
