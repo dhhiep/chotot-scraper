@@ -10,6 +10,7 @@ class AccountsController < ApplicationController
 
   def mark_review
     @account.status_inserted!
+    @account.update(inserted_at: Time.current)
   end
 
   def mark_wse_status
