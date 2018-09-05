@@ -43,8 +43,8 @@ class Account < ApplicationRecord
     address_tmp
   end
 
-  def category_names
-    lists.includes(:category).map { |l| l.category.try(:name) }.reject(&:blank?)
+  def build_category_names!
+    self.category_names =  lists.includes(:category).map { |l| l.category.try(:name) }.reject(&:blank?).join(', ')
   end
 
   def hide!

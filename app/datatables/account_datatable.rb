@@ -31,7 +31,7 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
         phone: phone_with_copy_to_clipboard(record.id, record.phone).html_safe,
         address: record.address_filtered,
         status: account_combine_status(record),
-        category: record.category_names.join(', '),
+        category: record.category_names,
         action_edit: action_edit(record).html_safe
       }
     end
