@@ -3,9 +3,19 @@ namespace :chotot do
   task scrape: :environment do
     # Global variable
     page = ENV['PAGE'].present? ? ENV['PAGE'].to_i : 0
-    max_retry = ENV['RETRY'].present? ? ENV['RETRY'].to_i : 10
+    max_retry = ENV['RETRY'].present? ? ENV['RETRY'].to_i : 50
     category_id = ENV['CATEGORY_ID'].present? ? ENV['CATEGORY_ID'].to_i : 5000
 
+    chottot_scraper(page, max_retry, category_id)
+  end
+
+  task daily_scrape: :environment do
+    Category.all.each do |category|
+      chottot_scraper(0, 1, category.ct_category_id)
+    end
+  end
+
+  def chottot_scraper(page, max_retry, category_id, region = 13)
     dup_counter = 0
     uuid = "%05d" % rand(1...99_999)
     offset = page * 20
@@ -13,26 +23,26 @@ namespace :chotot do
     summary(uuid, category, dup_counter, offset, 'Chotot - Scraper script is starting')
 
     loop do
-      base_url = 'https://gateway.chotot.com/v1/public/ad-listing?region=13&w=1&limit=20&st=s,k&f=p'
-      url = "#{base_url}&cg=#{category_id}&o=#{offset}&page=#{page}"
+      base_url = 'https://gateway.chotot.com/v1/public/ad-listing?w=1&limit=20&st=s,k&f=p'
+      url = "#{base_url}&region=#{region}&cg=#{category_id}&o=#{offset}&page=#{page}"
       list_item = HTTParty.get(url)['ads'] rescue nil
       if list_item.blank?
         summary(uuid, category, dup_counter, offset, "List end at page #{page}")
-        abort "List end at page #{page}"
+        return "List end at page #{page}"
         break
       end
 
       summary(uuid, category, dup_counter, offset, "Analyzing page #{page}", false)
       list_item.each do |item|
         list_id = item['list_id']
-        account = Account.create_by_oid(item['account_oid'])
+        account = Account.create_by_oid(item['account_oid'], { area_name: item['area_name'] })
 
         # Check and create list
         if List.by_lid(list_id)
           # List item existed in DB, mean the account was created
           if dup_counter > max_retry
             summary(uuid, category, dup_counter, offset, "List Duplicated from page #{page}")
-            abort 'List Duplicated'
+            return 'List Duplicated'
           else
             dup_counter += 1
           end

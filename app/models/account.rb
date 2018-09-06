@@ -11,18 +11,18 @@ class Account < ApplicationRecord
     find_by_account_oid(oid)
   end
 
-  def self.create_by_oid(oid)
+  def self.create_by_oid(oid, extra = {})
     account = by_oid(oid)
     return if account
     response = load_account_from_chotot(oid)
     return false unless response['account_id']
+    response['area_name'] = extra[:area_name]
     location = response['location']
     if location
       response['lat'] = response['location'][0]
       response['lng'] = response['location'][1]
       response.delete('location')
     end
-
     where(account_id: response['account_id']).first_or_create(response.as_json(only: whitelist_params))
   end
 
@@ -62,7 +62,7 @@ class Account < ApplicationRecord
     %w[
       account_id account_oid address create_time deviation email email_verified
       avatar facebook_id facebook_token full_name lat lng long_term_facebook_token
-      phone phone_verified start_time update_time is_active
+      phone phone_verified start_time update_time is_active area_name
     ]
   end
 end
