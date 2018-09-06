@@ -1,3 +1,7 @@
+<div id="today_summary">
+  <%= render 'accounts/today_summary_content' %>
+</div>
+
 <div class="table-responsive">
   <% url = "#{request.protocol}#{request.host_with_port}#{request.fullpath}" %>
   <table id="accounts-table" class="table" data-source="<%= url %>" style='width: 100%'>

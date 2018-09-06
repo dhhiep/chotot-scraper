@@ -1,0 +1,12 @@
+.alert.alert-dismissible.alert-info
+  %strong Today summay:
+  &nbsp;
+  &nbsp;
+  - Account.today_summary.each do |k, v|
+    %strong= k
+    &nbsp;
+    %i=v
+    &nbsp;
+    = k == :'Today:' ? '' : '|'
+    &nbsp;
+%br/

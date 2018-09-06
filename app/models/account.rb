@@ -7,9 +7,24 @@ class Account < ApplicationRecord
   scope :active, -> { where(hide: false) }
   scope :favorites, -> { where(favorite: true) }
   scope :district_7, -> { where(area_name: 'Quận 7') }
-  
+
   def self.by_oid(oid)
     find_by_account_oid(oid)
+  end
+
+  def self.today_summary
+    {
+      'In 30 minutes ago:': by_range(from: 30.minutes.ago).count,
+      'In 2 hours ago:': by_range(from: 2.hours.ago).count,
+      'Today:': by_range(from: Time.current.beginning_of_day, to: Time.current.end_of_day).count
+    }
+  end
+
+  def self.by_range(from: nil, to: nil)
+    resources = active
+    resources = resources.where('inserted_at >= :from', from: from) if from
+    resources = resources.where('inserted_at <= :to', to: to) if to
+    resources
   end
 
   def self.create_by_oid(oid, extra = {})

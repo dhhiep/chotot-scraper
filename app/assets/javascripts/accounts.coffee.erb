@@ -21,6 +21,12 @@ $ ->
       {data: 'action_edit', searchable: false, sortable: false}
     ]
 
+  window.fetchSummary = ->
+    $.ajax
+      type: 'GET'
+      url: '/accounts/fetch_summary'
+      dataType: 'script'
+
   markAccountWasReviewed = (id) ->
     $.ajax
       type: 'POST'
