@@ -42,7 +42,7 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
   private
 
   def get_raw_records
-    @query = Account.active
+    @query = Account.active.district_7
     if params[:type].presence == 'favorites'
       @query = @query.favorites
     end

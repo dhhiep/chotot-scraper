@@ -6,7 +6,8 @@ class Account < ApplicationRecord
 
   scope :active, -> { where(hide: false) }
   scope :favorites, -> { where(favorite: true) }
-
+  scope :district_7, -> { where(area_name: 'Quận 7') }
+  
   def self.by_oid(oid)
     find_by_account_oid(oid)
   end
