@@ -11,7 +11,7 @@ namespace :chotot do
 
   task daily_scrape: :environment do
     Category.all.each do |category|
-      chottot_scraper(0, 1, category.ct_category_id)
+      chottot_scraper(0, 50, category.ct_category_id)
     end
   end
 
