@@ -33,16 +33,13 @@ $ ->
       url: '/accounts/' + id + '/mark_review'
       dataType: 'script'
 
-  window.copyToClipboard = (element, id, str) ->
-    markAccountWasReviewed(id)
-    $(element).html('Copied')
-    $temp = $('<input>')
-    $('body').append $temp
-    $temp.val(str).select()
-    document.execCommand 'copy'
-    $temp.remove()
-
+  clipboard = new ClipboardJS('.copy-account-phone');
+  clipboard.on 'success', (e) ->
+    element = $(e.trigger)
     # Update text
+    element.html('Copied')
+    id = element.data('id')
+    markAccountWasReviewed(id)
     setTimeout ->
-      $(element).html("<i class='fa fa-copy'></i>")
+      element.html("<i class='fa fa-copy'></i>")
     , 1000

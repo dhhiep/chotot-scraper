@@ -18,4 +18,5 @@
 //= require bootstrap.min
 //= require dataTables/jquery.dataTables.min
 //= require dataTables/dataTables.bootstrap4.min
+//= require clipboard.min
 //= require_tree .
