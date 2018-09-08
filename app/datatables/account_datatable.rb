@@ -53,7 +53,7 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
     <<-HTML
       <div style="width: 130px;">
         <div class="phone">
-          <a href="javascript:;" data-id="#{record}" data-clipboard-text="#{phone}" class='copy-account-phone' style="margin-right: 5px;">
+          <a href="javascript:;" data-id="#{record.id}" data-clipboard-text="#{phone}" class='copy-account-phone' style="margin-right: 5px;">
             <i class='fa fa-copy'></i>
           </a>
           #{phone}
