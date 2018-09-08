@@ -1,5 +1,8 @@
 $ ->
   $('#accounts-table').dataTable
+    dom:  "<'row'<'col-sm-12 col-md-2'l><'col-sm-12 col-md-10'<'#account_dt_filters'>f>>" +
+          "<'row'<'col-sm-12'tr>>" +
+          "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
     responsive: true
     processing: true
     autoWidth: false
@@ -8,7 +11,14 @@ $ ->
     serverSide: true
     searchDelay: 800
     pageLength: 25
-    ajax: $('#accounts-table').data('source')
+    ajax:
+      url: $('#accounts-table').data('source')
+      data: (params) ->
+        params.extra =
+          'filter_date_range': $('#filter_date_range').val()
+          'filter_completed_by_admin': $('#filter_completed_by_admin').is(':checked')
+          'filter_completed_by_cart': $('#filter_completed_by_cart').is(':checked')
+        return
     pagingType: 'full_numbers'
     columns: [
       {data: 'id'}
@@ -36,10 +46,16 @@ $ ->
   clipboard = new ClipboardJS('.copy-account-phone');
   clipboard.on 'success', (e) ->
     element = $(e.trigger)
-    # Update text
-    element.html('Copied')
+    element_wrapper = element.parent()
+    actions = element.parents('td').find('.phone_actions')
+
+    # Store inserted at to server
     id = element.data('id')
     markAccountWasReviewed(id)
+
+    element_wrapper.hide()
+    actions.fadeIn()
     setTimeout ->
-      element.html("<i class='fa fa-copy'></i>")
-    , 1000
+      actions.hide()
+      element_wrapper.fadeIn()
+    , 5000

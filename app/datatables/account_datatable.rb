@@ -29,7 +29,7 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
         DT_RowId: record.id,
         id: record.id,
         full_name: record.full_name,
-        phone: phone_with_copy_to_clipboard(record.id, record.phone).html_safe,
+        phone: phone_with_copy_to_clipboard(record, record.phone).html_safe,
         address: record.address_filtered,
         status: account_combine_status(record),
         area_name: record.area_name,
@@ -49,23 +49,19 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
     @query
   end
 
-  def phone_with_copy_to_clipboard(id, phone)
+  def phone_with_copy_to_clipboard(record, phone)
     <<-HTML
       <div style="width: 130px;">
-        <a href="javascript:;" data-id="#{id}" data-clipboard-text="#{phone}" class='copy-account-phone' style="margin-right: 5px;">
-          <i class='fa fa-copy'></i>
-        </a>
-        #{phone}
+        <div class="phone">
+          <a href="javascript:;" data-id="#{record}" data-clipboard-text="#{phone}" class='copy-account-phone' style="margin-right: 5px;">
+            <i class='fa fa-copy'></i>
+          </a>
+          #{phone}
+        </div>
+        <div class="phone_actions">
+          #{account_wse_actions_edit(record)[1..2].join('').html_safe}
+        </div>
       </div>
     HTML
-  end
-
-  def count_responses(record)
-    # if survey = Survey.find_by_qt_survey_id(ENV['MAIN_SURVEY_ID'])
-    #   responses = survey.responses.where(account_id: record.id).sort_by_end_date.first
-    #   responses.answers.empty.count
-    # else
-    # end
-    0
   end
 end
