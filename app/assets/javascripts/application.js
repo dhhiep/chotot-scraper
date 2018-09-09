@@ -19,4 +19,5 @@
 //= require dataTables/jquery.dataTables.min
 //= require dataTables/dataTables.bootstrap4.min
 //= require clipboard.min
+//= require select2-full
 //= require_tree .

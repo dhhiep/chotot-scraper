@@ -27,19 +27,6 @@ module AccountsHelper
     "<span id='wse_status_#{account.id}' class='badge badge-#{badge}'>#{txt}</span>".html_safe
   end
 
-  def account_html_filters
-    <<-HTML
-      <select class='account_status_filter'>
-      </select>
-
-      <select class='account_wse_status_filter'>
-      </select>
-
-      <select class='account_area_filter'>
-      </select>
-    HTML
-  end
-
   def account_combine_status(account)
     "#{account_status_badge(account)} / #{account_wse_status(account)}".html_safe
   end

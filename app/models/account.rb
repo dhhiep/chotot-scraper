@@ -42,6 +42,10 @@ class Account < ApplicationRecord
     where(account_id: response['account_id']).first_or_create(response.as_json(only: whitelist_params))
   end
 
+  def self.districts
+    @districts ||= pluck(:area_name).uniq.compact.sort
+  end
+
   def self.load_account_from_chotot(oid)
     url = "https://gateway.chotot.com/v1/public/profile/#{oid}"
     HTTParty.get(url)
