@@ -5,6 +5,11 @@ class Account < ApplicationRecord
   enum wse_status: { wse_unknown: 0, wse_valid: 1, wse_duplicate: 2, wse_invalid: 3 }
 
   scope :active, -> { where(hide: false) }
+  scope :wse_unknown, -> { find_wse_status(:wse_unknown) }
+  scope :wse_valid, -> { find_wse_status(:wse_valid) }
+  scope :wse_duplicate, -> { find_wse_status(:wse_duplicate) }
+  scope :wse_invalid, -> { find_wse_status(:wse_invalid) }
+  scope :find_wse_status, -> (sts) { where(wse_status: sts) }
   scope :favorites, -> { where(favorite: true) }
   scope :district_7, -> { where(area_name: 'Quận 7') }
 
@@ -13,15 +18,29 @@ class Account < ApplicationRecord
   end
 
   def self.today_summary
-    {
-      'In 30 minutes ago:': by_range(from: 30.minutes.ago).count,
-      'In 2 hours ago:': by_range(from: 2.hours.ago).count,
-      'Today:': by_range(from: Time.current.beginning_of_day, to: Time.current.end_of_day).count
-    }
+    summary_rows = {}
+    today = by_range(from: Time.current.beginning_of_day, to: Time.current.end_of_day)
+    summary_rows.merge!(summary_text('Last 2 hours:', by_range(from: 2.hours.ago)))
+    summary_rows.merge!(summary_text('Today', today))
   end
 
-  def self.by_range(from: nil, to: nil)
+  def self.summary_text(text, resources)
+    {"#{text} (Insert/Dup/Invalid):": "#{resources.count}/#{resources.wse_duplicate.count}/#{resources.wse_invalid.count}"}
+  end
+
+  def self.by_range(from: nil, to: nil, wse_status: nil)
     resources = active
+    case wse_status
+    when :valid
+      resources.wse_valid
+    when :unknown
+      resources.wse_unknown
+    when :valid
+      resources.wse_valid
+    when :duplicate
+      resources.wse_duplicate
+    end
+
     resources = resources.where('inserted_at >= :from', from: from) if from
     resources = resources.where('inserted_at <= :to', to: to) if to
     resources

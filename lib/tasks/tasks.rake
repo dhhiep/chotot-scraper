@@ -21,4 +21,8 @@ namespace :tasks do
       end
     end
   end
+
+  task update_all_account_to_region_13: :environment do
+    Account.update_all(region_id: 13)
+  end
 end

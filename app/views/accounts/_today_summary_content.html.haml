@@ -1,12 +1,9 @@
 .alert.alert-dismissible.alert-info
-  %strong Today summaries:
-  &nbsp;
-  &nbsp;
   - Account.today_summary.each do |k, v|
     %strong= k
     &nbsp;
     %i=v
     &nbsp;
-    = k == :'Today:' ? '' : '|'
+    = k.to_s.include?('Today') ? '' : '|'
     &nbsp;
 %br/
