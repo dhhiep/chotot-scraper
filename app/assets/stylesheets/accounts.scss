@@ -1,24 +1,45 @@
-#accounts-table{
-  td{
-    vertical-align: middle;
+#account_page{
+  .table-responsive{
+    padding-top: 15px;
   }
-
-  .act.btn{
-    margin-left: 5px;
-    &:nth-child(1){
-      margin-left: 0;
+  #accounts-table{
+    td{
+      vertical-align: middle;
     }
-  }
 
-  .btn-favorite {
-    &.fv-active {
-      i {
-        color: #F39C12;
+    .act.btn{
+      margin-left: 5px;
+      &:nth-child(1){
+        margin-left: 0;
+      }
+    }
+
+    .btn-favorite {
+      &.fv-active {
+        i {
+          color: #F39C12;
+        }
       }
     }
   }
-}
+  .phone_actions{
+    display: none;
+  }
 
-.phone_actions{
-  display: none;
+  #account_dt_filters{
+    text-align: left;
+    display: inline-block;
+    padding-right: 20px;
+    margin-top: -2px;
+    .select2-container--bootstrap{
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+  
+  #accounts-table_filter{
+    display: inline-block;
+    float: right;
+    clear: right;
+  }
 }
