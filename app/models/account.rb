@@ -25,7 +25,10 @@ class Account < ApplicationRecord
   end
 
   def self.summary_text(text, resources)
-    {"#{text} (Insert/Dup/Invalid):": "#{resources.count}/#{resources.wse_duplicate.count}/#{resources.wse_invalid.count}"}
+    total = resources.count
+    wse_dup = resources.wse_duplicate.count
+    wse_inv = resources.wse_invalid.count
+    {"#{text} (Check/Inserted/Dup/Invalid):": "#{total}/#{total - wse_dup - wse_inv}/#{wse_dup}/#{wse_inv}"}
   end
 
   def self.by_range(from: nil, to: nil, wse_status: nil)
