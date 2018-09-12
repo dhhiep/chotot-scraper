@@ -2,19 +2,19 @@ $(document).ready(function() {
   setTimeout(function() {
     $('#account_dt_filters').html(
       " \
-        <select class='account_status_filter select2'> \
+        <select id='account_status_filter' class='account_status_filter select2'> \
           <option value=''>Account Status</option> \
           <option value='new'>New</option> \
-          <option value='instered'>Inserted</option> \
+          <option value='inserted'>Inserted</option> \
         </select> \
-        <select class='account_wse_status_filter select2'> \
+        <select id='account_wse_status_filter' class='account_wse_status_filter select2'> \
           <option value=''>WSE Status</option> \
           <option value='new'>New</option> \
           <option value='valid'>Valid</option> \
           <option value='duplicate'>Duplicate</option> \
           <option value='invalid'>Invalid</option> \
         </select> \
-        <select class='account_area_filter select2'> \
+        <select id='account_area_filter' class='account_area_filter select2'> \
           <option value=''>Area Filter</option> \
           <% Account.districts.each do |district| %> \
             <option value='<%= district %>'><%= district %></option> \
@@ -27,6 +27,8 @@ $(document).ready(function() {
       theme: "bootstrap",
       dropdownAutoWidth: false,
       width: '150px'
-    });
+    }).on('change', function(){
+      accounts_table.fnDraw();
+    })
   }, 1000);
 })

@@ -14,7 +14,7 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
     @view_columns ||= {
       id: { source: 'Account.id', cond: :eq },
       full_name: { source: 'Account.full_name', searchable: false, orderable: false },
-      phone: { source: 'Account.phone' },
+      phone: { source: 'Account.phone', orderable: false },
       address: { source: 'Account.address', searchable: true, orderable: false },
       status: { source: 'Account.status', searchable: false },
       area_name: { source: 'Account.area_name', searchable: false, orderable: true },
@@ -42,10 +42,39 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
   private
 
   def get_raw_records
+
+    extra = params[:extra]
+    account_status_filter = extra && extra[:account_status_filter].presence
+    account_wse_status_filter = extra && extra[:account_wse_status_filter].presence
+    account_area_filter = extra && extra[:account_area_filter].presence
+
     @query = Account.active
-    if params[:type].presence == 'favorites'
-      @query = @query.favorites
-    end
+    @query =
+      case account_status_filter
+      when 'new'
+        @query.status_new
+      when 'inserted'
+        @query.status_inserted
+      else
+        @query
+      end
+
+    @query =
+      case account_wse_status_filter
+      when 'new'
+        @query.wse_unknown
+      when 'valid'
+        @query.wse_valid
+      when 'duplicate'
+        @query.wse_duplicate
+      when 'invalid'
+        @query.wse_invalid
+      else
+        @query
+      end
+
+    @query = @query.in_district(account_area_filter) if Account.districts.include?(account_area_filter)
+    @query = @query.favorites if params[:type].presence == 'favorites'
     @query
   end
 

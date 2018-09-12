@@ -1,35 +1,36 @@
 $ ->
-  $('#accounts-table').dataTable
-    dom:  "<'row'<'col-sm-12 col-md-2'l><'col-sm-12 col-md-10 text-right'<'#account_dt_filters'>f>>" +
-          "<'row'<'col-sm-12'tr>>" +
-          "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
-    responsive: true
-    processing: true
-    autoWidth: false
-    oLanguage:
-      sProcessing: '<%= image_tag("Spinner.gif") %>'
-    serverSide: true
-    searchDelay: 800
-    pageLength: 25
-    ajax:
-      url: $('#accounts-table').data('source')
-      data: (params) ->
-        params.extra =
-          'filter_date_range': $('#filter_date_range').val()
-          'filter_completed_by_admin': $('#filter_completed_by_admin').is(':checked')
-          'filter_completed_by_cart': $('#filter_completed_by_cart').is(':checked')
-        return
-    pagingType: 'full_numbers'
-    columns: [
-      {data: 'id'}
-      {data: 'full_name'}
-      {data: 'phone'}
-      {data: 'address'}
-      {data: 'status'}
-      {data: 'area_name'}
-      # {data: 'category'}
-      {data: 'action_edit', searchable: false, sortable: false}
-    ]
+  window.accounts_table = 
+    $('#accounts-table').dataTable
+      dom:  "<'row'<'col-sm-12 col-lg-2'l><'col-sm-12 col-lg-10 text-right accounts_table_tool_right'f<'#account_dt_filters'>>>" +
+            "<'row'<'col-sm-12'tr>>" +
+            "<'row'<'col-sm-12 col-lg-5'i><'col-sm-12 col-lg-7'p>>",
+      responsive: true
+      processing: true
+      autoWidth: false
+      oLanguage:
+        sProcessing: '<%= image_tag("Spinner.gif") %>'
+      serverSide: true
+      searchDelay: 800
+      pageLength: 25
+      ajax:
+        url: $('#accounts-table').data('source')
+        data: (params) ->
+          params.extra =
+            'account_status_filter': $('#account_status_filter').val()
+            'account_wse_status_filter': $('#account_wse_status_filter').val()
+            'account_area_filter': $('#account_area_filter').val()
+          return
+      pagingType: 'full_numbers'
+      columns: [
+        {data: 'id'}
+        {data: 'full_name'}
+        {data: 'phone'}
+        {data: 'address'}
+        {data: 'status'}
+        {data: 'area_name'}
+        # {data: 'category'}
+        {data: 'action_edit', searchable: false, sortable: false}
+      ]
 
   window.fetchSummary = ->
     $.ajax

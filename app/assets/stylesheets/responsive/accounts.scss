@@ -1,0 +1,57 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  #account_page {
+    #accounts-table_length {
+      position: relative !important;
+      text-align: left;
+      margin-bottom: 5px;
+      margin-left: 15px;
+    }
+    
+    #account_dt_filters{
+      margin-bottom: 10px;
+      padding-right: 0;
+      > * {
+        width: 100% !important;
+        margin-bottom: 10px;
+      }
+    }
+
+    #accounts-table_filter {
+      width: 100%;
+      float: initial;
+      text-align: left;
+      margin-bottom: -10px;
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  #account_page {
+    #accounts-table_length {
+      position: absolute;
+    }
+
+    #account_dt_filters {
+      text-align: left;
+      display: inline-block;
+      width: 100%;
+      padding-right: 20px;
+      margin-top: 15px;
+      text-align: center;
+      margin-bottom: 20px;
+      > * {
+        text-align: left;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}

@@ -11,7 +11,7 @@ class Account < ApplicationRecord
   scope :wse_invalid, -> { find_wse_status(:wse_invalid) }
   scope :find_wse_status, -> (sts) { where(wse_status: sts) }
   scope :favorites, -> { where(favorite: true) }
-  scope :district_7, -> { where(area_name: 'Quận 7') }
+  scope :in_district, -> (area_name) { where(area_name: area_name) }
 
   def self.by_oid(oid)
     find_by_account_oid(oid)
