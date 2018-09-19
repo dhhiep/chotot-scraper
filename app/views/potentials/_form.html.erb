@@ -1,0 +1,25 @@
+<%= form_with(model: potential, local: true) do |form| %>
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :account_id %>
+    <%= form.number_field :account_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :remind_at %>
+    <%= form.datetime_select :remind_at %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

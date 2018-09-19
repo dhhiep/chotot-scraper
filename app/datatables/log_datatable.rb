@@ -11,6 +11,7 @@ class LogDatatable < AjaxDatatablesRails::ActiveRecord
   def data
     records.map do |record|
       {
+        DT_RowId: record.id,
         uuid: log_details(record).html_safe,
         description: record.description
       }

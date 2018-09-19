@@ -1,0 +1,20 @@
+$ ->
+  $('#potentials-table').dataTable
+    responsive: true
+    processing: true
+    autoWidth: false
+    pageLength: 25
+    oLanguage:
+      sProcessing: '<%= image_tag("Spinner.gif") %>'
+    serverSide: true
+    searchDelay: 800
+    ajax: $('#potentials-table').data('source')
+    pagingType: 'full_numbers'
+    columns: [
+      {data: 'id'}
+      {data: 'name'}
+      {data: 'phone'}
+      {data: 'remind_at'}
+      {data: 'source'}
+      {data: 'actions'}
+    ]

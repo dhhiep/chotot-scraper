@@ -26,6 +26,7 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :potentials
   resources :lists, only: [:index]
   resources :categories, only: [:index]
   resources :logs, only: [:index, :show]

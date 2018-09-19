@@ -4,8 +4,7 @@
   </div>
 
   <div class="table-responsive">
-    <% url = "#{request.protocol}#{request.host_with_port}#{request.fullpath}" %>
-    <table id="accounts-table" class="table" data-source="<%= url %>" style='width: 100%'>
+    <table id="accounts-table" class="table" data-source="<%= datatable_url %>" style='width: 100%'>
       <thead>
         <tr>
           <th>ID</th>

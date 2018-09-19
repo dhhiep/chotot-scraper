@@ -1,4 +1,8 @@
 module ApplicationHelper
+  def datatable_url
+    "#{request.protocol}#{request.host_with_port}#{request.fullpath}"
+  end
+  
   def helper
     ActionController::Base.helpers
   end
@@ -9,6 +13,7 @@ module ApplicationHelper
       # { name: 'Lists', path: lists_path },
       # { name: 'Categories', path: categories_path },
       { name: 'Favorites', path: favorites_accounts_path },
+      { name: 'Potentials', path: potentials_path },
       { name: 'Logs', path: logs_path }
     ]
 
