@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_19_095610) do
+ActiveRecord::Schema.define(version: 2018_09_22_101536) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,10 +46,20 @@ ActiveRecord::Schema.define(version: 2018_09_19_095610) do
     t.boolean "favorite", default: false
     t.string "area_name"
     t.integer "region_id"
+    t.integer "area_id"
     t.index ["account_id"], name: "index_accounts_on_account_id"
     t.index ["account_oid"], name: "index_accounts_on_account_oid"
     t.index ["status"], name: "index_accounts_on_status"
     t.index ["wse_status"], name: "index_accounts_on_wse_status"
+  end
+
+  create_table "areas", force: :cascade do |t|
+    t.string "name"
+    t.integer "region_id"
+    t.integer "area_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["area_id"], name: "index_areas_on_area_id", unique: true
   end
 
   create_table "categories", force: :cascade do |t|
@@ -70,6 +80,8 @@ ActiveRecord::Schema.define(version: 2018_09_19_095610) do
     t.string "area_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "area_id"
+    t.integer "region_id"
     t.index ["list_id"], name: "index_lists_on_list_id"
   end
 
@@ -80,6 +92,14 @@ ActiveRecord::Schema.define(version: 2018_09_19_095610) do
     t.datetime "remind_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "regions", force: :cascade do |t|
+    t.string "name"
+    t.integer "region_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["region_id"], name: "index_regions_on_region_id", unique: true
   end
 
   create_table "summaries", force: :cascade do |t|

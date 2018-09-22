@@ -4,14 +4,15 @@ class Account < ApplicationRecord
   enum status: { status_new: 0, status_inserted: 1 }
   enum wse_status: { wse_unknown: 0, wse_valid: 1, wse_duplicate: 2, wse_invalid: 3 }
 
-  scope :active, -> { where(hide: false) }
-  scope :wse_unknown, -> { find_wse_status(:wse_unknown) }
-  scope :wse_valid, -> { find_wse_status(:wse_valid) }
-  scope :wse_duplicate, -> { find_wse_status(:wse_duplicate) }
-  scope :wse_invalid, -> { find_wse_status(:wse_invalid) }
-  scope :find_wse_status, -> (sts) { where(wse_status: sts) }
+  scope :address_present, -> { where.not(address: nil).where.not(address: '') }
+  scope :active, -> { address_present.where(hide: false) }
+  scope :wse_unknown, -> { active.find_wse_status(:wse_unknown) }
+  scope :wse_valid, -> { active.find_wse_status(:wse_valid) }
+  scope :wse_duplicate, -> { active.find_wse_status(:wse_duplicate) }
+  scope :wse_invalid, -> { active.find_wse_status(:wse_invalid) }
+  scope :find_wse_status, ->(sts) { where(wse_status: sts) }
   scope :favorites, -> { where(favorite: true) }
-  scope :in_district, -> (area_name) { where(area_name: area_name) }
+  scope :in_district, ->(area_name) { where(area_name: area_name) }
 
   def self.by_oid(oid)
     find_by_account_oid(oid)
@@ -28,7 +29,7 @@ class Account < ApplicationRecord
     total = resources.count
     wse_dup = resources.wse_duplicate.count
     wse_inv = resources.wse_invalid.count
-    {"#{text} (Check/Inserted/Dup/Invalid):": "#{total}/#{total - wse_dup - wse_inv}/#{wse_dup}/#{wse_inv}"}
+    {"#{ text } (Check/Inserted/Dup/Invalid):": "#{ total }/#{ total - wse_dup - wse_inv }/#{ wse_dup }/#{ wse_inv }"}
   end
 
   def self.by_range(from: nil, to: nil, wse_status: nil)
@@ -54,6 +55,8 @@ class Account < ApplicationRecord
     return if account
     response = load_account_from_chotot(oid)
     return false unless response['account_id']
+    response['region_id'] = extra[:region_id]
+    response['area_id'] = extra[:area_id]
     response['area_name'] = extra[:area_name]
     location = response['location']
     if location
@@ -65,7 +68,7 @@ class Account < ApplicationRecord
   end
 
   def self.districts
-    @districts ||= pluck(:area_name).uniq.compact.sort
+    @districts ||= Region.find_by_region_id(13).areas.pluck(:name)
   end
 
   def self.load_account_from_chotot(oid)
@@ -87,7 +90,7 @@ class Account < ApplicationRecord
   end
 
   def build_category_names!
-    self.category_names =  lists.includes(:category).map { |l| l.category.try(:name) }.reject(&:blank?).join(', ')
+    self.category_names = lists.includes(:category).map { |l| l.category.try(:name) }.reject(&:blank?).join(', ')
   end
 
   def hide!
@@ -98,13 +101,12 @@ class Account < ApplicationRecord
     update(favorite: !favorite)
   end
 
-  private
-
   def self.whitelist_params
     %w[
       account_id account_oid address create_time deviation email email_verified
       avatar facebook_id facebook_token full_name lat lng long_term_facebook_token
-      phone phone_verified start_time update_time is_active area_name
+      phone phone_verified start_time update_time is_active area_name region_id
+      area_id
     ]
   end
 end

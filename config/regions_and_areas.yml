@@ -1,0 +1,578 @@
+---
+'1':
+  name: Các tỉnh lân cận Hà Nội
+  area:
+    '1':
+      id: '1'
+      name: Bắc Ninh
+      name_url: bac-ninh
+    '2':
+      id: '2'
+      name: Phú Thọ
+      name_url: phu-tho
+    '3':
+      id: '3'
+      name: Hà Nam
+      name_url: ha-nam
+    '4':
+      id: '4'
+      name: Hải Dương
+      name_url: hai-duong
+    '5':
+      id: '5'
+      name: Hòa Bình
+      name_url: hoa-binh
+    '6':
+      id: '6'
+      name: Hưng Yên
+      name_url: hung-yen
+    '7':
+      id: '7'
+      name: Ninh Bình
+      name_url: ninh-binh
+    '8':
+      id: '8'
+      name: Vĩnh Phúc
+      name_url: vinh-phuc
+    '9':
+      id: '9'
+      name: Tỉnh khác
+      name_url: tinh-khac
+  name_url: cac-tinh-lan-can-ha-noi
+  id: '1'
+'2':
+  name: Đông Nam Bộ
+  area:
+    '10':
+      id: '10'
+      name: Bà Rịa Vũng Tàu
+      name_url: ba-ria-vung-tau
+    '11':
+      id: '11'
+      name: Bình Dương
+      name_url: binh-duong
+    '12':
+      id: '12'
+      name: Bình Phước
+      name_url: binh-phuoc
+    '13':
+      id: '13'
+      name: Đồng Nai
+      name_url: dong-nai
+    '14':
+      id: '14'
+      name: Tây Ninh
+      name_url: tay-ninh
+    '15':
+      id: '15'
+      name: Tỉnh khác
+      name_url: tinh-khac
+  name_url: dong-nam-bo
+  id: '2'
+'3':
+  name: Quảng Nam Đà Nẵng
+  area:
+    '16':
+      id: '16'
+      name: Quảng Nam
+      name_url: quang-nam
+    '17':
+      id: '17'
+      name: Đà Nẵng
+      name_url: da-nang
+    '18':
+      id: '18'
+      name: Tỉnh khác
+      name_url: tinh-khac
+  name_url: quang-nam-da-nang
+  id: '3'
+'4':
+  name: Hải Phòng Nam Định Thái Bình
+  area:
+    '19':
+      id: '19'
+      name: Hải Phòng
+      name_url: hai-phong
+    '20':
+      id: '20'
+      name: Nam Định
+      name_url: nam-dinh
+    '21':
+      id: '21'
+      name: Thái Bình
+      name_url: thai-binh
+    '23':
+      id: '23'
+      name: Tỉnh khác
+      name_url: tinh-khac
+  name_url: hai-phong-nam-dinh-thai-binh
+  id: '4'
+'5':
+  name: Cần Thơ - Tây Nam Bộ
+  area:
+    '24':
+      id: '24'
+      name: An Giang
+      name_url: an-giang
+    '25':
+      id: '25'
+      name: Bạc Liêu
+      name_url: bac-lieu
+    '26':
+      id: '26'
+      name: Bến Tre
+      name_url: ben-tre
+    '27':
+      id: '27'
+      name: Cần Thơ
+      name_url: can-tho
+    '28':
+      id: '28'
+      name: Cà Mau
+      name_url: ca-mau
+    '29':
+      id: '29'
+      name: Đồng Tháp
+      name_url: dong-thap
+    '30':
+      id: '30'
+      name: Hậu Giang
+      name_url: hau-giang
+    '31':
+      id: '31'
+      name: Kiên Giang
+      name_url: kien-giang
+    '32':
+      id: '32'
+      name: Long An
+      name_url: long-an
+    '33':
+      id: '33'
+      name: Sóc Trăng
+      name_url: soc-trang
+    '34':
+      id: '34'
+      name: Tiền Giang
+      name_url: tien-giang
+    '35':
+      id: '35'
+      name: Trà Vinh
+      name_url: tra-vinh
+    '36':
+      id: '36'
+      name: Vĩnh Long
+      name_url: vinh-long
+    '37':
+      id: '37'
+      name: Tỉnh khác
+      name_url: tinh-khac
+  name_url: can-tho-tay-nam-bo
+  id: '5'
+'6':
+  name: Bình Trị Thừa Thiên Huế
+  area:
+    '38':
+      id: '38'
+      name: Quảng Bình
+      name_url: quang-binh
+    '39':
+      id: '39'
+      name: Quảng Trị
+      name_url: quang-tri
+    '40':
+      id: '40'
+      name: Thừa Thiên Huế
+      name_url: thua-thien-hue
+    '41':
+      id: '41'
+      name: Tỉnh khác
+      name_url: tinh-khac
+  name_url: binh-tri-thua-thien-hue
+  id: '6'
+'7':
+  name: Nam Trung Bộ
+  area:
+    '42':
+      id: '42'
+      name: Bình Thuận
+      name_url: binh-thuan
+    '43':
+      id: '43'
+      name: Bình Định
+      name_url: binh-dinh
+    '44':
+      id: '44'
+      name: Khánh Hòa
+      name_url: khanh-hoa
+    '45':
+      id: '45'
+      name: Ninh Thuận
+      name_url: ninh-thuan
+    '46':
+      id: '46'
+      name: Phú Yên
+      name_url: phu-yen
+    '47':
+      id: '47'
+      name: Quảng Ngãi
+      name_url: quang-ngai
+    '48':
+      id: '48'
+      name: Tỉnh khác
+      name_url: tinh-khac
+  name_url: nam-trung-bo
+  id: '7'
+'8':
+  name: Thanh Nghệ Tĩnh
+  area:
+    '49':
+      id: '49'
+      name: Hà Tĩnh
+      name_url: ha-tinh
+    '50':
+      id: '50'
+      name: Nghệ An
+      name_url: nghe-an
+    '51':
+      id: '51'
+      name: Thanh Hóa
+      name_url: thanh-hoa
+    '52':
+      id: '52'
+      name: Tỉnh khác
+      name_url: tinh-khac
+  name_url: thanh-nghe-tinh
+  id: '8'
+'9':
+  name: Tây Nguyên
+  area:
+    '53':
+      id: '53'
+      name: Đắk Lắk
+      name_url: dak-lak
+    '54':
+      id: '54'
+      name: Đắk Nông
+      name_url: dak-nong
+    '55':
+      id: '55'
+      name: Kon Tum
+      name_url: kon-tum
+    '56':
+      id: '56'
+      name: Gia Lai
+      name_url: gia-lai
+    '57':
+      id: '57'
+      name: Lâm Đồng
+      name_url: lam-dong
+    '58':
+      id: '58'
+      name: Tỉnh khác
+      name_url: tinh-khac
+  name_url: tay-nguyen
+  id: '9'
+'10':
+  name: Đông Bắc Bộ
+  area:
+    '59':
+      id: '59'
+      name: Bắc Kạn
+      name_url: bac-kan
+    '60':
+      id: '60'
+      name: Bắc Giang
+      name_url: bac-giang
+    '61':
+      id: '61'
+      name: Cao Bằng
+      name_url: cao-bang
+    '62':
+      id: '62'
+      name: Hà Giang
+      name_url: ha-giang
+    '63':
+      id: '63'
+      name: Lạng Sơn
+      name_url: lang-son
+    '64':
+      id: '64'
+      name: Thái Nguyên
+      name_url: thai-nguyen
+    '65':
+      id: '65'
+      name: Tuyên Quang
+      name_url: tuyen-quang
+    '66':
+      id: '66'
+      name: Tỉnh khác
+      name_url: tinh-khac
+    '130':
+      id: '130'
+      name: Quảng Ninh
+      name_url: quang-ninh
+  name_url: dong-bac-bo
+  id: '10'
+'11':
+  name: Tây Bắc Bộ
+  area:
+    '67':
+      id: '67'
+      name: Điện Biên
+      name_url: dien-bien
+    '68':
+      id: '68'
+      name: Lai Châu
+      name_url: lai-chau
+    '69':
+      id: '69'
+      name: Lào Cai
+      name_url: lao-cai
+    '70':
+      id: '70'
+      name: Sơn La
+      name_url: son-la
+    '71':
+      id: '71'
+      name: Yên Bái
+      name_url: yen-bai
+    '72':
+      id: '72'
+      name: Tỉnh khác
+      name_url: tinh-khac
+  name_url: tay-bac-bo
+  id: '11'
+'12':
+  name: Hà Nội
+  area:
+    '73':
+      id: '73'
+      name: Quận Hoàn Kiếm
+      name_url: quan-hoan-kiem
+    '74':
+      id: '74'
+      name: Quận Ba Đình
+      name_url: quan-ba-dinh
+    '75':
+      id: '75'
+      name: Quận Đống Đa
+      name_url: quan-dong-da
+    '76':
+      id: '76'
+      name: Quận Hai Bà Trưng
+      name_url: quan-hai-ba-trung
+    '77':
+      id: '77'
+      name: Quận Thanh Xuân
+      name_url: quan-thanh-xuan
+    '78':
+      id: '78'
+      name: Quận Tây Hồ
+      name_url: quan-tay-ho
+    '79':
+      id: '79'
+      name: Quận Cầu Giấy
+      name_url: quan-cau-giay
+    '80':
+      id: '80'
+      name: Quận Hoàng Mai
+      name_url: quan-hoang-mai
+    '81':
+      id: '81'
+      name: Quận Long Biên
+      name_url: quan-long-bien
+    '82':
+      id: '82'
+      name: Huyện Đông Anh
+      name_url: huyen-dong-anh
+    '83':
+      id: '83'
+      name: Huyện Sóc Sơn
+      name_url: huyen-soc-son
+    '84':
+      id: '84'
+      name: Huyện Thanh Trì
+      name_url: huyen-thanh-tri
+    '86':
+      id: '86'
+      name: Quận Hà Đông
+      name_url: quan-ha-dong
+    '87':
+      id: '87'
+      name: Thị Xã Sơn Tây
+      name_url: thi-xa-son-tay
+    '88':
+      id: '88'
+      name: Huyện Đan Phượng
+      name_url: huyen-dan-phuong
+    '89':
+      id: '89'
+      name: Huyện Hoài Đức
+      name_url: huyen-hoai-duc
+    '90':
+      id: '90'
+      name: Huyện Quốc Oai
+      name_url: huyen-quoc-oai
+    '91':
+      id: '91'
+      name: Huyện Thạch Thất
+      name_url: huyen-thach-that
+    '92':
+      id: '92'
+      name: Huyện Chương Mỹ
+      name_url: huyen-chuong-my
+    '93':
+      id: '93'
+      name: Huyện Thường Tín
+      name_url: huyen-thuong-tin
+    '94':
+      id: '94'
+      name: Huyện Phú Xuyên
+      name_url: huyen-phu-xuyen
+    '95':
+      id: '95'
+      name: Quận huyện khác
+      name_url: quan-huyen-khac
+    '121':
+      id: '121'
+      name: Quận Nam Từ Liêm
+      name_url: quan-nam-tu-liem
+    '122':
+      id: '122'
+      name: Huyện Ba Vì
+      name_url: huyen-ba-vi
+    '123':
+      id: '123'
+      name: Huyện Gia Lâm
+      name_url: huyen-gia-lam
+    '124':
+      id: '124'
+      name: Huyện Mê Linh
+      name_url: huyen-me-linh
+    '125':
+      id: '125'
+      name: Huyện Mỹ Đức
+      name_url: huyen-my-duc
+    '126':
+      id: '126'
+      name: Huyện Phúc Thọ
+      name_url: huyen-phuc-tho
+    '127':
+      id: '127'
+      name: Huyện Thanh Oai
+      name_url: huyen-thanh-oai
+    '128':
+      id: '128'
+      name: Huyện Ứng Hòa
+      name_url: huyen-ung-hoa
+    '129':
+      id: '129'
+      name: Quận Bắc Từ Liêm
+      name_url: quan-bac-tu-liem
+  name_url: ha-noi
+  id: '12'
+'13':
+  name: Tp Hồ Chí Minh
+  area:
+    '96':
+      id: '96'
+      name: Quận 1
+      name_url: quan-1
+    '97':
+      id: '97'
+      name: Quận 2
+      name_url: quan-2
+    '98':
+      id: '98'
+      name: Quận 3
+      name_url: quan-3
+    '99':
+      id: '99'
+      name: Quận 4
+      name_url: quan-4
+    '100':
+      id: '100'
+      name: Quận 5
+      name_url: quan-5
+    '101':
+      id: '101'
+      name: Quận 6
+      name_url: quan-6
+    '102':
+      id: '102'
+      name: Quận 7
+      name_url: quan-7
+    '103':
+      id: '103'
+      name: Quận 8
+      name_url: quan-8
+    '104':
+      id: '104'
+      name: Quận 9
+      name_url: quan-9
+    '105':
+      id: '105'
+      name: Quận 10
+      name_url: quan-10
+    '106':
+      id: '106'
+      name: Quận 11
+      name_url: quan-11
+    '107':
+      id: '107'
+      name: Quận 12
+      name_url: quan-12
+    '108':
+      id: '108'
+      name: Quận Bình Tân
+      name_url: quan-binh-tan
+    '109':
+      id: '109'
+      name: Quận Bình Thạnh
+      name_url: quan-binh-thanh
+    '110':
+      id: '110'
+      name: Quận Gò Vấp
+      name_url: quan-go-vap
+    '111':
+      id: '111'
+      name: Quận Phú Nhuận
+      name_url: quan-phu-nhuan
+    '112':
+      id: '112'
+      name: Quận Tân Bình
+      name_url: quan-tan-binh
+    '113':
+      id: '113'
+      name: Quận Tân Phú
+      name_url: quan-tan-phu
+    '114':
+      id: '114'
+      name: Quận Thủ Đức
+      name_url: quan-thu-duc
+    '115':
+      id: '115'
+      name: Huyện Bình Chánh
+      name_url: huyen-binh-chanh
+    '116':
+      id: '116'
+      name: Huyện Củ Chi
+      name_url: huyen-cu-chi
+    '117':
+      id: '117'
+      name: Huyện Hóc Môn
+      name_url: huyen-hoc-mon
+    '118':
+      id: '118'
+      name: Huyện Nhà Bè
+      name_url: huyen-nha-be
+    '119':
+      id: '119'
+      name: Quận huyện khác
+      name_url: quan-huyen-khac
+    '120':
+      id: '120'
+      name: Huyện Cần Giờ
+      name_url: huyen-can-gio
+  name_url: tp-ho-chi-minh
+  id: '13'
