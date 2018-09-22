@@ -13,6 +13,7 @@ class Account < ApplicationRecord
   scope :find_wse_status, ->(sts) { where(wse_status: sts) }
   scope :favorites, -> { where(favorite: true) }
   scope :in_district, ->(area_name) { where(area_name: area_name) }
+  scope :only_hcm, -> { where(region_id: 13) }
 
   def self.by_oid(oid)
     find_by_account_oid(oid)

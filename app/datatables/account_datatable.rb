@@ -48,7 +48,7 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
     account_wse_status_filter = extra && extra[:account_wse_status_filter].presence
     account_area_filter = extra && extra[:account_area_filter].presence
 
-    @query = Account.active
+    @query = Account.active.only_hcm
     @query =
       case account_status_filter
       when 'new'
