@@ -3,7 +3,7 @@ namespace :chotot do
   task scrape: :environment do
     # Global variable
     page = ENV['PAGE'].present? ? ENV['PAGE'].to_i : 0
-    max_retry = ENV['RETRY'].present? ? ENV['RETRY'].to_i : 150
+    max_retry = ENV['RETRY'].present? ? ENV['RETRY'].to_i : 60
     cagetory_ids = ENV['CATEGORY_ID'].present? ? ENV['CATEGORY_ID'].to_s.split(',').map(&:to_i) : all_cagetory_ids
     region_ids = ENV['REGION_ID'].present? ? ENV['REGION_ID'].to_s.split(',').map(&:to_i) : all_region_ids
     area_ids = ENV['AREA_ID'].present? ? ENV['AREA_ID'].to_s.split(',').map(&:to_i) : all_area_ids
