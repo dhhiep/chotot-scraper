@@ -44,7 +44,6 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
   private
 
   def get_raw_records
-
     extra = params[:extra]
     account_status_filter = extra && extra[:account_status_filter].presence
     account_wse_status_filter = extra && extra[:account_wse_status_filter].presence

@@ -1,0 +1,24 @@
+/*
+ *= require_tree .
+ *= require datatable/dataTables.bootstrap4
+ *= require datatable/custom
+ *= require font-awesome
+ *= require select2
+ *= require select2-bootstrap
+ *= require_self
+ */
+
+#header{
+  padding: 0px 5px;
+  max-width: 3000px;
+}
+
+#main_content{
+  padding: 30px 15px;
+  .row-actions{
+    .btn{
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+}

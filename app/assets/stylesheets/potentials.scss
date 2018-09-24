@@ -1,0 +1,17 @@
+#potential_page{
+  .table-responsive{
+    padding-top: 15px;
+  }
+  #potentials-table{
+    td{
+      vertical-align: middle;
+    }
+
+    .act.btn{
+      margin-left: 5px;
+      &:nth-child(1){
+        margin-left: 0;
+      }
+    }
+  }
+}

@@ -9,18 +9,10 @@ class PotentialsController < ApplicationController
       format.json { render json: PotentialDatatable.new(params, view_context: view_context) }
     end
   end
-  # GET /potentials/1
-  # GET /potentials/1.json
-  def show
-  end
 
   # GET /potentials/new
   def new
     @potential = Potential.new
-  end
-
-  # GET /potentials/1/edit
-  def edit
   end
 
   # POST /potentials
@@ -45,7 +37,6 @@ class PotentialsController < ApplicationController
     respond_to do |format|
       if @potential.update(potential_params)
         format.html { redirect_to @potential, notice: 'Potential was successfully updated.' }
-        format.json { render :show, status: :ok, location: @potential }
       else
         format.html { render :edit }
         format.json { render json: @potential.errors, status: :unprocessable_entity }
@@ -57,10 +48,6 @@ class PotentialsController < ApplicationController
   # DELETE /potentials/1.json
   def destroy
     @potential.destroy
-    respond_to do |format|
-      format.html { redirect_to potentials_url, notice: 'Potential was successfully destroyed.' }
-      format.json { head :no_content }
-    end
   end
 
   private
