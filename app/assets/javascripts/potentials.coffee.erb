@@ -10,11 +10,19 @@ $ ->
     searchDelay: 800
     ajax: $('#potentials-table').data('source')
     pagingType: 'full_numbers'
+    # order: [[ 4, "desc" ]]
     columns: [
       {data: 'id'}
       {data: 'name'}
       {data: 'phone'}
+      {data: 'owner'}
       {data: 'remind_at'}
       {data: 'source'}
       {data: 'actions'}
     ]
+
+  $('.input-group.date.only_date').datetimepicker
+    format: 'DD/MM/YYYY'
+    disabledHours: false
+    allowInputToggle: true
+

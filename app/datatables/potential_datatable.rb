@@ -6,12 +6,13 @@ class PotentialDatatable < AjaxDatatablesRails::ActiveRecord
 
   def view_columns
     @view_columns ||= {
-      id: { source: 'Potential.id', cond: :eq },
-      name: { source: 'Potential.name' },
-      phone: { source: 'Potential.phone' },
-      remind_at: { source: 'Potential.remind_at' },
-      source: { source: '' },
-      actions: { source: '' }
+      id: { source: 'Potential.id', cond: :eq, searchable: false, orderable: false },
+      name: { source: 'Potential.name', searchable: true, orderable: true },
+      phone: { source: 'Potential.phone', searchable: true, orderable: true },
+      owner: { source: 'Potential.owner', searchable: false, orderable: true },
+      remind_at: { source: 'Potential.remind_at', searchable: false, orderable: true },
+      source: { source: '', searchable: false, orderable: false },
+      actions: { source: '', searchable: false, orderable: false }
     }
   end
 
@@ -22,6 +23,7 @@ class PotentialDatatable < AjaxDatatablesRails::ActiveRecord
         id: record.id,
         name: record.name,
         phone: record.phone,
+        owner: record.owner,
         remind_at: record.remind_at.try(:to_datepicker_format),
         source: potential_status_badge(record),
         actions: build_actions(record)
@@ -38,10 +40,8 @@ class PotentialDatatable < AjaxDatatablesRails::ActiveRecord
     ].join(' ').html_safe
   end
 
-  def status(record)
-  end
-
   def get_raw_records
-    Potential.all
+    order_default = params["order"]["0"]['column'] == 0 rescue false
+    order_default ? Potential.sort_by_remind_date : Potential.all
   end
 end

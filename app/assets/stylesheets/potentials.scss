@@ -14,4 +14,15 @@
       }
     }
   }
+
+  .input-group.date.only_date{
+    width: 147px;
+    input{
+      width: 110px;
+    }
+  }
+
+  .bootstrap-datetimepicker-widget.dropdown-menu{
+    min-width: 302px;
+  }
 }

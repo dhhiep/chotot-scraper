@@ -20,4 +20,6 @@
 //= require dataTables/dataTables.bootstrap4.min
 //= require clipboard.min
 //= require select2-full
+//= require moment
+//= require bootstrap-datetimepicker
 //= require_tree .

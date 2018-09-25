@@ -1,10 +1,10 @@
 Date.class_eval do
   def to_datepicker_format
-    strftime("%m/%d/%Y")
+    strftime("%d/%m/%Y")
   end
 
   def to_datetimepicker_format
-    in_time_zone('Asia/Ho_Chi_Minh').strftime("%m/%d/%Y %I:%M %p")
+    in_time_zone('Asia/Ho_Chi_Minh').strftime("%d/%m/%Y %I:%M %p")
   end
 
   def add_time(time)
@@ -14,7 +14,7 @@ end
 
 ActiveSupport::TimeWithZone.class_eval do
   def to_datepicker_format
-    strftime("%m/%d/%Y")
+    strftime("%d/%m/%Y")
   end
 
   def to_display
