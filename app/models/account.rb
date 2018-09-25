@@ -90,6 +90,10 @@ class Account < ApplicationRecord
     address_tmp
   end
 
+  def chotot_updated_at
+    update_time.to_s.unix_to_time.to_datetimepicker_format rescue nil
+  end
+
   def build_category_names!
     self.category_names = lists.includes(:category).map { |l| l.category.try(:name) }.reject(&:blank?).join(', ')
   end

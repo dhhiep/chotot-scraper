@@ -4,7 +4,7 @@ Date.class_eval do
   end
 
   def to_datetimepicker_format
-    strftime("%m/%d/%Y %I:%M %p")
+    in_time_zone('Asia/Ho_Chi_Minh').strftime("%m/%d/%Y %I:%M %p")
   end
 
   def add_time(time)

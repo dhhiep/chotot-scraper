@@ -3,6 +3,10 @@ String.class_eval do
     gsub(/\D/, "")
   end
 
+  def unix_to_time
+    DateTime.strptime(self, '%s')
+  end
+
   def to_date_range
     split(" - ").map(&:to_date_picker)
   end

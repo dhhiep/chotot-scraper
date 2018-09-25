@@ -12,9 +12,10 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
 
   def view_columns
     @view_columns ||= {
-      id: { source: 'Account.id', cond: :eq },
+      id: { source: 'Account.id', searchable: false, orderable: true },
       full_name: { source: 'Account.full_name', searchable: false, orderable: false },
       phone: { source: 'Account.phone', orderable: false },
+      updated_at: { source: 'Account.update_time', searchable: false, orderable: true },
       address: { source: 'Account.address', searchable: true, orderable: false },
       status: { source: 'Account.status', searchable: false },
       area_name: { source: 'Account.area_name', searchable: false, orderable: true },
@@ -30,6 +31,7 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
         id: record.id,
         full_name: record.full_name,
         phone: phone_with_copy_to_clipboard(record, record.phone).html_safe,
+        updated_at: record.chotot_updated_at,
         address: record.address_filtered,
         status: account_combine_status(record),
         area_name: record.area_name,
