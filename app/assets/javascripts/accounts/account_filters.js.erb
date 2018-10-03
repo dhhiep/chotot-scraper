@@ -4,7 +4,7 @@ $(document).ready(function() {
       " \
         <select id='account_status_filter' class='account_status_filter select2'> \
           <option value=''>Account Status</option> \
-          <option value='new'>New</option> \
+          <option value='new' selected>New</option> \
           <option value='inserted'>Inserted</option> \
         </select> \
         <select id='account_wse_status_filter' class='account_wse_status_filter select2'> \
@@ -17,7 +17,7 @@ $(document).ready(function() {
         <select id='account_area_filter' class='account_area_filter select2'> \
           <option value=''>Area Filter</option> \
           <% Account.districts.each do |district| %> \
-            <option value='<%= district %>'><%= district %></option> \
+            <option value='<%= district %>' <%= district == 'Quận 7' ? 'selected' : nil %>><%= district %></option> \
           <% end %>\
         </select> \
       "
@@ -30,5 +30,7 @@ $(document).ready(function() {
     }).on('change', function(){
       accounts_table.fnDraw();
     })
+
+    accounts_table.fnDraw();
   }, 1000);
 })

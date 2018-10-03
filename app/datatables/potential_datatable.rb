@@ -26,7 +26,7 @@ class PotentialDatatable < AjaxDatatablesRails::ActiveRecord
         owner: record.owner,
         remind_at: record.remind_at.try(:to_datepicker_format),
         source: potential_status_badge(record),
-        actions: build_actions(record)
+        actions: build_actions(record).html_safe
       }
     end
   end
@@ -34,10 +34,17 @@ class PotentialDatatable < AjaxDatatablesRails::ActiveRecord
   private
 
   def build_actions(record)
-    [
-      helper.link_to('EDIT', edit_potential_path(record), class: 'act btn btn-sm btn-success', method: :get),
-      helper.link_to('DELETE', potential_path(record), class: 'act btn btn-sm btn-warning', method: :delete, remote: true, data: { original_title: "Delete", confirm: 'Bạn có muốn xóa số phone này không?' })
-    ].join(' ').html_safe
+    buttons =
+      [
+        helper.link_to('EDIT', edit_potential_path(record), class: 'act btn btn-sm btn-success', method: :get),
+        helper.link_to('DELETE', potential_path(record), class: 'act btn btn-sm btn-warning', method: :delete, remote: true, data: { original_title: "Delete", confirm: 'Bạn có muốn xóa số phone này không?' })
+      ].join(' ')
+
+    <<-HTML
+      <div style="width: 130px;">
+        #{buttons}
+      </div>
+    HTML
   end
 
   def get_raw_records
