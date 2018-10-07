@@ -17,7 +17,7 @@ $ ->
       {data: 'phone'}
       {data: 'owner'}
       {data: 'remind_at'}
-      {data: 'source'}
+      {data: 'last_comment'}
       {data: 'actions'}
     ]
 
@@ -26,3 +26,10 @@ $ ->
     disabledHours: false
     allowInputToggle: true
 
+  $('.delete_comment').on 'click', ->
+    destroy_flag = $(@).parents('.comment-block').find('.destroy_flag')
+    current_status = destroy_flag.val() == 'true'
+    next_status = !current_status
+    destroy_flag.val(next_status)
+    txt = if next_status then "Submit to delete or Click again to revert cancel delete action" else 'Delete'
+    $(@).text(txt)

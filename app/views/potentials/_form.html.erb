@@ -9,8 +9,6 @@
     <%= form.text_field :phone, class: 'form-control', required: true %>
   </div>
 
-
-
   <div class='form-group'>
     <%= form.label :owner %>
     <%= select "potential", "owner", options_for_select(Potential::OWNER, form.object.owner), { include_blank: false, }, class: 'init_select2' %>
@@ -19,7 +17,7 @@
   <div class='form-group'>
     <%= form.label :remind_at %>
     <div class="input-group mb-3 date only_date">
-      <%= form.text_field :remind_at_field, :class => 'form-control', required: true %>
+      <%= form.text_field :remind_at_field, class: 'form-control', required: true %>
       <div class="input-group-append input-group-addon">
         <span class="input-group-text" id="basic-addon1">
           <span class="fa fa-calendar"></span>
@@ -27,6 +25,8 @@
       </div>
     </div>
   </div>
+
+  <%= render 'comments_form', potential: potential, form: form %>
 
   <div class='row-actions'>
     <%= link_to 'Back', potentials_path, class: 'btn btn-primary'  %>

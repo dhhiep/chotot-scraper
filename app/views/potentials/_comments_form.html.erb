@@ -1,0 +1,35 @@
+<hr>
+<% potential.comments.each do |comment| %>
+  <div class="card comment-block border-light mb-3" >
+    <div class="card-header">
+      <span class="comment_created_at">
+        <span>Commented At: </span>
+        <%= comment.created_at.to_display %>
+      </span>
+
+      <% if comment.created_at + 30.seconds < comment.updated_at %>
+        <span class="comment_updated_at">
+          <span>Updated At: </span>
+          <%= comment.updated_at.to_display %>
+        </span>
+      <% end %>
+
+      <%= form.fields_for :comments, comment do |i| %>
+        <%= i.hidden_field :id, value: i.object.id %>
+        <%= i.hidden_field :_destroy , value: false, class: 'destroy_flag' %>
+        <span class="float-right">
+          <a href="javascript:;" class="btn btn-sm delete_comment">Delete</a>
+        </span>
+      <% end %>
+    </div>
+
+    <div class="card-body">
+      <p class="card-text"><%= comment.content %></p>
+    </div>
+  </div>
+<% end %>
+
+<%= form.fields_for :comments, potential.comments.new do |i| %>
+  <%= i.text_area :content, class: 'form-control', rows: 5, placeholder: "Write a comment..." %>
+<% end %>
+<hr>

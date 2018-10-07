@@ -14,7 +14,6 @@ class PotentialsController < ApplicationController
 
   def create
     @potential = Potential.new(potential_params)
-
     respond_to do |format|
       if @potential.save
         format.html { redirect_to potentials_path, notice: 'Potential was successfully created.' }
@@ -28,7 +27,7 @@ class PotentialsController < ApplicationController
   def update
     respond_to do |format|
       if @potential.update(potential_params)
-        format.html { redirect_to potentials_path, notice: 'Potential was successfully updated.' }
+        format.html { redirect_to edit_potential_path(@potential), notice: 'Potential was successfully updated.' }
       else
         format.html { render :edit }
         format.json { render json: @potential.errors, status: :unprocessable_entity }
@@ -47,6 +46,17 @@ class PotentialsController < ApplicationController
     end
 
     def potential_params
-      params.require(:potential).permit(:name, :phone, :account_id, :remind_at_field, :owner)
+      # remove new comment empty
+      params[:potential][:comments_attributes].each do |k, v|
+        next if v[:id].present? || v[:content].present?
+        params[:potential][:comments_attributes].delete(k)
+      end
+
+      params.require(:potential).permit(
+        :name, :phone, :account_id, :remind_at_field, :owner,
+        comments_attributes: %i[
+          id content _destroy
+        ]
+      )
     end
 end

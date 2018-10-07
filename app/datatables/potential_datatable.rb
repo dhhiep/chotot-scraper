@@ -11,7 +11,7 @@ class PotentialDatatable < AjaxDatatablesRails::ActiveRecord
       phone: { source: 'Potential.phone', searchable: true, orderable: true },
       owner: { source: 'Potential.owner', searchable: false, orderable: true },
       remind_at: { source: 'Potential.remind_at', searchable: false, orderable: true },
-      source: { source: '', searchable: false, orderable: false },
+      last_comment: { source: '', searchable: false, orderable: false },
       actions: { source: '', searchable: false, orderable: false }
     }
   end
@@ -25,7 +25,7 @@ class PotentialDatatable < AjaxDatatablesRails::ActiveRecord
         phone: record.phone,
         owner: record.owner,
         remind_at: record.remind_at.try(:to_datepicker_format),
-        source: potential_status_badge(record),
+        last_comment: record.last_comment.try(:fulltext),
         actions: build_actions(record).html_safe
       }
     end
@@ -49,6 +49,6 @@ class PotentialDatatable < AjaxDatatablesRails::ActiveRecord
 
   def get_raw_records
     order_default = params["order"]["0"]['column'] == 0 rescue false
-    order_default ? Potential.sort_by_remind_date : Potential.all
+    order_default ? Potential.sort_by_remind_date.includes(:comments) : Potential.all.includes(:comments)
   end
 end
