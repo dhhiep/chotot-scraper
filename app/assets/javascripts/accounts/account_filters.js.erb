@@ -2,6 +2,7 @@ $(document).ready(function() {
   setTimeout(function() {
     $('#account_dt_filters').html(
       " \
+        <a href='javascript:;' id='accounts_table_reload_button' class='btn btn-success' style='margin-right: 5px; padding: 0.275rem 0.75rem;'>Refresh</a>\
         <select id='account_status_filter' class='account_status_filter select2'> \
           <option value=''>Account Status</option> \
           <option value='new' selected>New</option> \
@@ -31,6 +32,12 @@ $(document).ready(function() {
       accounts_table.fnDraw();
     })
 
-    accounts_table.fnDraw();
+    $("#accounts_table_reload_button").on('click', function(){
+      accounts_table.fnDraw();
+    })
+
+    setTimeout(function(){
+      accounts_table.fnDraw();
+    }, 1000)
   }, 1000);
 })

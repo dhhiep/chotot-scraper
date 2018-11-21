@@ -1,5 +1,12 @@
 namespace :chotot do
   # rake chotot:scrape PAGE=0 RETRY=150 CATEGORY_ID=8000,13000 REGION_ID=12,13 AREA_ID=100,101
+
+  # heroku run:detached rake chotot:scrape RETRY=100 REGION_ID=1,2,3
+  # heroku run:detached rake chotot:scrape RETRY=100 REGION_ID=4,5,6
+  # heroku run:detached rake chotot:scrape RETRY=100 REGION_ID=7,8,9
+  # heroku run:detached rake chotot:scrape RETRY=100 REGION_ID=10,11,12
+  # heroku run:detached rake chotot:scrape RETRY=100 REGION_ID=13
+
   task scrape: :environment do
     # Global variable
     page = ENV['PAGE'].present? ? ENV['PAGE'].to_i : 0
