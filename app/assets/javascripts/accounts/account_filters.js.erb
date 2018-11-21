@@ -21,6 +21,12 @@ $(document).ready(function() {
             <option value='<%= district %>' <%= district == 'Quận 7' ? 'selected' : nil %>><%= district %></option> \
           <% end %>\
         </select> \
+        <select id='account_address_length_filter' class='account_address_length_filter select2'> \
+          <option value=''>Addr Min Length</option> \
+          <% (3..20).to_a.each do |length| %> \
+            <option value='<%= length %>' <%= length == 10   ? 'selected' : nil %>>Least <%= length %> Characters</option> \
+          <% end %>\
+        </select> \
       "
     )
 

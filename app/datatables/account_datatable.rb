@@ -48,6 +48,7 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
     account_status_filter = extra && extra[:account_status_filter].presence
     account_wse_status_filter = extra && extra[:account_wse_status_filter].presence
     account_area_filter = extra && extra[:account_area_filter].presence
+    min_length = extra[:account_address_length_filter].to_i rescue 0
 
     @query = Account.active.only_hcm
     @query =
@@ -74,6 +75,7 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
         @query
       end
 
+    @query = @query.address_min_length(min_length)
     @query = @query.in_district(account_area_filter) if Account.districts.include?(account_area_filter)
     @query = @query.favorites if params[:type].presence == 'favorites'
     @query

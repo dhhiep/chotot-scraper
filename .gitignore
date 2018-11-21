@@ -28,3 +28,5 @@
 
 db_backups/*
 .env
+
+*.dump*

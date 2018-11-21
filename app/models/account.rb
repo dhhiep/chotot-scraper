@@ -5,6 +5,7 @@ class Account < ApplicationRecord
   enum wse_status: { wse_unknown: 0, wse_valid: 1, wse_duplicate: 2, wse_invalid: 3 }
 
   scope :address_present, -> { where.not(address: nil).where.not(address: '') }
+  scope :address_min_length, -> (length) { where("length(accounts.address) >= ?", length) }
   scope :active, -> { address_present.where(hide: false) }
   scope :wse_unknown, -> { active.find_wse_status(:wse_unknown) }
   scope :wse_valid, -> { active.find_wse_status(:wse_valid) }
