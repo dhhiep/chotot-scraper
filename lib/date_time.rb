@@ -6,6 +6,14 @@ Date.class_eval do
   def to_datetimepicker_format
     in_time_zone('Asia/Ho_Chi_Minh').strftime("%d/%m/%Y %I:%M %p")
   end
+  
+  def to_display_date
+    in_time_zone('Asia/Ho_Chi_Minh').strftime("%d/%m/%Y")
+  end
+
+  def to_display_datetime
+    in_time_zone('Asia/Ho_Chi_Minh').strftime("%d/%m/%Y %I:%M %p")
+  end
 
   def add_time(time)
     change({ hour: time.hour, min: time.min })
@@ -21,8 +29,12 @@ ActiveSupport::TimeWithZone.class_eval do
     strftime("%d/%m/%Y %I:%M %p")
   end
 
-  def to_display_with_timezone
-    in_time_zone('Asia/Ho_Chi_Minh').strftime("%d/%m/%Y %H:%M")
+  def to_display_date
+    in_time_zone('Asia/Ho_Chi_Minh').strftime("%d/%m/%Y")
+  end
+
+  def to_display_datetime
+    in_time_zone('Asia/Ho_Chi_Minh').strftime("%d/%m/%Y %I:%M %p")
   end
 end
 

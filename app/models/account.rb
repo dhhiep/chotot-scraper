@@ -92,7 +92,11 @@ class Account < ApplicationRecord
   end
 
   def chotot_updated_at
-    update_time.to_s.unix_to_time.to_datetimepicker_format rescue nil
+    update_time.to_s.unix_to_time.to_display_date rescue nil
+  end
+
+  def chotot_created_at
+    create_time.to_s.unix_to_time.to_display_date rescue nil
   end
 
   def build_category_names!
