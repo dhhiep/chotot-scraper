@@ -19,6 +19,7 @@ Rails.application.routes.draw do
     end
 
     member do
+      post :fetch_zalo_info
       post :mark_wse_status
       post :mark_review
       post :toggle_favorite

@@ -26,6 +26,10 @@ class AccountsController < ApplicationController
     end
   end
 
+  def fetch_zalo_info
+    @account.fetch_zalo_info!
+  end
+
   def hide
     @account.hide!
   end

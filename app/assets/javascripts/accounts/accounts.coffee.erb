@@ -22,11 +22,12 @@ $ ->
             'account_address_length_filter': $('#account_address_length_filter').val()
           return
       pagingType: 'full_numbers'
-      order: [[ 3, "desc" ]]
+      order: [[ 4, "desc" ]]
       columns: [
         {data: 'id'}
         {data: 'full_name'}
         {data: 'phone'}
+        {data: 'zalo_info', searchable: false, sortable: false}
         {data: 'updated_at'}
         {data: 'address'}
         {data: 'status'}

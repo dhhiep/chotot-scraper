@@ -47,6 +47,9 @@ namespace :chotot do
     summary(uuid, category, dup_counter, offset, region, area, custom_msg, 'Chotot - Scraper script is starting')
 
     loop do
+      # https://gateway.chotot.com/v1/public/ad-listing?region_v2=13000&area_v2=13102
+      # base_url = 'https://gateway.chotot.com/v1/public/ad-listing?w=1&limit=20&st=s,k&f=p'
+      # url = "#{base_url}&area_v2=#{region.id}#{area.id}&area=#{area.id}&cg=#{category.ct_category_id}&o=#{offset}&page=#{page}"
       base_url = 'https://gateway.chotot.com/v1/public/ad-listing?w=1&limit=20&st=s,k&f=p'
       url = "#{base_url}&region=#{region.id}&area=#{area.id}&cg=#{category.ct_category_id}&o=#{offset}&page=#{page}"
       list_item = HTTParty.get(url)['ads'] rescue nil

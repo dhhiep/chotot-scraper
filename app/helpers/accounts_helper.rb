@@ -31,6 +31,25 @@ module AccountsHelper
     "#{account_status_badge(account)} / #{account_wse_status(account)}".html_safe
   end
 
+  def account_zalo_info(account)
+    txt = 
+      if zalo = account.zalo
+        info =
+          <<-HTML
+            <div>
+              <div>#{zalo.name}</div>
+              <div>#{zalo.gender}</div>
+              <div>#{zalo.birthday}</div>
+            </div>
+          HTML
+        info.gsub("\n", '').gsub(' ', '')
+      else
+        helper.link_to('<i class="fa fa-download"></i>'.html_safe, fetch_zalo_info_account_path(account.id), class: 'act btn btn-sm btn-outline-primary', method: :post, remote: true)
+      end
+
+    "<div id='account_zalo_info_#{account.id}'>#{ txt }</div>".html_safe
+  end
+
   def account_actions_edit(account)
     actions = []
     actions << helper.link_to('<i class="fa fa-star"></i>'.html_safe, toggle_favorite_account_path(account.id), class: "act btn btn-favorite btn btn-outline-primary #{account.favorite ? 'fv-active' : ''}", method: :post, remote: true)

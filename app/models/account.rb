@@ -1,12 +1,13 @@
 class Account < ApplicationRecord
   has_many :lists
+  has_one :zalo
 
   enum status: { status_new: 0, status_inserted: 1 }
   enum wse_status: { wse_unknown: 0, wse_valid: 1, wse_duplicate: 2, wse_invalid: 3 }
 
   scope :address_present, -> { where.not(address: nil).where.not(address: '') }
   scope :address_min_length, -> (length) { where("length(accounts.address) >= ?", length) }
-  scope :active, -> { address_present.where(hide: false) }
+  scope :active, -> { address_present.includes(:zalo).where(hide: false) }
   scope :wse_unknown, -> { active.find_wse_status(:wse_unknown) }
   scope :wse_valid, -> { active.find_wse_status(:wse_valid) }
   scope :wse_duplicate, -> { active.find_wse_status(:wse_duplicate) }
@@ -76,6 +77,20 @@ class Account < ApplicationRecord
   def self.load_account_from_chotot(oid)
     url = "https://gateway.chotot.com/v1/public/profile/#{oid}"
     HTTParty.get(url)
+  end
+
+  def fetch_zalo_info!
+    return if zalo
+    begin
+      data = HTTParty.get("https://own-phone-number-detector.herokuapp.com/#{phone}/phone-finder")
+      create_zalo(
+        name: data['name'],
+        avatar: data['avatar'],
+        gender: data['gender'],
+        birthday: data['birth_day']
+      )
+    rescue Exception => e
+    end
   end
 
   def address_filtered
