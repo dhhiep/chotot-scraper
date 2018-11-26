@@ -42,13 +42,24 @@ module AccountsHelper
               <div>#{zalo.birthday}</div>
             </div>
           HTML
-        info.gsub("\n", '').gsub(' ', '')
-      else
-        helper.link_to('<i class="fa fa-download"></i>'.html_safe, fetch_zalo_info_account_path(account.id), class: 'act btn btn-sm btn-outline-primary', method: :post, remote: true)
       end
 
-    "<div id='account_zalo_info_#{account.id}'>#{ txt }</div>".html_safe
+    actions = []
+    actions << helper.link_to('<i class="fa fa-star"></i>'.html_safe, toggle_favorite_account_path(account.id), class: "act btn btn-sm btn-favorite btn-outline-primary #{account.favorite ? 'fv-active' : ''}", method: :post, remote: true)
+    actions << helper.link_to("<i class='fa fa-#{account.zalo ? 'refresh' : 'download' }'></i>".html_safe, fetch_zalo_info_account_path(account.id), class: 'act btn btn-sm btn-outline-primary', method: :post, remote: true)
+    actions << helper.link_to("<i class='fa fa-times'></i>".html_safe, hide_account_path(account.id), class: 'act btn btn-sm btn-outline-primary', method: :post, remote: true, data: { original_title: "Delete", confirm: 'Bạn có muốn xóa số phone này không?' })
+
+    "<div id='account_zalo_info_#{account.id}'>
+      #{ txt }
+      <div style='margin-top: 7px;'>
+        #{actions.join('').gsub('"', "'")}
+      </div>
+    </div>".gsub("\n", '').html_safe
   end
+
+  def fetch_zalo_info_btn(account)
+    helper.link_to("<i class='fa fa-#{account.zalo ? 'refresh' : 'download' }'></i>".html_safe, fetch_zalo_info_account_path(account.id), class: 'act btn btn-sm btn-outline-primary', method: :post, remote: true).gsub('"', "'")
+  end   
 
   def account_actions_edit(account)
     actions = []

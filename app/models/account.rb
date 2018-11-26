@@ -80,10 +80,10 @@ class Account < ApplicationRecord
   end
 
   def fetch_zalo_info!
-    return if zalo
+    current_zalo = self.zalo || build_zalo
     begin
       data = HTTParty.get("https://own-phone-number-detector.herokuapp.com/#{phone}/phone-finder")
-      create_zalo(
+      current_zalo.update(
         name: data['name'],
         avatar: data['avatar'],
         gender: data['gender'],
