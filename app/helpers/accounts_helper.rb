@@ -46,7 +46,7 @@ module AccountsHelper
 
     actions = []
     actions << helper.link_to('<i class="fa fa-star"></i>'.html_safe, toggle_favorite_account_path(account.id), class: "act btn btn-sm btn-favorite btn-outline-primary #{account.favorite ? 'fv-active' : ''}", method: :post, remote: true)
-    actions << helper.link_to("<i class='fa fa-#{account.zalo ? 'refresh' : 'download' }'></i>".html_safe, fetch_zalo_info_account_path(account.id), class: 'act btn btn-sm btn-outline-primary', method: :post, remote: true)
+    actions << helper.link_to("<i class='fa fa-#{account.zalo ? 'refresh' : 'download' }'></i>".html_safe, fetch_zalo_info_account_path(account.id), class: 'act btn btn-sm btn-outline-primary', method: :post, remote: true, onclick: "$(this).find('i').removeClass('fa-download fa.refresh').addClass('fa-refresh fa-spin')")
     actions << helper.link_to("<i class='fa fa-times'></i>".html_safe, hide_account_path(account.id), class: 'act btn btn-sm btn-outline-primary', method: :post, remote: true, data: { original_title: "Delete", confirm: 'Bạn có muốn xóa số phone này không?' })
 
     "<div id='account_zalo_info_#{account.id}'>
