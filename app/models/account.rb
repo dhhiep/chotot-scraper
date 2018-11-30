@@ -7,7 +7,7 @@ class Account < ApplicationRecord
 
   scope :address_present, -> { where.not(address: nil).where.not(address: '') }
   scope :address_min_length, -> (length) { where("length(accounts.address) >= ?", length) }
-  scope :active, -> { address_present.includes(:zalo).where(hide: false) }
+  scope :active, -> { address_present.includes(:zalo).from_2018.where(hide: false) }
   scope :wse_unknown, -> { active.find_wse_status(:wse_unknown) }
   scope :wse_valid, -> { active.find_wse_status(:wse_valid) }
   scope :wse_duplicate, -> { active.find_wse_status(:wse_duplicate) }
@@ -77,6 +77,12 @@ class Account < ApplicationRecord
   def self.load_account_from_chotot(oid)
     url = "https://gateway.chotot.com/v1/public/profile/#{oid}"
     HTTParty.get(url)
+  end
+
+  def self.from_2018
+    where('create_time IS NOT NULL').
+      where("create_time NOT LIKE '%-%'").
+      where('CAST(create_time AS INTEGER) > ?', DateTime.parse('2018-01-01').to_i)
   end
 
   def fetch_zalo_info!
