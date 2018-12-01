@@ -16,7 +16,7 @@ class AccountDatatable < AjaxDatatablesRails::ActiveRecord
       full_name: { source: 'Account.full_name', searchable: false, orderable: false },
       phone: { source: 'Account.phone', orderable: false },
       zalo_info: { source: '', searchable: false, orderable: false },
-      updated_at: { source: 'Account.update_time', searchable: false, orderable: true },
+      updated_at: { source: 'Account.create_time', searchable: false, orderable: true },
       address: { source: 'Account.address', searchable: true, orderable: false },
       status: { source: 'Account.status', searchable: false },
       area_name: { source: 'Account.area_name', searchable: false, orderable: true },
