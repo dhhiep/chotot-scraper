@@ -46,6 +46,7 @@ namespace :tasks do
   end
 
   # rake tasks:migrate_list_to_account FROM_ROW=0 to TO_ROW=5
+  # heroku run:detached rake tasks:migrate_list_to_account
   task migrate_list_to_account: :environment do
     row_number = 0
     total      = List.count
@@ -59,7 +60,7 @@ namespace :tasks do
         abort if to_row && row_number > to_row
 
         if account = list_item.account
-          account.list_id = list_item.list_id
+          account.add_list_id(list_item.list_id)
           account.category_id = list_item.category_id
           account.ad_id = list_item.ad_id
           account.category_code = list_item.category_name

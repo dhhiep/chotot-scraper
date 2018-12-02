@@ -85,6 +85,14 @@ class Account < ApplicationRecord
       where('CAST(create_time AS INTEGER) > ?', DateTime.parse('2018-01-01').to_i)
   end
 
+  def self.by_lid(lid)
+    where("list_id LIKE '%|#{lid}|%'").any?
+  end
+
+  def cho_tot_url
+    "https://www.chotot.com/x/x/#{list_id}.htm"
+  end
+
   def fetch_zalo_info!
     current_zalo = self.zalo || build_zalo
     begin
@@ -97,6 +105,12 @@ class Account < ApplicationRecord
       )
     rescue Exception => e
     end
+  end
+
+  def add_list_id(lid)
+    tmp = list_id.present? ? list_id.to_s[1..-2].split('|') : []
+    tmp << lid
+    self.list_id = "|#{tmp.reject(&:blank?).uniq.join('|')}|"
   end
 
   def address_filtered
