@@ -1,4 +1,4 @@
-namespace :chotot do
+namespace :chotot_v2 do
   # rake chotot:scrape PAGE=0 RETRY=150 CATEGORY_ID=8000,13000 REGION_ID=12,13 AREA_ID=100,101
 
   # heroku run:detached rake chotot:scrape RETRY=100 REGION_ID=1,2,3
@@ -25,7 +25,6 @@ namespace :chotot do
     end
   end
 
-
   # rake chotot:daily_scrape RETRY=150
   task daily_scrape: :environment do
     max_retry = ENV['RETRY'].present? ? ENV['RETRY'].to_i : 150
@@ -39,7 +38,7 @@ namespace :chotot do
     end
   end
 
-  def chottot_scraper(page, max_retry, category, region = nil, area = nil, custom_msg = '')
+  def chottot_scraper_v2(page, max_retry, category, region = nil, area = nil, custom_msg = '')
     dup_counter = 0
     uuid = "%05d" % rand(1...99_999)
     offset = page * 20
@@ -48,12 +47,11 @@ namespace :chotot do
 
     loop do
       # https://gateway.chotot.com/v1/public/ad-listing?region_v2=13000&area_v2=13102
-      # base_url = 'https://gateway.chotot.com/v1/public/ad-listing?w=1&limit=20&st=s,k&f=p'
+      base_url = 'https://gateway.chotot.com/v1/public/ad-listing?w=1&limit=20&st=s,k&f=p'
       # url = "#{base_url}&area_v2=#{region.id}#{area.id}&area=#{area.id}&cg=#{category.ct_category_id}&o=#{offset}&page=#{page}"
       base_url = 'https://gateway.chotot.com/v1/public/ad-listing?w=1&limit=20&st=s,k&f=p'
-      url = "#{base_url}&region=#{region.region_id}&area=#{area.area_id}&cg=#{category.ct_category_id}&o=#{offset}&page=#{page}"
+      url = "#{base_url}&region=#{region.id}&area=#{area.id}&cg=#{category.ct_category_id}&o=#{offset}&page=#{page}"
       list_item = HTTParty.get(url)['ads'] rescue nil
-
       if list_item.blank?
         summary(uuid, category, dup_counter, offset, region, area, custom_msg, "List end at page #{page}")
         return "List end at page #{page}"

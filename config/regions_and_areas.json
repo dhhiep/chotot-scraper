@@ -1,0 +1,4823 @@
+{
+  "1001": {
+    "name": "Bắc Ninh",
+    "area": {
+      "100101": {
+        "id": "100101",
+        "name": "Thành phố Bắc Ninh",
+        "name_url": "thanh-pho-bac-ninh"
+      },
+      "100102": {
+        "id": "100102",
+        "name": "Huyện Yên Phong",
+        "name_url": "huyen-yen-phong"
+      },
+      "100103": {
+        "id": "100103",
+        "name": "Huyện Quế Võ",
+        "name_url": "huyen-que-vo"
+      },
+      "100104": {
+        "id": "100104",
+        "name": "Huyện Tiên Du",
+        "name_url": "huyen-tien-du"
+      },
+      "100105": {
+        "id": "100105",
+        "name": "Thị xã Từ Sơn",
+        "name_url": "thi-xa-tu-son"
+      },
+      "100106": {
+        "id": "100106",
+        "name": "Huyện Thuận Thành",
+        "name_url": "huyen-thuan-thanh"
+      },
+      "100107": {
+        "id": "100107",
+        "name": "Huyện Gia Bình",
+        "name_url": "huyen-gia-binh"
+      },
+      "100108": {
+        "id": "100108",
+        "name": "Huyện Lương Tài",
+        "name_url": "huyen-luong-tai"
+      }
+    },
+    "name_url": "bac-ninh",
+    "id": "1001",
+    "areaOrder": [
+      "100107",
+      "100108",
+      "100103",
+      "100106",
+      "100104",
+      "100102",
+      "100101",
+      "100105"
+    ]
+  },
+  "1002": {
+    "name": "Phú Thọ",
+    "area": {
+      "100201": {
+        "id": "100201",
+        "name": "Thành phố Việt Trì",
+        "name_url": "thanh-pho-viet-tri"
+      },
+      "100202": {
+        "id": "100202",
+        "name": "Thị xã Phú Thọ",
+        "name_url": "thi-xa-phu-tho"
+      },
+      "100203": {
+        "id": "100203",
+        "name": "Huyện Đoan Hùng",
+        "name_url": "huyen-doan-hung"
+      },
+      "100204": {
+        "id": "100204",
+        "name": "Huyện Hạ Hòa",
+        "name_url": "huyen-ha-hoa"
+      },
+      "100205": {
+        "id": "100205",
+        "name": "Huyện Thanh Ba",
+        "name_url": "huyen-thanh-ba"
+      },
+      "100206": {
+        "id": "100206",
+        "name": "Huyện Phù Ninh",
+        "name_url": "huyen-phu-ninh"
+      },
+      "100207": {
+        "id": "100207",
+        "name": "Huyện Yên Lập",
+        "name_url": "huyen-yen-lap"
+      },
+      "100208": {
+        "id": "100208",
+        "name": "Huyện Cẩm Khê",
+        "name_url": "huyen-cam-khe"
+      },
+      "100209": {
+        "id": "100209",
+        "name": "Huyện Tam Nông",
+        "name_url": "huyen-tam-nong"
+      },
+      "100210": {
+        "id": "100210",
+        "name": "Huyện Lâm Thao",
+        "name_url": "huyen-lam-thao"
+      },
+      "100211": {
+        "id": "100211",
+        "name": "Huyện Thanh Sơn",
+        "name_url": "huyen-thanh-son"
+      },
+      "100212": {
+        "id": "100212",
+        "name": "Huyện Thanh Thuỷ",
+        "name_url": "huyen-thanh-thuy"
+      },
+      "100213": {
+        "id": "100213",
+        "name": "Huyện Tân Sơn",
+        "name_url": "huyen-tan-son"
+      }
+    },
+    "name_url": "phu-tho",
+    "id": "1002",
+    "areaOrder": [
+      "100201",
+      "100208",
+      "100203",
+      "100204",
+      "100210",
+      "100206",
+      "100209",
+      "100213",
+      "100205",
+      "100211",
+      "100212",
+      "100207",
+      "100202"
+    ]
+  },
+  "1003": {
+    "name": "Hà Nam",
+    "area": {
+      "100301": {
+        "id": "100301",
+        "name": "Thành phố Phủ Lý",
+        "name_url": "thanh-pho-phu-ly"
+      },
+      "100302": {
+        "id": "100302",
+        "name": "Huyện Duy Tiên",
+        "name_url": "huyen-duy-tien"
+      },
+      "100303": {
+        "id": "100303",
+        "name": "Huyện Kim Bảng",
+        "name_url": "huyen-kim-bang"
+      },
+      "100304": {
+        "id": "100304",
+        "name": "Huyện Thanh Liêm",
+        "name_url": "huyen-thanh-liem"
+      },
+      "100305": {
+        "id": "100305",
+        "name": "Huyện Bình Lục",
+        "name_url": "huyen-binh-luc"
+      },
+      "100306": {
+        "id": "100306",
+        "name": "Huyện Lý Nhân",
+        "name_url": "huyen-ly-nhan"
+      }
+    },
+    "name_url": "ha-nam",
+    "id": "1003",
+    "areaOrder": [
+      "100301",
+      "100305",
+      "100302",
+      "100303",
+      "100306",
+      "100304"
+    ]
+  },
+  "1004": {
+    "name": "Hải Dương",
+    "area": {
+      "100401": {
+        "id": "100401",
+        "name": "Thành phố Hải Dương",
+        "name_url": "thanh-pho-hai-duong"
+      },
+      "100402": {
+        "id": "100402",
+        "name": "Thị xã Chí Linh",
+        "name_url": "thi-xa-chi-linh"
+      },
+      "100403": {
+        "id": "100403",
+        "name": "Huyện Nam Sách",
+        "name_url": "huyen-nam-sach"
+      },
+      "100404": {
+        "id": "100404",
+        "name": "Huyện Kinh Môn",
+        "name_url": "huyen-kinh-mon"
+      },
+      "100405": {
+        "id": "100405",
+        "name": "Huyện Kim Thành",
+        "name_url": "huyen-kim-thanh"
+      },
+      "100406": {
+        "id": "100406",
+        "name": "Huyện Thanh Hà",
+        "name_url": "huyen-thanh-ha"
+      },
+      "100407": {
+        "id": "100407",
+        "name": "Huyện Cẩm Giàng",
+        "name_url": "huyen-cam-giang"
+      },
+      "100408": {
+        "id": "100408",
+        "name": "Huyện Bình Giang",
+        "name_url": "huyen-binh-giang"
+      },
+      "100409": {
+        "id": "100409",
+        "name": "Huyện Gia Lộc",
+        "name_url": "huyen-gia-loc"
+      },
+      "100410": {
+        "id": "100410",
+        "name": "Huyện Tứ Kỳ",
+        "name_url": "huyen-tu-ky"
+      },
+      "100411": {
+        "id": "100411",
+        "name": "Huyện Ninh Giang",
+        "name_url": "huyen-ninh-giang"
+      },
+      "100412": {
+        "id": "100412",
+        "name": "Huyện Thanh Miện",
+        "name_url": "huyen-thanh-mien"
+      }
+    },
+    "name_url": "hai-duong",
+    "id": "1004",
+    "areaOrder": [
+      "100401",
+      "100408",
+      "100407",
+      "100409",
+      "100405",
+      "100404",
+      "100403",
+      "100411",
+      "100406",
+      "100412",
+      "100410",
+      "100402"
+    ]
+  },
+  "1005": {
+    "name": "Hòa Bình",
+    "area": {
+      "100501": {
+        "id": "100501",
+        "name": "Thành phố Hòa Bình",
+        "name_url": "thanh-pho-hoa-binh"
+      },
+      "100502": {
+        "id": "100502",
+        "name": "Huyện Đà Bắc",
+        "name_url": "huyen-da-bac"
+      },
+      "100503": {
+        "id": "100503",
+        "name": "Huyện Kỳ Sơn",
+        "name_url": "huyen-ky-son"
+      },
+      "100504": {
+        "id": "100504",
+        "name": "Huyện Lương Sơn",
+        "name_url": "huyen-luong-son"
+      },
+      "100505": {
+        "id": "100505",
+        "name": "Huyện Kim Bôi",
+        "name_url": "huyen-kim-boi"
+      },
+      "100506": {
+        "id": "100506",
+        "name": "Huyện Cao Phong",
+        "name_url": "huyen-cao-phong"
+      },
+      "100507": {
+        "id": "100507",
+        "name": "Huyện Tân Lạc",
+        "name_url": "huyen-tan-lac"
+      },
+      "100508": {
+        "id": "100508",
+        "name": "Huyện Mai Châu",
+        "name_url": "huyen-mai-chau"
+      },
+      "100509": {
+        "id": "100509",
+        "name": "Huyện Lạc Sơn",
+        "name_url": "huyen-lac-son"
+      },
+      "100510": {
+        "id": "100510",
+        "name": "Huyện Yên Thủy",
+        "name_url": "huyen-yen-thuy"
+      },
+      "100511": {
+        "id": "100511",
+        "name": "Huyện Lạc Thủy",
+        "name_url": "huyen-lac-thuy"
+      }
+    },
+    "name_url": "hoa-binh",
+    "id": "1005",
+    "areaOrder": [
+      "100501",
+      "100506",
+      "100502",
+      "100505",
+      "100503",
+      "100509",
+      "100511",
+      "100504",
+      "100508",
+      "100507",
+      "100510"
+    ]
+  },
+  "1006": {
+    "name": "Hưng Yên",
+    "area": {
+      "100601": {
+        "id": "100601",
+        "name": "Thành phố Hưng Yên",
+        "name_url": "thanh-pho-hung-yen"
+      },
+      "100602": {
+        "id": "100602",
+        "name": "Huyện Văn Lâm",
+        "name_url": "huyen-van-lam"
+      },
+      "100603": {
+        "id": "100603",
+        "name": "Huyện Văn Giang",
+        "name_url": "huyen-van-giang"
+      },
+      "100604": {
+        "id": "100604",
+        "name": "Huyện Yên Mỹ",
+        "name_url": "huyen-yen-my"
+      },
+      "100605": {
+        "id": "100605",
+        "name": "Huyện Mỹ Hào",
+        "name_url": "huyen-my-hao"
+      },
+      "100606": {
+        "id": "100606",
+        "name": "Huyện Ân Thi",
+        "name_url": "huyen-an-thi"
+      },
+      "100607": {
+        "id": "100607",
+        "name": "Huyện Khoái Châu",
+        "name_url": "huyen-khoai-chau"
+      },
+      "100608": {
+        "id": "100608",
+        "name": "Huyện Kim Động",
+        "name_url": "huyen-kim-dong"
+      },
+      "100609": {
+        "id": "100609",
+        "name": "Huyện Tiên Lữ",
+        "name_url": "huyen-tien-lu"
+      },
+      "100610": {
+        "id": "100610",
+        "name": "Huyện Phù Cừ",
+        "name_url": "huyen-phu-cu"
+      }
+    },
+    "name_url": "hung-yen",
+    "id": "1006",
+    "areaOrder": [
+      "100601",
+      "100606",
+      "100607",
+      "100608",
+      "100605",
+      "100610",
+      "100609",
+      "100603",
+      "100602",
+      "100604"
+    ]
+  },
+  "1007": {
+    "name": "Ninh Bình",
+    "area": {
+      "100701": {
+        "id": "100701",
+        "name": "Thành phố Ninh Bình",
+        "name_url": "thanh-pho-ninh-binh"
+      },
+      "100702": {
+        "id": "100702",
+        "name": "Thành phố Tam Điệp",
+        "name_url": "thanh-pho-tam-diep"
+      },
+      "100703": {
+        "id": "100703",
+        "name": "Huyện Nho Quan",
+        "name_url": "huyen-nho-quan"
+      },
+      "100704": {
+        "id": "100704",
+        "name": "Huyện Gia Viễn",
+        "name_url": "huyen-gia-vien"
+      },
+      "100705": {
+        "id": "100705",
+        "name": "Huyện Hoa Lư",
+        "name_url": "huyen-hoa-lu"
+      },
+      "100706": {
+        "id": "100706",
+        "name": "Huyện Yên Khánh",
+        "name_url": "huyen-yen-khanh"
+      },
+      "100707": {
+        "id": "100707",
+        "name": "Huyện Kim Sơn",
+        "name_url": "huyen-kim-son"
+      },
+      "100708": {
+        "id": "100708",
+        "name": "Huyện Yên Mô",
+        "name_url": "huyen-yen-mo"
+      }
+    },
+    "name_url": "ninh-binh",
+    "id": "1007",
+    "areaOrder": [
+      "100701",
+      "100702",
+      "100704",
+      "100705",
+      "100707",
+      "100703",
+      "100706",
+      "100708"
+    ]
+  },
+  "1008": {
+    "name": "Vĩnh Phúc",
+    "area": {
+      "100801": {
+        "id": "100801",
+        "name": "Thành phố Vĩnh Yên",
+        "name_url": "thanh-pho-vinh-yen"
+      },
+      "100802": {
+        "id": "100802",
+        "name": "Thị xã Phúc Yên",
+        "name_url": "thi-xa-phuc-yen"
+      },
+      "100803": {
+        "id": "100803",
+        "name": "Huyện Lập Thạch",
+        "name_url": "huyen-lap-thach"
+      },
+      "100804": {
+        "id": "100804",
+        "name": "Huyện Tam Dương",
+        "name_url": "huyen-tam-duong"
+      },
+      "100805": {
+        "id": "100805",
+        "name": "Huyện Tam Đảo",
+        "name_url": "huyen-tam-dao"
+      },
+      "100806": {
+        "id": "100806",
+        "name": "Huyện Bình Xuyên",
+        "name_url": "huyen-binh-xuyen"
+      },
+      "100807": {
+        "id": "100807",
+        "name": "Huyện Yên Lạc",
+        "name_url": "huyen-yen-lac"
+      },
+      "100808": {
+        "id": "100808",
+        "name": "Huyện Vĩnh Tường",
+        "name_url": "huyen-vinh-tuong"
+      },
+      "100809": {
+        "id": "100809",
+        "name": "Huyện Sông Lô",
+        "name_url": "huyen-song-lo"
+      }
+    },
+    "name_url": "vinh-phuc",
+    "id": "1008",
+    "areaOrder": [
+      "100801",
+      "100806",
+      "100803",
+      "100809",
+      "100805",
+      "100804",
+      "100808",
+      "100807",
+      "100802"
+    ]
+  },
+  "2010": {
+    "name": "Bà Rịa - Vũng Tàu",
+    "area": {
+      "201001": {
+        "id": "201001",
+        "name": "Thành phố Vũng Tàu",
+        "name_url": "thanh-pho-vung-tau"
+      },
+      "201002": {
+        "id": "201002",
+        "name": "Thành phố Bà Rịa",
+        "name_url": "thanh-pho-ba-ria"
+      },
+      "201003": {
+        "id": "201003",
+        "name": "Huyện Châu Đức",
+        "name_url": "huyen-chau-duc"
+      },
+      "201004": {
+        "id": "201004",
+        "name": "Huyện Xuyên Mộc",
+        "name_url": "huyen-xuyen-moc"
+      },
+      "201005": {
+        "id": "201005",
+        "name": "Huyện Long Điền",
+        "name_url": "huyen-long-dien"
+      },
+      "201006": {
+        "id": "201006",
+        "name": "Huyện Đất Đỏ",
+        "name_url": "huyen-dat-do"
+      },
+      "201007": {
+        "id": "201007",
+        "name": "Huyện Tân Thành",
+        "name_url": "huyen-tan-thanh"
+      }
+    },
+    "name_url": "ba-ria-vung-tau",
+    "id": "2010",
+    "areaOrder": [
+      "201002",
+      "201001",
+      "201003",
+      "201006",
+      "201005",
+      "201007",
+      "201004"
+    ]
+  },
+  "2011": {
+    "name": "Bình Dương",
+    "area": {
+      "201101": {
+        "id": "201101",
+        "name": "Thành phố Thủ Dầu Một",
+        "name_url": "thanh-pho-thu-dau-mot"
+      },
+      "201102": {
+        "id": "201102",
+        "name": "Huyện Bàu Bàng",
+        "name_url": "huyen-bau-bang"
+      },
+      "201103": {
+        "id": "201103",
+        "name": "Huyện Dầu Tiếng",
+        "name_url": "huyen-dau-tieng"
+      },
+      "201104": {
+        "id": "201104",
+        "name": "Thị xã Bến Cát",
+        "name_url": "thi-xa-ben-cat"
+      },
+      "201105": {
+        "id": "201105",
+        "name": "Huyện Phú Giáo",
+        "name_url": "huyen-phu-giao"
+      },
+      "201106": {
+        "id": "201106",
+        "name": "Thị xã Tân Uyên",
+        "name_url": "thi-xa-tan-uyen"
+      },
+      "201107": {
+        "id": "201107",
+        "name": "Thị xã Dĩ An",
+        "name_url": "thi-xa-di-an"
+      },
+      "201108": {
+        "id": "201108",
+        "name": "Thị xã Thuận An",
+        "name_url": "thi-xa-thuan-an"
+      },
+      "201109": {
+        "id": "201109",
+        "name": "Huyện Bắc Tân Uyên",
+        "name_url": "huyen-bac-tan-uyen"
+      }
+    },
+    "name_url": "binh-duong",
+    "id": "2011",
+    "areaOrder": [
+      "201101",
+      "201109",
+      "201102",
+      "201103",
+      "201105",
+      "201104",
+      "201107",
+      "201106",
+      "201108"
+    ]
+  },
+  "2012": {
+    "name": "Bình Phước",
+    "area": {
+      "201201": {
+        "id": "201201",
+        "name": "Thị xã Phước Long",
+        "name_url": "thi-xa-phuoc-long"
+      },
+      "201202": {
+        "id": "201202",
+        "name": "Thị xã Đồng Xoài",
+        "name_url": "thi-xa-dong-xoai"
+      },
+      "201203": {
+        "id": "201203",
+        "name": "Thị xã Bình Long",
+        "name_url": "thi-xa-binh-long"
+      },
+      "201204": {
+        "id": "201204",
+        "name": "Huyện Bù Gia Mập",
+        "name_url": "huyen-bu-gia-map"
+      },
+      "201205": {
+        "id": "201205",
+        "name": "Huyện Lộc Ninh",
+        "name_url": "huyen-loc-ninh"
+      },
+      "201206": {
+        "id": "201206",
+        "name": "Huyện Bù Đốp",
+        "name_url": "huyen-bu-dop"
+      },
+      "201207": {
+        "id": "201207",
+        "name": "Huyện Hớn Quản",
+        "name_url": "huyen-hon-quan"
+      },
+      "201208": {
+        "id": "201208",
+        "name": "Huyện Đồng Phú",
+        "name_url": "huyen-dong-phu"
+      },
+      "201209": {
+        "id": "201209",
+        "name": "Huyện Bù Đăng",
+        "name_url": "huyen-bu-dang"
+      },
+      "201210": {
+        "id": "201210",
+        "name": "Huyện Chơn Thành",
+        "name_url": "huyen-chon-thanh"
+      },
+      "201211": {
+        "id": "201211",
+        "name": "Huyện Phú Riềng",
+        "name_url": "huyen-phu-rieng"
+      }
+    },
+    "name_url": "binh-phuoc",
+    "id": "2012",
+    "areaOrder": [
+      "201209",
+      "201206",
+      "201204",
+      "201210",
+      "201208",
+      "201207",
+      "201205",
+      "201211",
+      "201203",
+      "201202",
+      "201201"
+    ]
+  },
+  "2013": {
+    "name": "Đồng Nai",
+    "area": {
+      "201301": {
+        "id": "201301",
+        "name": "Thành phố Biên Hòa",
+        "name_url": "thanh-pho-bien-hoa"
+      },
+      "201302": {
+        "id": "201302",
+        "name": "Thị xã Long Khánh",
+        "name_url": "thi-xa-long-khanh"
+      },
+      "201303": {
+        "id": "201303",
+        "name": "Huyện Tân Phú",
+        "name_url": "huyen-tan-phu"
+      },
+      "201304": {
+        "id": "201304",
+        "name": "Huyện Vĩnh Cửu",
+        "name_url": "huyen-vinh-cuu"
+      },
+      "201305": {
+        "id": "201305",
+        "name": "Huyện Định Quán",
+        "name_url": "huyen-dinh-quan"
+      },
+      "201306": {
+        "id": "201306",
+        "name": "Huyện Trảng Bom",
+        "name_url": "huyen-trang-bom"
+      },
+      "201307": {
+        "id": "201307",
+        "name": "Huyện Thống Nhất",
+        "name_url": "huyen-thong-nhat"
+      },
+      "201308": {
+        "id": "201308",
+        "name": "Huyện Cẩm Mỹ",
+        "name_url": "huyen-cam-my"
+      },
+      "201309": {
+        "id": "201309",
+        "name": "Huyện Long Thành",
+        "name_url": "huyen-long-thanh"
+      },
+      "201310": {
+        "id": "201310",
+        "name": "Huyện Xuân Lộc",
+        "name_url": "huyen-xuan-loc"
+      },
+      "201311": {
+        "id": "201311",
+        "name": "Huyện Nhơn Trạch",
+        "name_url": "huyen-nhon-trach"
+      }
+    },
+    "name_url": "dong-nai",
+    "id": "2013",
+    "areaOrder": [
+      "201301",
+      "201308",
+      "201305",
+      "201309",
+      "201311",
+      "201303",
+      "201307",
+      "201306",
+      "201304",
+      "201310",
+      "201302"
+    ]
+  },
+  "2014": {
+    "name": "Tây Ninh",
+    "area": {
+      "201401": {
+        "id": "201401",
+        "name": "Thành phố Tây Ninh",
+        "name_url": "thanh-pho-tay-ninh"
+      },
+      "201402": {
+        "id": "201402",
+        "name": "Huyện Tân Biên",
+        "name_url": "huyen-tan-bien"
+      },
+      "201403": {
+        "id": "201403",
+        "name": "Huyện Tân Châu",
+        "name_url": "huyen-tan-chau"
+      },
+      "201404": {
+        "id": "201404",
+        "name": "Huyện Dương Minh Châu",
+        "name_url": "huyen-duong-minh-chau"
+      },
+      "201405": {
+        "id": "201405",
+        "name": "Huyện Châu Thành",
+        "name_url": "huyen-chau-thanh"
+      },
+      "201406": {
+        "id": "201406",
+        "name": "Huyện Hòa Thành",
+        "name_url": "huyen-hoa-thanh"
+      },
+      "201407": {
+        "id": "201407",
+        "name": "Huyện Gò Dầu",
+        "name_url": "huyen-go-dau"
+      },
+      "201408": {
+        "id": "201408",
+        "name": "Huyện Bến Cầu",
+        "name_url": "huyen-ben-cau"
+      },
+      "201409": {
+        "id": "201409",
+        "name": "Huyện Trảng Bàng",
+        "name_url": "huyen-trang-bang"
+      }
+    },
+    "name_url": "tay-ninh",
+    "id": "2014",
+    "areaOrder": [
+      "201401",
+      "201408",
+      "201405",
+      "201404",
+      "201407",
+      "201406",
+      "201402",
+      "201403",
+      "201409"
+    ]
+  },
+  "3016": {
+    "name": "Quảng Nam",
+    "area": {
+      "301601": {
+        "id": "301601",
+        "name": "Thành phố Tam Kỳ",
+        "name_url": "thanh-pho-tam-ky"
+      },
+      "301602": {
+        "id": "301602",
+        "name": "Thành phố Hội An",
+        "name_url": "thanh-pho-hoi-an"
+      },
+      "301603": {
+        "id": "301603",
+        "name": "Huyện Tây Giang",
+        "name_url": "huyen-tay-giang"
+      },
+      "301604": {
+        "id": "301604",
+        "name": "Huyện Đông Giang",
+        "name_url": "huyen-dong-giang"
+      },
+      "301605": {
+        "id": "301605",
+        "name": "Huyện Đại Lộc",
+        "name_url": "huyen-dai-loc"
+      },
+      "301606": {
+        "id": "301606",
+        "name": "Thị xã Điện Bàn",
+        "name_url": "thi-xa-dien-ban"
+      },
+      "301607": {
+        "id": "301607",
+        "name": "Huyện Duy Xuyên",
+        "name_url": "huyen-duy-xuyen"
+      },
+      "301608": {
+        "id": "301608",
+        "name": "Huyện Quế Sơn",
+        "name_url": "huyen-que-son"
+      },
+      "301609": {
+        "id": "301609",
+        "name": "Huyện Nam Giang",
+        "name_url": "huyen-nam-giang"
+      },
+      "301610": {
+        "id": "301610",
+        "name": "Huyện Phước Sơn",
+        "name_url": "huyen-phuoc-son"
+      },
+      "301611": {
+        "id": "301611",
+        "name": "Huyện Hiệp Đức",
+        "name_url": "huyen-hiep-duc"
+      },
+      "301612": {
+        "id": "301612",
+        "name": "Huyện Thăng Bình",
+        "name_url": "huyen-thang-binh"
+      },
+      "301613": {
+        "id": "301613",
+        "name": "Huyện Tiên Phước",
+        "name_url": "huyen-tien-phuoc"
+      },
+      "301614": {
+        "id": "301614",
+        "name": "Huyện Bắc Trà My",
+        "name_url": "huyen-bac-tra-my"
+      },
+      "301615": {
+        "id": "301615",
+        "name": "Huyện Nam Trà My",
+        "name_url": "huyen-nam-tra-my"
+      },
+      "301616": {
+        "id": "301616",
+        "name": "Huyện Núi Thành",
+        "name_url": "huyen-nui-thanh"
+      },
+      "301617": {
+        "id": "301617",
+        "name": "Huyện Phú Ninh",
+        "name_url": "huyen-phu-ninh"
+      },
+      "301618": {
+        "id": "301618",
+        "name": "Huyện Nông Sơn",
+        "name_url": "huyen-nong-son"
+      }
+    },
+    "name_url": "quang-nam",
+    "id": "3016",
+    "areaOrder": [
+      "301602",
+      "301601",
+      "301614",
+      "301605",
+      "301604",
+      "301607",
+      "301611",
+      "301609",
+      "301615",
+      "301618",
+      "301616",
+      "301617",
+      "301610",
+      "301608",
+      "301603",
+      "301612",
+      "301613",
+      "301606"
+    ]
+  },
+  "3017": {
+    "name": "Đà Nẵng",
+    "area": {
+      "301701": {
+        "id": "301701",
+        "name": "Quận Liên Chiểu",
+        "name_url": "quan-lien-chieu"
+      },
+      "301702": {
+        "id": "301702",
+        "name": "Quận Thanh Khê",
+        "name_url": "quan-thanh-khe"
+      },
+      "301703": {
+        "id": "301703",
+        "name": "Quận Hải Châu",
+        "name_url": "quan-hai-chau"
+      },
+      "301704": {
+        "id": "301704",
+        "name": "Quận Sơn Trà",
+        "name_url": "quan-son-tra"
+      },
+      "301705": {
+        "id": "301705",
+        "name": "Quận Ngũ Hành Sơn",
+        "name_url": "quan-ngu-hanh-son"
+      },
+      "301706": {
+        "id": "301706",
+        "name": "Quận Cẩm Lệ",
+        "name_url": "quan-cam-le"
+      },
+      "301707": {
+        "id": "301707",
+        "name": "Huyện Hòa Vang",
+        "name_url": "huyen-hoa-vang"
+      }
+    },
+    "name_url": "da-nang",
+    "id": "3017",
+    "areaOrder": [
+      "301706",
+      "301703",
+      "301701",
+      "301705",
+      "301704",
+      "301702",
+      "301707"
+    ]
+  },
+  "4019": {
+    "name": "Hải Phòng",
+    "area": {
+      "401901": {
+        "id": "401901",
+        "name": "Quận Hồng Bàng",
+        "name_url": "quan-hong-bang"
+      },
+      "401902": {
+        "id": "401902",
+        "name": "Quận Ngô Quyền",
+        "name_url": "quan-ngo-quyen"
+      },
+      "401903": {
+        "id": "401903",
+        "name": "Quận Lê Chân",
+        "name_url": "quan-le-chan"
+      },
+      "401904": {
+        "id": "401904",
+        "name": "Quận Hải An",
+        "name_url": "quan-hai-an"
+      },
+      "401905": {
+        "id": "401905",
+        "name": "Quận Kiến An",
+        "name_url": "quan-kien-an"
+      },
+      "401906": {
+        "id": "401906",
+        "name": "Quận Đồ Sơn",
+        "name_url": "quan-do-son"
+      },
+      "401907": {
+        "id": "401907",
+        "name": "Quận Dương Kinh",
+        "name_url": "quan-duong-kinh"
+      },
+      "401908": {
+        "id": "401908",
+        "name": "Huyện Thuỷ Nguyên",
+        "name_url": "huyen-thuy-nguyen"
+      },
+      "401909": {
+        "id": "401909",
+        "name": "Huyện An Dương",
+        "name_url": "huyen-an-duong"
+      },
+      "401910": {
+        "id": "401910",
+        "name": "Huyện An Lão",
+        "name_url": "huyen-an-lao"
+      },
+      "401911": {
+        "id": "401911",
+        "name": "Huyện Kiến Thuỵ",
+        "name_url": "huyen-kien-thuy"
+      },
+      "401912": {
+        "id": "401912",
+        "name": "Huyện Tiên Lãng",
+        "name_url": "huyen-tien-lang"
+      },
+      "401913": {
+        "id": "401913",
+        "name": "Huyện Vĩnh Bảo",
+        "name_url": "huyen-vinh-bao"
+      },
+      "401914": {
+        "id": "401914",
+        "name": "Huyện Cát Hải",
+        "name_url": "huyen-cat-hai"
+      }
+    },
+    "name_url": "hai-phong",
+    "id": "4019",
+    "areaOrder": [
+      "401906",
+      "401907",
+      "401904",
+      "401901",
+      "401905",
+      "401903",
+      "401902",
+      "401909",
+      "401910",
+      "401914",
+      "401911",
+      "401908",
+      "401912",
+      "401913"
+    ]
+  },
+  "4020": {
+    "name": "Nam Định",
+    "area": {
+      "402001": {
+        "id": "402001",
+        "name": "Thành phố Nam Định",
+        "name_url": "thanh-pho-nam-dinh"
+      },
+      "402002": {
+        "id": "402002",
+        "name": "Huyện Mỹ Lộc",
+        "name_url": "huyen-my-loc"
+      },
+      "402003": {
+        "id": "402003",
+        "name": "Huyện Vụ Bản",
+        "name_url": "huyen-vu-ban"
+      },
+      "402004": {
+        "id": "402004",
+        "name": "Huyện Ý Yên",
+        "name_url": "huyen-y-yen"
+      },
+      "402005": {
+        "id": "402005",
+        "name": "Huyện Nghĩa Hưng",
+        "name_url": "huyen-nghia-hung"
+      },
+      "402006": {
+        "id": "402006",
+        "name": "Huyện Nam Trực",
+        "name_url": "huyen-nam-truc"
+      },
+      "402007": {
+        "id": "402007",
+        "name": "Huyện Trực Ninh",
+        "name_url": "huyen-truc-ninh"
+      },
+      "402008": {
+        "id": "402008",
+        "name": "Huyện Xuân Trường",
+        "name_url": "huyen-xuan-truong"
+      },
+      "402009": {
+        "id": "402009",
+        "name": "Huyện Giao Thủy",
+        "name_url": "huyen-giao-thuy"
+      },
+      "402010": {
+        "id": "402010",
+        "name": "Huyện Hải Hậu",
+        "name_url": "huyen-hai-hau"
+      }
+    },
+    "name_url": "nam-dinh",
+    "id": "4020",
+    "areaOrder": [
+      "402001",
+      "402009",
+      "402010",
+      "402002",
+      "402006",
+      "402005",
+      "402007",
+      "402003",
+      "402008",
+      "402004"
+    ]
+  },
+  "4021": {
+    "name": "Thái Bình",
+    "area": {
+      "402101": {
+        "id": "402101",
+        "name": "Thành phố Thái Bình",
+        "name_url": "thanh-pho-thai-binh"
+      },
+      "402102": {
+        "id": "402102",
+        "name": "Huyện Quỳnh Phụ",
+        "name_url": "huyen-quynh-phu"
+      },
+      "402103": {
+        "id": "402103",
+        "name": "Huyện Hưng Hà",
+        "name_url": "huyen-hung-ha"
+      },
+      "402104": {
+        "id": "402104",
+        "name": "Huyện Đông Hưng",
+        "name_url": "huyen-dong-hung"
+      },
+      "402105": {
+        "id": "402105",
+        "name": "Huyện Thái Thụy",
+        "name_url": "huyen-thai-thuy"
+      },
+      "402106": {
+        "id": "402106",
+        "name": "Huyện Tiền Hải",
+        "name_url": "huyen-tien-hai"
+      },
+      "402107": {
+        "id": "402107",
+        "name": "Huyện Kiến Xương",
+        "name_url": "huyen-kien-xuong"
+      },
+      "402108": {
+        "id": "402108",
+        "name": "Huyện Vũ Thư",
+        "name_url": "huyen-vu-thu"
+      }
+    },
+    "name_url": "thai-binh",
+    "id": "4021",
+    "areaOrder": [
+      "402101",
+      "402104",
+      "402103",
+      "402107",
+      "402102",
+      "402105",
+      "402106",
+      "402108"
+    ]
+  },
+  "5024": {
+    "name": "An Giang",
+    "area": {
+      "502401": {
+        "id": "502401",
+        "name": "Thành phố Long Xuyên",
+        "name_url": "thanh-pho-long-xuyen"
+      },
+      "502402": {
+        "id": "502402",
+        "name": "Thành phố Châu Đốc",
+        "name_url": "thanh-pho-chau-doc"
+      },
+      "502403": {
+        "id": "502403",
+        "name": "Huyện An Phú",
+        "name_url": "huyen-an-phu"
+      },
+      "502404": {
+        "id": "502404",
+        "name": "Thị xã Tân Châu",
+        "name_url": "thi-xa-tan-chau"
+      },
+      "502405": {
+        "id": "502405",
+        "name": "Huyện Phú Tân",
+        "name_url": "huyen-phu-tan"
+      },
+      "502406": {
+        "id": "502406",
+        "name": "Huyện Châu Phú",
+        "name_url": "huyen-chau-phu"
+      },
+      "502407": {
+        "id": "502407",
+        "name": "Huyện Tịnh Biên",
+        "name_url": "huyen-tinh-bien"
+      },
+      "502408": {
+        "id": "502408",
+        "name": "Huyện Tri Tôn",
+        "name_url": "huyen-tri-ton"
+      },
+      "502409": {
+        "id": "502409",
+        "name": "Huyện Châu Thành",
+        "name_url": "huyen-chau-thanh"
+      },
+      "502410": {
+        "id": "502410",
+        "name": "Huyện Chợ Mới",
+        "name_url": "huyen-cho-moi"
+      },
+      "502411": {
+        "id": "502411",
+        "name": "Huyện Thoại Sơn",
+        "name_url": "huyen-thoai-son"
+      }
+    },
+    "name_url": "an-giang",
+    "id": "5024",
+    "areaOrder": [
+      "502402",
+      "502401",
+      "502403",
+      "502406",
+      "502409",
+      "502410",
+      "502405",
+      "502411",
+      "502407",
+      "502408",
+      "502404"
+    ]
+  },
+  "5025": {
+    "name": "Bạc Liêu",
+    "area": {
+      "502501": {
+        "id": "502501",
+        "name": "Thành phố Bạc Liêu",
+        "name_url": "thanh-pho-bac-lieu"
+      },
+      "502502": {
+        "id": "502502",
+        "name": "Huyện Hồng Dân",
+        "name_url": "huyen-hong-dan"
+      },
+      "502503": {
+        "id": "502503",
+        "name": "Huyện Phước Long",
+        "name_url": "huyen-phuoc-long"
+      },
+      "502504": {
+        "id": "502504",
+        "name": "Huyện Vĩnh Lợi",
+        "name_url": "huyen-vinh-loi"
+      },
+      "502505": {
+        "id": "502505",
+        "name": "Thị xã Giá Rai",
+        "name_url": "thi-xa-gia-rai"
+      },
+      "502506": {
+        "id": "502506",
+        "name": "Huyện Đông Hải",
+        "name_url": "huyen-dong-hai"
+      },
+      "502507": {
+        "id": "502507",
+        "name": "Huyện Hòa Bình",
+        "name_url": "huyen-hoa-binh"
+      }
+    },
+    "name_url": "bac-lieu",
+    "id": "5025",
+    "areaOrder": [
+      "502501",
+      "502506",
+      "502507",
+      "502502",
+      "502503",
+      "502504",
+      "502505"
+    ]
+  },
+  "5026": {
+    "name": "Bến Tre",
+    "area": {
+      "502601": {
+        "id": "502601",
+        "name": "Thành phố Bến Tre",
+        "name_url": "thanh-pho-ben-tre"
+      },
+      "502602": {
+        "id": "502602",
+        "name": "Huyện Châu Thành",
+        "name_url": "huyen-chau-thanh"
+      },
+      "502603": {
+        "id": "502603",
+        "name": "Huyện Chợ Lách",
+        "name_url": "huyen-cho-lach"
+      },
+      "502604": {
+        "id": "502604",
+        "name": "Huyện Mỏ Cày Nam",
+        "name_url": "huyen-mo-cay-nam"
+      },
+      "502605": {
+        "id": "502605",
+        "name": "Huyện Giồng Trôm",
+        "name_url": "huyen-giong-trom"
+      },
+      "502606": {
+        "id": "502606",
+        "name": "Huyện Bình Đại",
+        "name_url": "huyen-binh-dai"
+      },
+      "502607": {
+        "id": "502607",
+        "name": "Huyện Ba Tri",
+        "name_url": "huyen-ba-tri"
+      },
+      "502608": {
+        "id": "502608",
+        "name": "Huyện Thạnh Phú",
+        "name_url": "huyen-thanh-phu"
+      },
+      "502609": {
+        "id": "502609",
+        "name": "Huyện Mỏ Cày Bắc",
+        "name_url": "huyen-mo-cay-bac"
+      }
+    },
+    "name_url": "ben-tre",
+    "id": "5026",
+    "areaOrder": [
+      "502601",
+      "502607",
+      "502606",
+      "502602",
+      "502603",
+      "502605",
+      "502609",
+      "502604",
+      "502608"
+    ]
+  },
+  "5027": {
+    "name": "Cần Thơ",
+    "area": {
+      "502701": {
+        "id": "502701",
+        "name": "Quận Ninh Kiều",
+        "name_url": "quan-ninh-kieu"
+      },
+      "502702": {
+        "id": "502702",
+        "name": "Quận Ô Môn",
+        "name_url": "quan-o-mon"
+      },
+      "502703": {
+        "id": "502703",
+        "name": "Quận Bình Thuỷ",
+        "name_url": "quan-binh-thuy"
+      },
+      "502704": {
+        "id": "502704",
+        "name": "Quận Cái Răng",
+        "name_url": "quan-cai-rang"
+      },
+      "502705": {
+        "id": "502705",
+        "name": "Quận Thốt Nốt",
+        "name_url": "quan-thot-not"
+      },
+      "502706": {
+        "id": "502706",
+        "name": "Huyện Vĩnh Thạnh",
+        "name_url": "huyen-vinh-thanh"
+      },
+      "502707": {
+        "id": "502707",
+        "name": "Huyện Cờ Đỏ",
+        "name_url": "huyen-co-do"
+      },
+      "502708": {
+        "id": "502708",
+        "name": "Huyện Phong Điền",
+        "name_url": "huyen-phong-dien"
+      },
+      "502709": {
+        "id": "502709",
+        "name": "Huyện Thới Lai",
+        "name_url": "huyen-thoi-lai"
+      }
+    },
+    "name_url": "can-tho",
+    "id": "5027",
+    "areaOrder": [
+      "502703",
+      "502704",
+      "502701",
+      "502702",
+      "502705",
+      "502707",
+      "502708",
+      "502709",
+      "502706"
+    ]
+  },
+  "5028": {
+    "name": "Cà Mau",
+    "area": {
+      "502801": {
+        "id": "502801",
+        "name": "Thành phố Cà Mau",
+        "name_url": "thanh-pho-ca-mau"
+      },
+      "502802": {
+        "id": "502802",
+        "name": "Huyện U Minh",
+        "name_url": "huyen-u-minh"
+      },
+      "502803": {
+        "id": "502803",
+        "name": "Huyện Thới Bình",
+        "name_url": "huyen-thoi-binh"
+      },
+      "502804": {
+        "id": "502804",
+        "name": "Huyện Trần Văn Thời",
+        "name_url": "huyen-tran-van-thoi"
+      },
+      "502805": {
+        "id": "502805",
+        "name": "Huyện Cái Nước",
+        "name_url": "huyen-cai-nuoc"
+      },
+      "502806": {
+        "id": "502806",
+        "name": "Huyện Đầm Dơi",
+        "name_url": "huyen-dam-doi"
+      },
+      "502807": {
+        "id": "502807",
+        "name": "Huyện Năm Căn",
+        "name_url": "huyen-nam-can"
+      },
+      "502808": {
+        "id": "502808",
+        "name": "Huyện Phú Tân",
+        "name_url": "huyen-phu-tan"
+      },
+      "502809": {
+        "id": "502809",
+        "name": "Huyện Ngọc Hiển",
+        "name_url": "huyen-ngoc-hien"
+      }
+    },
+    "name_url": "ca-mau",
+    "id": "5028",
+    "areaOrder": [
+      "502801",
+      "502805",
+      "502806",
+      "502807",
+      "502809",
+      "502808",
+      "502803",
+      "502804",
+      "502802"
+    ]
+  },
+  "5029": {
+    "name": "Đồng Tháp",
+    "area": {
+      "502901": {
+        "id": "502901",
+        "name": "Thành phố Cao Lãnh",
+        "name_url": "thanh-pho-cao-lanh"
+      },
+      "502902": {
+        "id": "502902",
+        "name": "Thành phố Sa Đéc",
+        "name_url": "thanh-pho-sa-dec"
+      },
+      "502903": {
+        "id": "502903",
+        "name": "Thị xã Hồng Ngự",
+        "name_url": "thi-xa-hong-ngu"
+      },
+      "502904": {
+        "id": "502904",
+        "name": "Huyện Tân Hồng",
+        "name_url": "huyen-tan-hong"
+      },
+      "502905": {
+        "id": "502905",
+        "name": "Huyện Hồng Ngự",
+        "name_url": "huyen-hong-ngu"
+      },
+      "502906": {
+        "id": "502906",
+        "name": "Huyện Tam Nông",
+        "name_url": "huyen-tam-nong"
+      },
+      "502907": {
+        "id": "502907",
+        "name": "Huyện Tháp Mười",
+        "name_url": "huyen-thap-muoi"
+      },
+      "502908": {
+        "id": "502908",
+        "name": "Huyện Cao Lãnh",
+        "name_url": "huyen-cao-lanh"
+      },
+      "502909": {
+        "id": "502909",
+        "name": "Huyện Thanh Bình",
+        "name_url": "huyen-thanh-binh"
+      },
+      "502910": {
+        "id": "502910",
+        "name": "Huyện Lấp Vò",
+        "name_url": "huyen-lap-vo"
+      },
+      "502911": {
+        "id": "502911",
+        "name": "Huyện Lai Vung",
+        "name_url": "huyen-lai-vung"
+      },
+      "502912": {
+        "id": "502912",
+        "name": "Huyện Châu Thành",
+        "name_url": "huyen-chau-thanh"
+      }
+    },
+    "name_url": "dong-thap",
+    "id": "5029",
+    "areaOrder": [
+      "502901",
+      "502902",
+      "502908",
+      "502912",
+      "502905",
+      "502911",
+      "502910",
+      "502906",
+      "502904",
+      "502909",
+      "502907",
+      "502903"
+    ]
+  },
+  "5030": {
+    "name": "Hậu Giang",
+    "area": {
+      "503001": {
+        "id": "503001",
+        "name": "Thành phố Vị Thanh",
+        "name_url": "thanh-pho-vi-thanh"
+      },
+      "503002": {
+        "id": "503002",
+        "name": "Thị xã Ngã Bảy",
+        "name_url": "thi-xa-nga-bay"
+      },
+      "503003": {
+        "id": "503003",
+        "name": "Huyện Châu Thành A",
+        "name_url": "huyen-chau-thanh-a"
+      },
+      "503004": {
+        "id": "503004",
+        "name": "Huyện Châu Thành",
+        "name_url": "huyen-chau-thanh"
+      },
+      "503005": {
+        "id": "503005",
+        "name": "Huyện Phụng Hiệp",
+        "name_url": "huyen-phung-hiep"
+      },
+      "503006": {
+        "id": "503006",
+        "name": "Huyện Vị Thuỷ",
+        "name_url": "huyen-vi-thuy"
+      },
+      "503007": {
+        "id": "503007",
+        "name": "Huyện Long Mỹ",
+        "name_url": "huyen-long-my"
+      },
+      "503008": {
+        "id": "503008",
+        "name": "Thị xã Long Mỹ",
+        "name_url": "thi-xa-long-my"
+      }
+    },
+    "name_url": "hau-giang",
+    "id": "5030",
+    "areaOrder": [
+      "503001",
+      "503004",
+      "503003",
+      "503007",
+      "503005",
+      "503006",
+      "503008",
+      "503002"
+    ]
+  },
+  "5031": {
+    "name": "Kiên Giang",
+    "area": {
+      "503101": {
+        "id": "503101",
+        "name": "Thành phố Rạch Giá",
+        "name_url": "thanh-pho-rach-gia"
+      },
+      "503102": {
+        "id": "503102",
+        "name": "Thị xã Hà Tiên",
+        "name_url": "thi-xa-ha-tien"
+      },
+      "503103": {
+        "id": "503103",
+        "name": "Huyện Kiên Lương",
+        "name_url": "huyen-kien-luong"
+      },
+      "503104": {
+        "id": "503104",
+        "name": "Huyện Hòn Đất",
+        "name_url": "huyen-hon-dat"
+      },
+      "503105": {
+        "id": "503105",
+        "name": "Huyện Tân Hiệp",
+        "name_url": "huyen-tan-hiep"
+      },
+      "503106": {
+        "id": "503106",
+        "name": "Huyện Châu Thành",
+        "name_url": "huyen-chau-thanh"
+      },
+      "503107": {
+        "id": "503107",
+        "name": "Huyện Giồng Riềng",
+        "name_url": "huyen-giong-rieng"
+      },
+      "503108": {
+        "id": "503108",
+        "name": "Huyện Gò Quao",
+        "name_url": "huyen-go-quao"
+      },
+      "503109": {
+        "id": "503109",
+        "name": "Huyện An Biên",
+        "name_url": "huyen-an-bien"
+      },
+      "503110": {
+        "id": "503110",
+        "name": "Huyện An Minh",
+        "name_url": "huyen-an-minh"
+      },
+      "503111": {
+        "id": "503111",
+        "name": "Huyện Vĩnh Thuận",
+        "name_url": "huyen-vinh-thuan"
+      },
+      "503112": {
+        "id": "503112",
+        "name": "Huyện Phú Quốc",
+        "name_url": "huyen-phu-quoc"
+      },
+      "503113": {
+        "id": "503113",
+        "name": "Huyện Kiên Hải",
+        "name_url": "huyen-kien-hai"
+      },
+      "503114": {
+        "id": "503114",
+        "name": "Huyện U Minh Thượng",
+        "name_url": "huyen-u-minh-thuong"
+      },
+      "503115": {
+        "id": "503115",
+        "name": "Huyện Giang Thành",
+        "name_url": "huyen-giang-thanh"
+      }
+    },
+    "name_url": "kien-giang",
+    "id": "5031",
+    "areaOrder": [
+      "503101",
+      "503109",
+      "503110",
+      "503106",
+      "503115",
+      "503107",
+      "503108",
+      "503104",
+      "503113",
+      "503103",
+      "503112",
+      "503105",
+      "503114",
+      "503111",
+      "503102"
+    ]
+  },
+  "5032": {
+    "name": "Long An",
+    "area": {
+      "503201": {
+        "id": "503201",
+        "name": "Thành phố Tân An",
+        "name_url": "thanh-pho-tan-an"
+      },
+      "503202": {
+        "id": "503202",
+        "name": "Thị xã Kiến Tường",
+        "name_url": "thi-xa-kien-tuong"
+      },
+      "503203": {
+        "id": "503203",
+        "name": "Huyện Tân Hưng",
+        "name_url": "huyen-tan-hung"
+      },
+      "503204": {
+        "id": "503204",
+        "name": "Huyện Vĩnh Hưng",
+        "name_url": "huyen-vinh-hung"
+      },
+      "503205": {
+        "id": "503205",
+        "name": "Huyện Mộc Hóa",
+        "name_url": "huyen-moc-hoa"
+      },
+      "503206": {
+        "id": "503206",
+        "name": "Huyện Tân Thạnh",
+        "name_url": "huyen-tan-thanh"
+      },
+      "503207": {
+        "id": "503207",
+        "name": "Huyện Thạnh Hóa",
+        "name_url": "huyen-thanh-hoa"
+      },
+      "503208": {
+        "id": "503208",
+        "name": "Huyện Đức Huệ",
+        "name_url": "huyen-duc-hue"
+      },
+      "503209": {
+        "id": "503209",
+        "name": "Huyện Đức Hòa",
+        "name_url": "huyen-duc-hoa"
+      },
+      "503210": {
+        "id": "503210",
+        "name": "Huyện Bến Lức",
+        "name_url": "huyen-ben-luc"
+      },
+      "503211": {
+        "id": "503211",
+        "name": "Huyện Thủ Thừa",
+        "name_url": "huyen-thu-thua"
+      },
+      "503212": {
+        "id": "503212",
+        "name": "Huyện Tân Trụ",
+        "name_url": "huyen-tan-tru"
+      },
+      "503213": {
+        "id": "503213",
+        "name": "Huyện Cần Đước",
+        "name_url": "huyen-can-duoc"
+      },
+      "503214": {
+        "id": "503214",
+        "name": "Huyện Cần Giuộc",
+        "name_url": "huyen-can-giuoc"
+      },
+      "503215": {
+        "id": "503215",
+        "name": "Huyện Châu Thành",
+        "name_url": "huyen-chau-thanh"
+      }
+    },
+    "name_url": "long-an",
+    "id": "5032",
+    "areaOrder": [
+      "503201",
+      "503210",
+      "503213",
+      "503214",
+      "503215",
+      "503209",
+      "503208",
+      "503205",
+      "503203",
+      "503206",
+      "503212",
+      "503207",
+      "503211",
+      "503204",
+      "503202"
+    ]
+  },
+  "5033": {
+    "name": "Sóc Trăng",
+    "area": {
+      "503301": {
+        "id": "503301",
+        "name": "Thành phố Sóc Trăng",
+        "name_url": "thanh-pho-soc-trang"
+      },
+      "503302": {
+        "id": "503302",
+        "name": "Huyện Châu Thành",
+        "name_url": "huyen-chau-thanh"
+      },
+      "503303": {
+        "id": "503303",
+        "name": "Huyện Kế Sách",
+        "name_url": "huyen-ke-sach"
+      },
+      "503304": {
+        "id": "503304",
+        "name": "Huyện Mỹ Tú",
+        "name_url": "huyen-my-tu"
+      },
+      "503305": {
+        "id": "503305",
+        "name": "Huyện Cù Lao Dung",
+        "name_url": "huyen-cu-lao-dung"
+      },
+      "503306": {
+        "id": "503306",
+        "name": "Huyện Long Phú",
+        "name_url": "huyen-long-phu"
+      },
+      "503307": {
+        "id": "503307",
+        "name": "Huyện Mỹ Xuyên",
+        "name_url": "huyen-my-xuyen"
+      },
+      "503308": {
+        "id": "503308",
+        "name": "Thị xã Ngã Năm",
+        "name_url": "thi-xa-nga-nam"
+      },
+      "503309": {
+        "id": "503309",
+        "name": "Huyện Thạnh Trị",
+        "name_url": "huyen-thanh-tri"
+      },
+      "503310": {
+        "id": "503310",
+        "name": "Thị xã Vĩnh Châu",
+        "name_url": "thi-xa-vinh-chau"
+      },
+      "503311": {
+        "id": "503311",
+        "name": "Huyện Trần Đề",
+        "name_url": "huyen-tran-de"
+      }
+    },
+    "name_url": "soc-trang",
+    "id": "5033",
+    "areaOrder": [
+      "503301",
+      "503302",
+      "503305",
+      "503303",
+      "503306",
+      "503304",
+      "503307",
+      "503309",
+      "503311",
+      "503308",
+      "503310"
+    ]
+  },
+  "5034": {
+    "name": "Tiền Giang",
+    "area": {
+      "503401": {
+        "id": "503401",
+        "name": "Thành phố Mỹ Tho",
+        "name_url": "thanh-pho-my-tho"
+      },
+      "503402": {
+        "id": "503402",
+        "name": "Thị xã Gò Công",
+        "name_url": "thi-xa-go-cong"
+      },
+      "503403": {
+        "id": "503403",
+        "name": "Thị xã Cai Lậy",
+        "name_url": "thi-xa-cai-lay"
+      },
+      "503404": {
+        "id": "503404",
+        "name": "Huyện Tân Phước",
+        "name_url": "huyen-tan-phuoc"
+      },
+      "503405": {
+        "id": "503405",
+        "name": "Huyện Cái Bè",
+        "name_url": "huyen-cai-be"
+      },
+      "503406": {
+        "id": "503406",
+        "name": "Huyện Cai Lậy",
+        "name_url": "huyen-cai-lay"
+      },
+      "503407": {
+        "id": "503407",
+        "name": "Huyện Châu Thành",
+        "name_url": "huyen-chau-thanh"
+      },
+      "503408": {
+        "id": "503408",
+        "name": "Huyện Chợ Gạo",
+        "name_url": "huyen-cho-gao"
+      },
+      "503409": {
+        "id": "503409",
+        "name": "Huyện Gò Công Tây",
+        "name_url": "huyen-go-cong-tay"
+      },
+      "503410": {
+        "id": "503410",
+        "name": "Huyện Gò Công Đông",
+        "name_url": "huyen-go-cong-dong"
+      },
+      "503411": {
+        "id": "503411",
+        "name": "Huyện Tân Phú Đông",
+        "name_url": "huyen-tan-phu-dong"
+      }
+    },
+    "name_url": "tien-giang",
+    "id": "5034",
+    "areaOrder": [
+      "503401",
+      "503405",
+      "503406",
+      "503407",
+      "503408",
+      "503410",
+      "503409",
+      "503411",
+      "503404",
+      "503403",
+      "503402"
+    ]
+  },
+  "5035": {
+    "name": "Trà Vinh",
+    "area": {
+      "503501": {
+        "id": "503501",
+        "name": "Thành phố Trà Vinh",
+        "name_url": "thanh-pho-tra-vinh"
+      },
+      "503502": {
+        "id": "503502",
+        "name": "Huyện Càng Long",
+        "name_url": "huyen-cang-long"
+      },
+      "503503": {
+        "id": "503503",
+        "name": "Huyện Cầu Kè",
+        "name_url": "huyen-cau-ke"
+      },
+      "503504": {
+        "id": "503504",
+        "name": "Huyện Tiểu Cần",
+        "name_url": "huyen-tieu-can"
+      },
+      "503505": {
+        "id": "503505",
+        "name": "Huyện Châu Thành",
+        "name_url": "huyen-chau-thanh"
+      },
+      "503506": {
+        "id": "503506",
+        "name": "Huyện Cầu Ngang",
+        "name_url": "huyen-cau-ngang"
+      },
+      "503507": {
+        "id": "503507",
+        "name": "Huyện Trà Cú",
+        "name_url": "huyen-tra-cu"
+      },
+      "503508": {
+        "id": "503508",
+        "name": "Huyện Duyên Hải",
+        "name_url": "huyen-duyen-hai"
+      },
+      "503509": {
+        "id": "503509",
+        "name": "Thị xã Duyên Hải",
+        "name_url": "thi-xa-duyen-hai"
+      }
+    },
+    "name_url": "tra-vinh",
+    "id": "5035",
+    "areaOrder": [
+      "503501",
+      "503502",
+      "503503",
+      "503506",
+      "503505",
+      "503508",
+      "503504",
+      "503507",
+      "503509"
+    ]
+  },
+  "5036": {
+    "name": "Vĩnh Long",
+    "area": {
+      "503601": {
+        "id": "503601",
+        "name": "Thành phố Vĩnh Long",
+        "name_url": "thanh-pho-vinh-long"
+      },
+      "503602": {
+        "id": "503602",
+        "name": "Huyện Long Hồ",
+        "name_url": "huyen-long-ho"
+      },
+      "503603": {
+        "id": "503603",
+        "name": "Huyện Mang Thít",
+        "name_url": "huyen-mang-thit"
+      },
+      "503604": {
+        "id": "503604",
+        "name": "Huyện Vũng Liêm",
+        "name_url": "huyen-vung-liem"
+      },
+      "503605": {
+        "id": "503605",
+        "name": "Huyện Tam Bình",
+        "name_url": "huyen-tam-binh"
+      },
+      "503606": {
+        "id": "503606",
+        "name": "Thị xã Bình Minh",
+        "name_url": "thi-xa-binh-minh"
+      },
+      "503607": {
+        "id": "503607",
+        "name": "Huyện Trà Ôn",
+        "name_url": "huyen-tra-on"
+      },
+      "503608": {
+        "id": "503608",
+        "name": "Huyện Bình Tân",
+        "name_url": "huyen-binh-tan"
+      }
+    },
+    "name_url": "vinh-long",
+    "id": "5036",
+    "areaOrder": [
+      "503601",
+      "503608",
+      "503602",
+      "503603",
+      "503605",
+      "503607",
+      "503604",
+      "503606"
+    ]
+  },
+  "6038": {
+    "name": "Quảng Bình",
+    "area": {
+      "603801": {
+        "id": "603801",
+        "name": "Thành Phố Đồng Hới",
+        "name_url": "thanh-pho-dong-hoi"
+      },
+      "603802": {
+        "id": "603802",
+        "name": "Huyện Minh Hóa",
+        "name_url": "huyen-minh-hoa"
+      },
+      "603803": {
+        "id": "603803",
+        "name": "Huyện Tuyên Hóa",
+        "name_url": "huyen-tuyen-hoa"
+      },
+      "603804": {
+        "id": "603804",
+        "name": "Huyện Quảng Trạch",
+        "name_url": "huyen-quang-trach"
+      },
+      "603805": {
+        "id": "603805",
+        "name": "Huyện Bố Trạch",
+        "name_url": "huyen-bo-trach"
+      },
+      "603806": {
+        "id": "603806",
+        "name": "Huyện Quảng Ninh",
+        "name_url": "huyen-quang-ninh"
+      },
+      "603807": {
+        "id": "603807",
+        "name": "Huyện Lệ Thủy",
+        "name_url": "huyen-le-thuy"
+      },
+      "603808": {
+        "id": "603808",
+        "name": "Thị xã Ba Đồn",
+        "name_url": "thi-xa-ba-don"
+      }
+    },
+    "name_url": "quang-binh",
+    "id": "6038",
+    "areaOrder": [
+      "603801",
+      "603805",
+      "603807",
+      "603802",
+      "603806",
+      "603804",
+      "603803",
+      "603808"
+    ]
+  },
+  "6039": {
+    "name": "Quảng Trị",
+    "area": {
+      "603901": {
+        "id": "603901",
+        "name": "Thành phố Đông Hà",
+        "name_url": "thanh-pho-dong-ha"
+      },
+      "603902": {
+        "id": "603902",
+        "name": "Thị xã Quảng Trị",
+        "name_url": "thi-xa-quang-tri"
+      },
+      "603903": {
+        "id": "603903",
+        "name": "Huyện Vĩnh Linh",
+        "name_url": "huyen-vinh-linh"
+      },
+      "603904": {
+        "id": "603904",
+        "name": "Huyện Hướng Hóa",
+        "name_url": "huyen-huong-hoa"
+      },
+      "603905": {
+        "id": "603905",
+        "name": "Huyện Gio Linh",
+        "name_url": "huyen-gio-linh"
+      },
+      "603906": {
+        "id": "603906",
+        "name": "Huyện Đa Krông",
+        "name_url": "huyen-da-krong"
+      },
+      "603907": {
+        "id": "603907",
+        "name": "Huyện Cam Lộ",
+        "name_url": "huyen-cam-lo"
+      },
+      "603908": {
+        "id": "603908",
+        "name": "Huyện Triệu Phong",
+        "name_url": "huyen-trieu-phong"
+      },
+      "603909": {
+        "id": "603909",
+        "name": "Huyện Hải Lăng",
+        "name_url": "huyen-hai-lang"
+      }
+    },
+    "name_url": "quang-tri",
+    "id": "6039",
+    "areaOrder": [
+      "603901",
+      "603907",
+      "603906",
+      "603905",
+      "603909",
+      "603904",
+      "603908",
+      "603903",
+      "603902"
+    ]
+  },
+  "6040": {
+    "name": "Thừa Thiên Huế",
+    "area": {
+      "604001": {
+        "id": "604001",
+        "name": "Thành phố Huế",
+        "name_url": "thanh-pho-hue"
+      },
+      "604002": {
+        "id": "604002",
+        "name": "Huyện Phong Điền",
+        "name_url": "huyen-phong-dien"
+      },
+      "604003": {
+        "id": "604003",
+        "name": "Huyện Quảng Điền",
+        "name_url": "huyen-quang-dien"
+      },
+      "604004": {
+        "id": "604004",
+        "name": "Huyện Phú Vang",
+        "name_url": "huyen-phu-vang"
+      },
+      "604005": {
+        "id": "604005",
+        "name": "Thị xã Hương Thủy",
+        "name_url": "thi-xa-huong-thuy"
+      },
+      "604006": {
+        "id": "604006",
+        "name": "Thị xã Hương Trà",
+        "name_url": "thi-xa-huong-tra"
+      },
+      "604007": {
+        "id": "604007",
+        "name": "Huyện A Lưới",
+        "name_url": "huyen-a-luoi"
+      },
+      "604008": {
+        "id": "604008",
+        "name": "Huyện Phú Lộc",
+        "name_url": "huyen-phu-loc"
+      },
+      "604009": {
+        "id": "604009",
+        "name": "Huyện Nam Đông",
+        "name_url": "huyen-nam-dong"
+      }
+    },
+    "name_url": "thua-thien-hue",
+    "id": "6040",
+    "areaOrder": [
+      "604001",
+      "604007",
+      "604009",
+      "604002",
+      "604008",
+      "604004",
+      "604003",
+      "604005",
+      "604006"
+    ]
+  },
+  "7042": {
+    "name": "Bình Thuận",
+    "area": {
+      "704201": {
+        "id": "704201",
+        "name": "Thành phố Phan Thiết",
+        "name_url": "thanh-pho-phan-thiet"
+      },
+      "704202": {
+        "id": "704202",
+        "name": "Thị xã La Gi",
+        "name_url": "thi-xa-la-gi"
+      },
+      "704203": {
+        "id": "704203",
+        "name": "Huyện Tuy Phong",
+        "name_url": "huyen-tuy-phong"
+      },
+      "704204": {
+        "id": "704204",
+        "name": "Huyện Bắc Bình",
+        "name_url": "huyen-bac-binh"
+      },
+      "704205": {
+        "id": "704205",
+        "name": "Huyện Hàm Thuận Bắc",
+        "name_url": "huyen-ham-thuan-bac"
+      },
+      "704206": {
+        "id": "704206",
+        "name": "Huyện Hàm Thuận Nam",
+        "name_url": "huyen-ham-thuan-nam"
+      },
+      "704207": {
+        "id": "704207",
+        "name": "Huyện Tánh Linh",
+        "name_url": "huyen-tanh-linh"
+      },
+      "704208": {
+        "id": "704208",
+        "name": "Huyện Đức Linh",
+        "name_url": "huyen-duc-linh"
+      },
+      "704209": {
+        "id": "704209",
+        "name": "Huyện Hàm Tân",
+        "name_url": "huyen-ham-tan"
+      },
+      "704210": {
+        "id": "704210",
+        "name": "Huyện Phú Quí",
+        "name_url": "huyen-phu-qui"
+      }
+    },
+    "name_url": "binh-thuan",
+    "id": "7042",
+    "areaOrder": [
+      "704201",
+      "704204",
+      "704208",
+      "704209",
+      "704205",
+      "704206",
+      "704210",
+      "704207",
+      "704203",
+      "704202"
+    ]
+  },
+  "7043": {
+    "name": "Bình Định",
+    "area": {
+      "704301": {
+        "id": "704301",
+        "name": "Thành phố Qui Nhơn",
+        "name_url": "thanh-pho-qui-nhon"
+      },
+      "704302": {
+        "id": "704302",
+        "name": "Huyện An Lão",
+        "name_url": "huyen-an-lao"
+      },
+      "704303": {
+        "id": "704303",
+        "name": "Huyện Hoài Nhơn",
+        "name_url": "huyen-hoai-nhon"
+      },
+      "704304": {
+        "id": "704304",
+        "name": "Huyện Hoài Ân",
+        "name_url": "huyen-hoai-an"
+      },
+      "704305": {
+        "id": "704305",
+        "name": "Huyện Phù Mỹ",
+        "name_url": "huyen-phu-my"
+      },
+      "704306": {
+        "id": "704306",
+        "name": "Huyện Vĩnh Thạnh",
+        "name_url": "huyen-vinh-thanh"
+      },
+      "704307": {
+        "id": "704307",
+        "name": "Huyện Tây Sơn",
+        "name_url": "huyen-tay-son"
+      },
+      "704308": {
+        "id": "704308",
+        "name": "Huyện Phù Cát",
+        "name_url": "huyen-phu-cat"
+      },
+      "704309": {
+        "id": "704309",
+        "name": "Thị xã An Nhơn",
+        "name_url": "thi-xa-an-nhon"
+      },
+      "704310": {
+        "id": "704310",
+        "name": "Huyện Tuy Phước",
+        "name_url": "huyen-tuy-phuoc"
+      },
+      "704311": {
+        "id": "704311",
+        "name": "Huyện Vân Canh",
+        "name_url": "huyen-van-canh"
+      }
+    },
+    "name_url": "binh-dinh",
+    "id": "7043",
+    "areaOrder": [
+      "704301",
+      "704302",
+      "704304",
+      "704303",
+      "704308",
+      "704305",
+      "704307",
+      "704310",
+      "704311",
+      "704306",
+      "704309"
+    ]
+  },
+  "7044": {
+    "name": "Khánh Hòa",
+    "area": {
+      "704401": {
+        "id": "704401",
+        "name": "Thành phố Nha Trang",
+        "name_url": "thanh-pho-nha-trang"
+      },
+      "704402": {
+        "id": "704402",
+        "name": "Thành phố Cam Ranh",
+        "name_url": "thanh-pho-cam-ranh"
+      },
+      "704403": {
+        "id": "704403",
+        "name": "Huyện Cam Lâm",
+        "name_url": "huyen-cam-lam"
+      },
+      "704404": {
+        "id": "704404",
+        "name": "Huyện Vạn Ninh",
+        "name_url": "huyen-van-ninh"
+      },
+      "704405": {
+        "id": "704405",
+        "name": "Thị xã Ninh Hòa",
+        "name_url": "thi-xa-ninh-hoa"
+      },
+      "704406": {
+        "id": "704406",
+        "name": "Huyện Khánh Vĩnh",
+        "name_url": "huyen-khanh-vinh"
+      },
+      "704407": {
+        "id": "704407",
+        "name": "Huyện Diên Khánh",
+        "name_url": "huyen-dien-khanh"
+      },
+      "704408": {
+        "id": "704408",
+        "name": "Huyện Khánh Sơn",
+        "name_url": "huyen-khanh-son"
+      },
+      "704409": {
+        "id": "704409",
+        "name": "Huyện Trường Sa",
+        "name_url": "huyen-truong-sa"
+      }
+    },
+    "name_url": "khanh-hoa",
+    "id": "7044",
+    "areaOrder": [
+      "704402",
+      "704401",
+      "704403",
+      "704407",
+      "704408",
+      "704406",
+      "704409",
+      "704404",
+      "704405"
+    ]
+  },
+  "7045": {
+    "name": "Ninh Thuận",
+    "area": {
+      "704501": {
+        "id": "704501",
+        "name": "Thành phố Phan Rang-Tháp Chàm",
+        "name_url": "thanh-pho-phan-rang-thap-cham"
+      },
+      "704502": {
+        "id": "704502",
+        "name": "Huyện Bác Ái",
+        "name_url": "huyen-bac-ai"
+      },
+      "704503": {
+        "id": "704503",
+        "name": "Huyện Ninh Sơn",
+        "name_url": "huyen-ninh-son"
+      },
+      "704504": {
+        "id": "704504",
+        "name": "Huyện Ninh Hải",
+        "name_url": "huyen-ninh-hai"
+      },
+      "704505": {
+        "id": "704505",
+        "name": "Huyện Ninh Phước",
+        "name_url": "huyen-ninh-phuoc"
+      },
+      "704506": {
+        "id": "704506",
+        "name": "Huyện Thuận Bắc",
+        "name_url": "huyen-thuan-bac"
+      },
+      "704507": {
+        "id": "704507",
+        "name": "Huyện Thuận Nam",
+        "name_url": "huyen-thuan-nam"
+      }
+    },
+    "name_url": "ninh-thuan",
+    "id": "7045",
+    "areaOrder": [
+      "704501",
+      "704502",
+      "704504",
+      "704505",
+      "704503",
+      "704506",
+      "704507"
+    ]
+  },
+  "7046": {
+    "name": "Phú Yên",
+    "area": {
+      "704601": {
+        "id": "704601",
+        "name": "Thành phố Tuy Hòa",
+        "name_url": "thanh-pho-tuy-hoa"
+      },
+      "704602": {
+        "id": "704602",
+        "name": "Thị xã Sông Cầu",
+        "name_url": "thi-xa-song-cau"
+      },
+      "704603": {
+        "id": "704603",
+        "name": "Huyện Đồng Xuân",
+        "name_url": "huyen-dong-xuan"
+      },
+      "704604": {
+        "id": "704604",
+        "name": "Huyện Tuy An",
+        "name_url": "huyen-tuy-an"
+      },
+      "704605": {
+        "id": "704605",
+        "name": "Huyện Sơn Hòa",
+        "name_url": "huyen-son-hoa"
+      },
+      "704606": {
+        "id": "704606",
+        "name": "Huyện Sông Hinh",
+        "name_url": "huyen-song-hinh"
+      },
+      "704607": {
+        "id": "704607",
+        "name": "Huyện Tây Hòa",
+        "name_url": "huyen-tay-hoa"
+      },
+      "704608": {
+        "id": "704608",
+        "name": "Huyện Phú Hòa",
+        "name_url": "huyen-phu-hoa"
+      },
+      "704609": {
+        "id": "704609",
+        "name": "Huyện Đông Hòa",
+        "name_url": "huyen-dong-hoa"
+      }
+    },
+    "name_url": "phu-yen",
+    "id": "7046",
+    "areaOrder": [
+      "704601",
+      "704609",
+      "704603",
+      "704608",
+      "704605",
+      "704606",
+      "704607",
+      "704604",
+      "704602"
+    ]
+  },
+  "7047": {
+    "name": "Quảng Ngãi",
+    "area": {
+      "704701": {
+        "id": "704701",
+        "name": "Thành phố Quảng Ngãi",
+        "name_url": "thanh-pho-quang-ngai"
+      },
+      "704702": {
+        "id": "704702",
+        "name": "Huyện Bình Sơn",
+        "name_url": "huyen-binh-son"
+      },
+      "704703": {
+        "id": "704703",
+        "name": "Huyện Trà Bồng",
+        "name_url": "huyen-tra-bong"
+      },
+      "704704": {
+        "id": "704704",
+        "name": "Huyện Tây Trà",
+        "name_url": "huyen-tay-tra"
+      },
+      "704705": {
+        "id": "704705",
+        "name": "Huyện Sơn Tịnh",
+        "name_url": "huyen-son-tinh"
+      },
+      "704706": {
+        "id": "704706",
+        "name": "Huyện Tư Nghĩa",
+        "name_url": "huyen-tu-nghia"
+      },
+      "704707": {
+        "id": "704707",
+        "name": "Huyện Sơn Hà",
+        "name_url": "huyen-son-ha"
+      },
+      "704708": {
+        "id": "704708",
+        "name": "Huyện Sơn Tây",
+        "name_url": "huyen-son-tay"
+      },
+      "704709": {
+        "id": "704709",
+        "name": "Huyện Minh Long",
+        "name_url": "huyen-minh-long"
+      },
+      "704710": {
+        "id": "704710",
+        "name": "Huyện Nghĩa Hành",
+        "name_url": "huyen-nghia-hanh"
+      },
+      "704711": {
+        "id": "704711",
+        "name": "Huyện Mộ Đức",
+        "name_url": "huyen-mo-duc"
+      },
+      "704712": {
+        "id": "704712",
+        "name": "Huyện Đức Phổ",
+        "name_url": "huyen-duc-pho"
+      },
+      "704713": {
+        "id": "704713",
+        "name": "Huyện Ba Tơ",
+        "name_url": "huyen-ba-to"
+      },
+      "704714": {
+        "id": "704714",
+        "name": "Huyện Lý Sơn",
+        "name_url": "huyen-ly-son"
+      }
+    },
+    "name_url": "quang-ngai",
+    "id": "7047",
+    "areaOrder": [
+      "704701",
+      "704713",
+      "704702",
+      "704712",
+      "704714",
+      "704709",
+      "704711",
+      "704710",
+      "704707",
+      "704708",
+      "704705",
+      "704704",
+      "704703",
+      "704706"
+    ]
+  },
+  "8049": {
+    "name": "Hà Tĩnh",
+    "area": {
+      "804901": {
+        "id": "804901",
+        "name": "Thành phố Hà Tĩnh",
+        "name_url": "thanh-pho-ha-tinh"
+      },
+      "804902": {
+        "id": "804902",
+        "name": "Thị xã Hồng Lĩnh",
+        "name_url": "thi-xa-hong-linh"
+      },
+      "804903": {
+        "id": "804903",
+        "name": "Huyện Hương Sơn",
+        "name_url": "huyen-huong-son"
+      },
+      "804904": {
+        "id": "804904",
+        "name": "Huyện Đức Thọ",
+        "name_url": "huyen-duc-tho"
+      },
+      "804905": {
+        "id": "804905",
+        "name": "Huyện Vũ Quang",
+        "name_url": "huyen-vu-quang"
+      },
+      "804906": {
+        "id": "804906",
+        "name": "Huyện Nghi Xuân",
+        "name_url": "huyen-nghi-xuan"
+      },
+      "804907": {
+        "id": "804907",
+        "name": "Huyện Can Lộc",
+        "name_url": "huyen-can-loc"
+      },
+      "804908": {
+        "id": "804908",
+        "name": "Huyện Hương Khê",
+        "name_url": "huyen-huong-khe"
+      },
+      "804909": {
+        "id": "804909",
+        "name": "Huyện Thạch Hà",
+        "name_url": "huyen-thach-ha"
+      },
+      "804910": {
+        "id": "804910",
+        "name": "Huyện Cẩm Xuyên",
+        "name_url": "huyen-cam-xuyen"
+      },
+      "804911": {
+        "id": "804911",
+        "name": "Huyện Kỳ Anh",
+        "name_url": "huyen-ky-anh"
+      },
+      "804912": {
+        "id": "804912",
+        "name": "Huyện Lộc Hà",
+        "name_url": "huyen-loc-ha"
+      },
+      "804913": {
+        "id": "804913",
+        "name": "Thị xã Kỳ Anh",
+        "name_url": "thi-xa-ky-anh"
+      }
+    },
+    "name_url": "ha-tinh",
+    "id": "8049",
+    "areaOrder": [
+      "804901",
+      "804910",
+      "804907",
+      "804904",
+      "804908",
+      "804903",
+      "804911",
+      "804912",
+      "804906",
+      "804909",
+      "804905",
+      "804902",
+      "804913"
+    ]
+  },
+  "8050": {
+    "name": "Nghệ An",
+    "area": {
+      "805001": {
+        "id": "805001",
+        "name": "Thành phố Vinh",
+        "name_url": "thanh-pho-vinh"
+      },
+      "805002": {
+        "id": "805002",
+        "name": "Thị xã Cửa Lò",
+        "name_url": "thi-xa-cua-lo"
+      },
+      "805003": {
+        "id": "805003",
+        "name": "Thị xã Thái Hòa",
+        "name_url": "thi-xa-thai-hoa"
+      },
+      "805004": {
+        "id": "805004",
+        "name": "Huyện Quế Phong",
+        "name_url": "huyen-que-phong"
+      },
+      "805005": {
+        "id": "805005",
+        "name": "Huyện Quỳ Châu",
+        "name_url": "huyen-quy-chau"
+      },
+      "805006": {
+        "id": "805006",
+        "name": "Huyện Kỳ Sơn",
+        "name_url": "huyen-ky-son"
+      },
+      "805007": {
+        "id": "805007",
+        "name": "Huyện Tương Dương",
+        "name_url": "huyen-tuong-duong"
+      },
+      "805008": {
+        "id": "805008",
+        "name": "Huyện Nghĩa Đàn",
+        "name_url": "huyen-nghia-dan"
+      },
+      "805009": {
+        "id": "805009",
+        "name": "Huyện Quỳ Hợp",
+        "name_url": "huyen-quy-hop"
+      },
+      "805010": {
+        "id": "805010",
+        "name": "Huyện Quỳnh Lưu",
+        "name_url": "huyen-quynh-luu"
+      },
+      "805011": {
+        "id": "805011",
+        "name": "Huyện Con Cuông",
+        "name_url": "huyen-con-cuong"
+      },
+      "805012": {
+        "id": "805012",
+        "name": "Huyện Tân Kỳ",
+        "name_url": "huyen-tan-ky"
+      },
+      "805013": {
+        "id": "805013",
+        "name": "Huyện Anh Sơn",
+        "name_url": "huyen-anh-son"
+      },
+      "805014": {
+        "id": "805014",
+        "name": "Huyện Diễn Châu",
+        "name_url": "huyen-dien-chau"
+      },
+      "805015": {
+        "id": "805015",
+        "name": "Huyện Yên Thành",
+        "name_url": "huyen-yen-thanh"
+      },
+      "805016": {
+        "id": "805016",
+        "name": "Huyện Đô Lương",
+        "name_url": "huyen-do-luong"
+      },
+      "805017": {
+        "id": "805017",
+        "name": "Huyện Thanh Chương",
+        "name_url": "huyen-thanh-chuong"
+      },
+      "805018": {
+        "id": "805018",
+        "name": "Huyện Nghi Lộc",
+        "name_url": "huyen-nghi-loc"
+      },
+      "805019": {
+        "id": "805019",
+        "name": "Huyện Nam Đàn",
+        "name_url": "huyen-nam-dan"
+      },
+      "805020": {
+        "id": "805020",
+        "name": "Huyện Hưng Nguyên",
+        "name_url": "huyen-hung-nguyen"
+      },
+      "805021": {
+        "id": "805021",
+        "name": "Thị xã Hoàng Mai",
+        "name_url": "thi-xa-hoang-mai"
+      }
+    },
+    "name_url": "nghe-an",
+    "id": "8050",
+    "areaOrder": [
+      "805001",
+      "805013",
+      "805011",
+      "805014",
+      "805016",
+      "805020",
+      "805006",
+      "805019",
+      "805018",
+      "805008",
+      "805004",
+      "805005",
+      "805009",
+      "805010",
+      "805012",
+      "805017",
+      "805007",
+      "805015",
+      "805002",
+      "805021",
+      "805003"
+    ]
+  },
+  "8051": {
+    "name": "Thanh Hóa",
+    "area": {
+      "805101": {
+        "id": "805101",
+        "name": "Thành phố Thanh Hóa",
+        "name_url": "thanh-pho-thanh-hoa"
+      },
+      "805102": {
+        "id": "805102",
+        "name": "Thị xã Bỉm Sơn",
+        "name_url": "thi-xa-bim-son"
+      },
+      "805103": {
+        "id": "805103",
+        "name": "Thành phố Sầm Sơn",
+        "name_url": "thanh-pho-sam-son"
+      },
+      "805104": {
+        "id": "805104",
+        "name": "Huyện Mường Lát",
+        "name_url": "huyen-muong-lat"
+      },
+      "805105": {
+        "id": "805105",
+        "name": "Huyện Quan Hóa",
+        "name_url": "huyen-quan-hoa"
+      },
+      "805106": {
+        "id": "805106",
+        "name": "Huyện Bá Thước",
+        "name_url": "huyen-ba-thuoc"
+      },
+      "805107": {
+        "id": "805107",
+        "name": "Huyện Quan Sơn",
+        "name_url": "huyen-quan-son"
+      },
+      "805108": {
+        "id": "805108",
+        "name": "Huyện Lang Chánh",
+        "name_url": "huyen-lang-chanh"
+      },
+      "805109": {
+        "id": "805109",
+        "name": "Huyện Ngọc Lặc",
+        "name_url": "huyen-ngoc-lac"
+      },
+      "805110": {
+        "id": "805110",
+        "name": "Huyện Cẩm Thủy",
+        "name_url": "huyen-cam-thuy"
+      },
+      "805111": {
+        "id": "805111",
+        "name": "Huyện Thạch Thành",
+        "name_url": "huyen-thach-thanh"
+      },
+      "805112": {
+        "id": "805112",
+        "name": "Huyện Hà Trung",
+        "name_url": "huyen-ha-trung"
+      },
+      "805113": {
+        "id": "805113",
+        "name": "Huyện Vĩnh Lộc",
+        "name_url": "huyen-vinh-loc"
+      },
+      "805114": {
+        "id": "805114",
+        "name": "Huyện Yên Định",
+        "name_url": "huyen-yen-dinh"
+      },
+      "805115": {
+        "id": "805115",
+        "name": "Huyện Thọ Xuân",
+        "name_url": "huyen-tho-xuan"
+      },
+      "805116": {
+        "id": "805116",
+        "name": "Huyện Thường Xuân",
+        "name_url": "huyen-thuong-xuan"
+      },
+      "805117": {
+        "id": "805117",
+        "name": "Huyện Triệu Sơn",
+        "name_url": "huyen-trieu-son"
+      },
+      "805118": {
+        "id": "805118",
+        "name": "Huyện Thiệu Hóa",
+        "name_url": "huyen-thieu-hoa"
+      },
+      "805119": {
+        "id": "805119",
+        "name": "Huyện Hoằng Hóa",
+        "name_url": "huyen-hoang-hoa"
+      },
+      "805120": {
+        "id": "805120",
+        "name": "Huyện Hậu Lộc",
+        "name_url": "huyen-hau-loc"
+      },
+      "805121": {
+        "id": "805121",
+        "name": "Huyện Nga Sơn",
+        "name_url": "huyen-nga-son"
+      },
+      "805122": {
+        "id": "805122",
+        "name": "Huyện Như Xuân",
+        "name_url": "huyen-nhu-xuan"
+      },
+      "805123": {
+        "id": "805123",
+        "name": "Huyện Như Thanh",
+        "name_url": "huyen-nhu-thanh"
+      },
+      "805124": {
+        "id": "805124",
+        "name": "Huyện Nông Cống",
+        "name_url": "huyen-nong-cong"
+      },
+      "805125": {
+        "id": "805125",
+        "name": "Huyện Đông Sơn",
+        "name_url": "huyen-dong-son"
+      },
+      "805126": {
+        "id": "805126",
+        "name": "Huyện Quảng Xương",
+        "name_url": "huyen-quang-xuong"
+      },
+      "805127": {
+        "id": "805127",
+        "name": "Huyện Tĩnh Gia",
+        "name_url": "huyen-tinh-gia"
+      }
+    },
+    "name_url": "thanh-hoa",
+    "id": "8051",
+    "areaOrder": [
+      "805103",
+      "805101",
+      "805106",
+      "805110",
+      "805125",
+      "805112",
+      "805120",
+      "805119",
+      "805108",
+      "805104",
+      "805121",
+      "805109",
+      "805123",
+      "805122",
+      "805124",
+      "805105",
+      "805107",
+      "805126",
+      "805111",
+      "805118",
+      "805115",
+      "805116",
+      "805127",
+      "805117",
+      "805113",
+      "805114",
+      "805102"
+    ]
+  },
+  "9053": {
+    "name": "Đắk Lắk",
+    "area": {
+      "905301": {
+        "id": "905301",
+        "name": "Thành phố Buôn Ma Thuột",
+        "name_url": "thanh-pho-buon-ma-thuot"
+      },
+      "905302": {
+        "id": "905302",
+        "name": "Thị Xã Buôn Hồ",
+        "name_url": "thi-xa-buon-ho"
+      },
+      "905303": {
+        "id": "905303",
+        "name": "Huyện Ea H'leo",
+        "name_url": "huyen-ea-h-leo"
+      },
+      "905304": {
+        "id": "905304",
+        "name": "Huyện Ea Súp",
+        "name_url": "huyen-ea-sup"
+      },
+      "905305": {
+        "id": "905305",
+        "name": "Huyện Buôn Đôn",
+        "name_url": "huyen-buon-don"
+      },
+      "905306": {
+        "id": "905306",
+        "name": "Huyện Cư M'gar",
+        "name_url": "huyen-cu-m-gar"
+      },
+      "905307": {
+        "id": "905307",
+        "name": "Huyện Krông Búk",
+        "name_url": "huyen-krong-buk"
+      },
+      "905308": {
+        "id": "905308",
+        "name": "Huyện Krông Năng",
+        "name_url": "huyen-krong-nang"
+      },
+      "905309": {
+        "id": "905309",
+        "name": "Huyện Ea Kar",
+        "name_url": "huyen-ea-kar"
+      },
+      "905310": {
+        "id": "905310",
+        "name": "Huyện M'Đrắk",
+        "name_url": "huyen-m-drak"
+      },
+      "905311": {
+        "id": "905311",
+        "name": "Huyện Krông Bông",
+        "name_url": "huyen-krong-bong"
+      },
+      "905312": {
+        "id": "905312",
+        "name": "Huyện Krông Pắc",
+        "name_url": "huyen-krong-pac"
+      },
+      "905313": {
+        "id": "905313",
+        "name": "Huyện Krông A Na",
+        "name_url": "huyen-krong-a-na"
+      },
+      "905314": {
+        "id": "905314",
+        "name": "Huyện Lắk",
+        "name_url": "huyen-lak"
+      },
+      "905315": {
+        "id": "905315",
+        "name": "Huyện Cư Kuin",
+        "name_url": "huyen-cu-kuin"
+      }
+    },
+    "name_url": "dak-lak",
+    "id": "9053",
+    "areaOrder": [
+      "905301",
+      "905305",
+      "905315",
+      "905306",
+      "905303",
+      "905309",
+      "905304",
+      "905313",
+      "905311",
+      "905307",
+      "905308",
+      "905312",
+      "905314",
+      "905310",
+      "905302"
+    ]
+  },
+  "9054": {
+    "name": "Đắk Nông",
+    "area": {
+      "905401": {
+        "id": "905401",
+        "name": "Thị xã Gia Nghĩa",
+        "name_url": "thi-xa-gia-nghia"
+      },
+      "905402": {
+        "id": "905402",
+        "name": "Huyện Đăk Glong",
+        "name_url": "huyen-dak-glong"
+      },
+      "905403": {
+        "id": "905403",
+        "name": "Huyện Cư Jút",
+        "name_url": "huyen-cu-jut"
+      },
+      "905404": {
+        "id": "905404",
+        "name": "Huyện Đắk Mil",
+        "name_url": "huyen-dak-mil"
+      },
+      "905405": {
+        "id": "905405",
+        "name": "Huyện Krông Nô",
+        "name_url": "huyen-krong-no"
+      },
+      "905406": {
+        "id": "905406",
+        "name": "Huyện Đắk Song",
+        "name_url": "huyen-dak-song"
+      },
+      "905407": {
+        "id": "905407",
+        "name": "Huyện Đắk R'Lấp",
+        "name_url": "huyen-dak-r-lap"
+      },
+      "905408": {
+        "id": "905408",
+        "name": "Huyện Tuy Đức",
+        "name_url": "huyen-tuy-duc"
+      }
+    },
+    "name_url": "dak-nong",
+    "id": "9054",
+    "areaOrder": [
+      "905403",
+      "905402",
+      "905404",
+      "905407",
+      "905406",
+      "905405",
+      "905408",
+      "905401"
+    ]
+  },
+  "9055": {
+    "name": "Kon Tum",
+    "area": {
+      "905501": {
+        "id": "905501",
+        "name": "Thành phố Kon Tum",
+        "name_url": "thanh-pho-kon-tum"
+      },
+      "905502": {
+        "id": "905502",
+        "name": "Huyện Đắk Glei",
+        "name_url": "huyen-dak-glei"
+      },
+      "905503": {
+        "id": "905503",
+        "name": "Huyện Ngọc Hồi",
+        "name_url": "huyen-ngoc-hoi"
+      },
+      "905504": {
+        "id": "905504",
+        "name": "Huyện Đắk Tô",
+        "name_url": "huyen-dak-to"
+      },
+      "905505": {
+        "id": "905505",
+        "name": "Huyện Kon Plông",
+        "name_url": "huyen-kon-plong"
+      },
+      "905506": {
+        "id": "905506",
+        "name": "Huyện Kon Rẫy",
+        "name_url": "huyen-kon-ray"
+      },
+      "905507": {
+        "id": "905507",
+        "name": "Huyện Đắk Hà",
+        "name_url": "huyen-dak-ha"
+      },
+      "905508": {
+        "id": "905508",
+        "name": "Huyện Sa Thầy",
+        "name_url": "huyen-sa-thay"
+      },
+      "905509": {
+        "id": "905509",
+        "name": "Huyện Tu Mơ Rông",
+        "name_url": "huyen-tu-mo-rong"
+      },
+      "905510": {
+        "id": "905510",
+        "name": "Huyện Ia H' Drai",
+        "name_url": "huyen-ia-h-drai"
+      }
+    },
+    "name_url": "kon-tum",
+    "id": "9055",
+    "areaOrder": [
+      "905501",
+      "905502",
+      "905507",
+      "905504",
+      "905510",
+      "905505",
+      "905506",
+      "905503",
+      "905508",
+      "905509"
+    ]
+  },
+  "9056": {
+    "name": "Gia Lai",
+    "area": {
+      "905601": {
+        "id": "905601",
+        "name": "Thành phố Pleiku",
+        "name_url": "thanh-pho-pleiku"
+      },
+      "905602": {
+        "id": "905602",
+        "name": "Thị xã An Khê",
+        "name_url": "thi-xa-an-khe"
+      },
+      "905603": {
+        "id": "905603",
+        "name": "Thị xã Ayun Pa",
+        "name_url": "thi-xa-ayun-pa"
+      },
+      "905604": {
+        "id": "905604",
+        "name": "Huyện KBang",
+        "name_url": "huyen-kbang"
+      },
+      "905605": {
+        "id": "905605",
+        "name": "Huyện Đăk Đoa",
+        "name_url": "huyen-dak-doa"
+      },
+      "905606": {
+        "id": "905606",
+        "name": "Huyện Chư Păh",
+        "name_url": "huyen-chu-pah"
+      },
+      "905607": {
+        "id": "905607",
+        "name": "Huyện Ia Grai",
+        "name_url": "huyen-ia-grai"
+      },
+      "905608": {
+        "id": "905608",
+        "name": "Huyện Mang Yang",
+        "name_url": "huyen-mang-yang"
+      },
+      "905609": {
+        "id": "905609",
+        "name": "Huyện Kông Chro",
+        "name_url": "huyen-kong-chro"
+      },
+      "905610": {
+        "id": "905610",
+        "name": "Huyện Đức Cơ",
+        "name_url": "huyen-duc-co"
+      },
+      "905611": {
+        "id": "905611",
+        "name": "Huyện Chư Prông",
+        "name_url": "huyen-chu-prong"
+      },
+      "905612": {
+        "id": "905612",
+        "name": "Huyện Chư Sê",
+        "name_url": "huyen-chu-se"
+      },
+      "905613": {
+        "id": "905613",
+        "name": "Huyện Đăk Pơ",
+        "name_url": "huyen-dak-po"
+      },
+      "905614": {
+        "id": "905614",
+        "name": "Huyện Ia Pa",
+        "name_url": "huyen-ia-pa"
+      },
+      "905615": {
+        "id": "905615",
+        "name": "Huyện Krông Pa",
+        "name_url": "huyen-krong-pa"
+      },
+      "905616": {
+        "id": "905616",
+        "name": "Huyện Phú Thiện",
+        "name_url": "huyen-phu-thien"
+      },
+      "905617": {
+        "id": "905617",
+        "name": "Huyện Chư Pưh",
+        "name_url": "huyen-chu-puh"
+      }
+    },
+    "name_url": "gia-lai",
+    "id": "9056",
+    "areaOrder": [
+      "905601",
+      "905606",
+      "905611",
+      "905617",
+      "905612",
+      "905605",
+      "905613",
+      "905610",
+      "905607",
+      "905614",
+      "905604",
+      "905609",
+      "905615",
+      "905608",
+      "905616",
+      "905602",
+      "905603"
+    ]
+  },
+  "9057": {
+    "name": "Lâm Đồng",
+    "area": {
+      "905701": {
+        "id": "905701",
+        "name": "Thành phố Đà Lạt",
+        "name_url": "thanh-pho-da-lat"
+      },
+      "905702": {
+        "id": "905702",
+        "name": "Thành phố Bảo Lộc",
+        "name_url": "thanh-pho-bao-loc"
+      },
+      "905703": {
+        "id": "905703",
+        "name": "Huyện Đam Rông",
+        "name_url": "huyen-dam-rong"
+      },
+      "905704": {
+        "id": "905704",
+        "name": "Huyện Lạc Dương",
+        "name_url": "huyen-lac-duong"
+      },
+      "905705": {
+        "id": "905705",
+        "name": "Huyện Lâm Hà",
+        "name_url": "huyen-lam-ha"
+      },
+      "905706": {
+        "id": "905706",
+        "name": "Huyện Đơn Dương",
+        "name_url": "huyen-don-duong"
+      },
+      "905707": {
+        "id": "905707",
+        "name": "Huyện Đức Trọng",
+        "name_url": "huyen-duc-trong"
+      },
+      "905708": {
+        "id": "905708",
+        "name": "Huyện Di Linh",
+        "name_url": "huyen-di-linh"
+      },
+      "905709": {
+        "id": "905709",
+        "name": "Huyện Bảo Lâm",
+        "name_url": "huyen-bao-lam"
+      },
+      "905710": {
+        "id": "905710",
+        "name": "Huyện Đạ Huoai",
+        "name_url": "huyen-da-huoai"
+      },
+      "905711": {
+        "id": "905711",
+        "name": "Huyện Đạ Tẻh",
+        "name_url": "huyen-da-teh"
+      },
+      "905712": {
+        "id": "905712",
+        "name": "Huyện Cát Tiên",
+        "name_url": "huyen-cat-tien"
+      }
+    },
+    "name_url": "lam-dong",
+    "id": "9057",
+    "areaOrder": [
+      "905702",
+      "905701",
+      "905709",
+      "905712",
+      "905710",
+      "905711",
+      "905703",
+      "905708",
+      "905706",
+      "905707",
+      "905704",
+      "905705"
+    ]
+  },
+  "10059": {
+    "name": "Bắc Kạn",
+    "area": {
+      "1005901": {
+        "id": "1005901",
+        "name": "Thành Phố Bắc Kạn",
+        "name_url": "thanh-pho-bac-kan"
+      },
+      "1005902": {
+        "id": "1005902",
+        "name": "Huyện Pác Nặm",
+        "name_url": "huyen-pac-nam"
+      },
+      "1005903": {
+        "id": "1005903",
+        "name": "Huyện Ba Bể",
+        "name_url": "huyen-ba-be"
+      },
+      "1005904": {
+        "id": "1005904",
+        "name": "Huyện Ngân Sơn",
+        "name_url": "huyen-ngan-son"
+      },
+      "1005905": {
+        "id": "1005905",
+        "name": "Huyện Bạch Thông",
+        "name_url": "huyen-bach-thong"
+      },
+      "1005906": {
+        "id": "1005906",
+        "name": "Huyện Chợ Đồn",
+        "name_url": "huyen-cho-don"
+      },
+      "1005907": {
+        "id": "1005907",
+        "name": "Huyện Chợ Mới",
+        "name_url": "huyen-cho-moi"
+      },
+      "1005908": {
+        "id": "1005908",
+        "name": "Huyện Na Rì",
+        "name_url": "huyen-na-ri"
+      }
+    },
+    "name_url": "bac-kan",
+    "id": "10059",
+    "areaOrder": [
+      "1005903",
+      "1005905",
+      "1005906",
+      "1005907",
+      "1005908",
+      "1005904",
+      "1005902",
+      "1005901"
+    ]
+  },
+  "10060": {
+    "name": "Bắc Giang",
+    "area": {
+      "1006001": {
+        "id": "1006001",
+        "name": "Thành phố Bắc Giang",
+        "name_url": "thanh-pho-bac-giang"
+      },
+      "1006002": {
+        "id": "1006002",
+        "name": "Huyện Yên Thế",
+        "name_url": "huyen-yen-the"
+      },
+      "1006003": {
+        "id": "1006003",
+        "name": "Huyện Tân Yên",
+        "name_url": "huyen-tan-yen"
+      },
+      "1006004": {
+        "id": "1006004",
+        "name": "Huyện Lạng Giang",
+        "name_url": "huyen-lang-giang"
+      },
+      "1006005": {
+        "id": "1006005",
+        "name": "Huyện Lục Nam",
+        "name_url": "huyen-luc-nam"
+      },
+      "1006006": {
+        "id": "1006006",
+        "name": "Huyện Lục Ngạn",
+        "name_url": "huyen-luc-ngan"
+      },
+      "1006007": {
+        "id": "1006007",
+        "name": "Huyện Sơn Động",
+        "name_url": "huyen-son-dong"
+      },
+      "1006008": {
+        "id": "1006008",
+        "name": "Huyện Yên Dũng",
+        "name_url": "huyen-yen-dung"
+      },
+      "1006009": {
+        "id": "1006009",
+        "name": "Huyện Việt Yên",
+        "name_url": "huyen-viet-yen"
+      },
+      "1006010": {
+        "id": "1006010",
+        "name": "Huyện Hiệp Hòa",
+        "name_url": "huyen-hiep-hoa"
+      }
+    },
+    "name_url": "bac-giang",
+    "id": "10060",
+    "areaOrder": [
+      "1006001",
+      "1006010",
+      "1006004",
+      "1006005",
+      "1006006",
+      "1006007",
+      "1006003",
+      "1006009",
+      "1006008",
+      "1006002"
+    ]
+  },
+  "10061": {
+    "name": "Cao Bằng",
+    "area": {
+      "1006101": {
+        "id": "1006101",
+        "name": "Thành phố Cao Bằng",
+        "name_url": "thanh-pho-cao-bang"
+      },
+      "1006102": {
+        "id": "1006102",
+        "name": "Huyện Bảo Lâm",
+        "name_url": "huyen-bao-lam"
+      },
+      "1006103": {
+        "id": "1006103",
+        "name": "Huyện Bảo Lạc",
+        "name_url": "huyen-bao-lac"
+      },
+      "1006104": {
+        "id": "1006104",
+        "name": "Huyện Thông Nông",
+        "name_url": "huyen-thong-nong"
+      },
+      "1006105": {
+        "id": "1006105",
+        "name": "Huyện Hà Quảng",
+        "name_url": "huyen-ha-quang"
+      },
+      "1006106": {
+        "id": "1006106",
+        "name": "Huyện Trà Lĩnh",
+        "name_url": "huyen-tra-linh"
+      },
+      "1006107": {
+        "id": "1006107",
+        "name": "Huyện Trùng Khánh",
+        "name_url": "huyen-trung-khanh"
+      },
+      "1006108": {
+        "id": "1006108",
+        "name": "Huyện Hạ Lang",
+        "name_url": "huyen-ha-lang"
+      },
+      "1006109": {
+        "id": "1006109",
+        "name": "Huyện Quảng Uyên",
+        "name_url": "huyen-quang-uyen"
+      },
+      "1006110": {
+        "id": "1006110",
+        "name": "Huyện Phục Hòa",
+        "name_url": "huyen-phuc-hoa"
+      },
+      "1006111": {
+        "id": "1006111",
+        "name": "Huyện Hòa An",
+        "name_url": "huyen-hoa-an"
+      },
+      "1006112": {
+        "id": "1006112",
+        "name": "Huyện Nguyên Bình",
+        "name_url": "huyen-nguyen-binh"
+      },
+      "1006113": {
+        "id": "1006113",
+        "name": "Huyện Thạch An",
+        "name_url": "huyen-thach-an"
+      }
+    },
+    "name_url": "cao-bang",
+    "id": "10061",
+    "areaOrder": [
+      "1006101",
+      "1006103",
+      "1006102",
+      "1006108",
+      "1006105",
+      "1006111",
+      "1006112",
+      "1006110",
+      "1006109",
+      "1006113",
+      "1006104",
+      "1006106",
+      "1006107"
+    ]
+  },
+  "10062": {
+    "name": "Hà Giang",
+    "area": {
+      "1006201": {
+        "id": "1006201",
+        "name": "Thành phố Hà Giang",
+        "name_url": "thanh-pho-ha-giang"
+      },
+      "1006202": {
+        "id": "1006202",
+        "name": "Huyện Đồng Văn",
+        "name_url": "huyen-dong-van"
+      },
+      "1006203": {
+        "id": "1006203",
+        "name": "Huyện Mèo Vạc",
+        "name_url": "huyen-meo-vac"
+      },
+      "1006204": {
+        "id": "1006204",
+        "name": "Huyện Yên Minh",
+        "name_url": "huyen-yen-minh"
+      },
+      "1006205": {
+        "id": "1006205",
+        "name": "Huyện Quản Bạ",
+        "name_url": "huyen-quan-ba"
+      },
+      "1006206": {
+        "id": "1006206",
+        "name": "Huyện Vị Xuyên",
+        "name_url": "huyen-vi-xuyen"
+      },
+      "1006207": {
+        "id": "1006207",
+        "name": "Huyện Bắc Mê",
+        "name_url": "huyen-bac-me"
+      },
+      "1006208": {
+        "id": "1006208",
+        "name": "Huyện Hoàng Su Phì",
+        "name_url": "huyen-hoang-su-phi"
+      },
+      "1006209": {
+        "id": "1006209",
+        "name": "Huyện Xín Mần",
+        "name_url": "huyen-xin-man"
+      },
+      "1006210": {
+        "id": "1006210",
+        "name": "Huyện Bắc Quang",
+        "name_url": "huyen-bac-quang"
+      },
+      "1006211": {
+        "id": "1006211",
+        "name": "Huyện Quang Bình",
+        "name_url": "huyen-quang-binh"
+      }
+    },
+    "name_url": "ha-giang",
+    "id": "10062",
+    "areaOrder": [
+      "1006201",
+      "1006207",
+      "1006210",
+      "1006202",
+      "1006208",
+      "1006203",
+      "1006205",
+      "1006211",
+      "1006206",
+      "1006209",
+      "1006204"
+    ]
+  },
+  "10063": {
+    "name": "Lạng Sơn",
+    "area": {
+      "1006301": {
+        "id": "1006301",
+        "name": "Thành phố Lạng Sơn",
+        "name_url": "thanh-pho-lang-son"
+      },
+      "1006302": {
+        "id": "1006302",
+        "name": "Huyện Tràng Định",
+        "name_url": "huyen-trang-dinh"
+      },
+      "1006303": {
+        "id": "1006303",
+        "name": "Huyện Bình Gia",
+        "name_url": "huyen-binh-gia"
+      },
+      "1006304": {
+        "id": "1006304",
+        "name": "Huyện Văn Lãng",
+        "name_url": "huyen-van-lang"
+      },
+      "1006305": {
+        "id": "1006305",
+        "name": "Huyện Cao Lộc",
+        "name_url": "huyen-cao-loc"
+      },
+      "1006306": {
+        "id": "1006306",
+        "name": "Huyện Văn Quan",
+        "name_url": "huyen-van-quan"
+      },
+      "1006307": {
+        "id": "1006307",
+        "name": "Huyện Bắc Sơn",
+        "name_url": "huyen-bac-son"
+      },
+      "1006308": {
+        "id": "1006308",
+        "name": "Huyện Hữu Lũng",
+        "name_url": "huyen-huu-lung"
+      },
+      "1006309": {
+        "id": "1006309",
+        "name": "Huyện Chi Lăng",
+        "name_url": "huyen-chi-lang"
+      },
+      "1006310": {
+        "id": "1006310",
+        "name": "Huyện Lộc Bình",
+        "name_url": "huyen-loc-binh"
+      },
+      "1006311": {
+        "id": "1006311",
+        "name": "Huyện Đình Lập",
+        "name_url": "huyen-dinh-lap"
+      }
+    },
+    "name_url": "lang-son",
+    "id": "10063",
+    "areaOrder": [
+      "1006301",
+      "1006307",
+      "1006303",
+      "1006305",
+      "1006309",
+      "1006311",
+      "1006308",
+      "1006310",
+      "1006302",
+      "1006304",
+      "1006306"
+    ]
+  },
+  "10064": {
+    "name": "Thái Nguyên",
+    "area": {
+      "1006401": {
+        "id": "1006401",
+        "name": "Thành phố Thái Nguyên",
+        "name_url": "thanh-pho-thai-nguyen"
+      },
+      "1006402": {
+        "id": "1006402",
+        "name": "Thành phố Sông Công",
+        "name_url": "thanh-pho-song-cong"
+      },
+      "1006403": {
+        "id": "1006403",
+        "name": "Huyện Định Hóa",
+        "name_url": "huyen-dinh-hoa"
+      },
+      "1006404": {
+        "id": "1006404",
+        "name": "Huyện Phú Lương",
+        "name_url": "huyen-phu-luong"
+      },
+      "1006405": {
+        "id": "1006405",
+        "name": "Huyện Đồng Hỷ",
+        "name_url": "huyen-dong-hy"
+      },
+      "1006406": {
+        "id": "1006406",
+        "name": "Huyện Võ Nhai",
+        "name_url": "huyen-vo-nhai"
+      },
+      "1006407": {
+        "id": "1006407",
+        "name": "Huyện Đại Từ",
+        "name_url": "huyen-dai-tu"
+      },
+      "1006408": {
+        "id": "1006408",
+        "name": "Thị xã Phổ Yên",
+        "name_url": "thi-xa-pho-yen"
+      },
+      "1006409": {
+        "id": "1006409",
+        "name": "Huyện Phú Bình",
+        "name_url": "huyen-phu-binh"
+      }
+    },
+    "name_url": "thai-nguyen",
+    "id": "10064",
+    "areaOrder": [
+      "1006402",
+      "1006401",
+      "1006407",
+      "1006403",
+      "1006405",
+      "1006409",
+      "1006404",
+      "1006406",
+      "1006408"
+    ]
+  },
+  "10065": {
+    "name": "Tuyên Quang",
+    "area": {
+      "1006501": {
+        "id": "1006501",
+        "name": "Thành phố Tuyên Quang",
+        "name_url": "thanh-pho-tuyen-quang"
+      },
+      "1006502": {
+        "id": "1006502",
+        "name": "Huyện Lâm Bình",
+        "name_url": "huyen-lam-binh"
+      },
+      "1006503": {
+        "id": "1006503",
+        "name": "Huyện Nà Hang",
+        "name_url": "huyen-na-hang"
+      },
+      "1006504": {
+        "id": "1006504",
+        "name": "Huyện Chiêm Hóa",
+        "name_url": "huyen-chiem-hoa"
+      },
+      "1006505": {
+        "id": "1006505",
+        "name": "Huyện Hàm Yên",
+        "name_url": "huyen-ham-yen"
+      },
+      "1006506": {
+        "id": "1006506",
+        "name": "Huyện Yên Sơn",
+        "name_url": "huyen-yen-son"
+      },
+      "1006507": {
+        "id": "1006507",
+        "name": "Huyện Sơn Dương",
+        "name_url": "huyen-son-duong"
+      }
+    },
+    "name_url": "tuyen-quang",
+    "id": "10065",
+    "areaOrder": [
+      "1006501",
+      "1006504",
+      "1006505",
+      "1006502",
+      "1006503",
+      "1006507",
+      "1006506"
+    ]
+  },
+  "10130": {
+    "name": "Quảng Ninh",
+    "area": {
+      "1013001": {
+        "id": "1013001",
+        "name": "Thành phố Hạ Long",
+        "name_url": "thanh-pho-ha-long"
+      },
+      "1013002": {
+        "id": "1013002",
+        "name": "Thành phố Móng Cái",
+        "name_url": "thanh-pho-mong-cai"
+      },
+      "1013003": {
+        "id": "1013003",
+        "name": "Thành phố Cẩm Phả",
+        "name_url": "thanh-pho-cam-pha"
+      },
+      "1013004": {
+        "id": "1013004",
+        "name": "Thành phố Uông Bí",
+        "name_url": "thanh-pho-uong-bi"
+      },
+      "1013005": {
+        "id": "1013005",
+        "name": "Huyện Bình Liêu",
+        "name_url": "huyen-binh-lieu"
+      },
+      "1013006": {
+        "id": "1013006",
+        "name": "Huyện Tiên Yên",
+        "name_url": "huyen-tien-yen"
+      },
+      "1013007": {
+        "id": "1013007",
+        "name": "Huyện Đầm Hà",
+        "name_url": "huyen-dam-ha"
+      },
+      "1013008": {
+        "id": "1013008",
+        "name": "Huyện Hải Hà",
+        "name_url": "huyen-hai-ha"
+      },
+      "1013009": {
+        "id": "1013009",
+        "name": "Huyện Ba Chẽ",
+        "name_url": "huyen-ba-che"
+      },
+      "1013010": {
+        "id": "1013010",
+        "name": "Huyện Vân Đồn",
+        "name_url": "huyen-van-don"
+      },
+      "1013011": {
+        "id": "1013011",
+        "name": "Huyện Hoành Bồ",
+        "name_url": "huyen-hoanh-bo"
+      },
+      "1013012": {
+        "id": "1013012",
+        "name": "Thị xã Đông Triều",
+        "name_url": "thi-xa-dong-trieu"
+      },
+      "1013013": {
+        "id": "1013013",
+        "name": "Thị xã Quảng Yên",
+        "name_url": "thi-xa-quang-yen"
+      },
+      "1013014": {
+        "id": "1013014",
+        "name": "Huyện Cô Tô",
+        "name_url": "huyen-co-to"
+      }
+    },
+    "name_url": "quang-ninh",
+    "id": "10130",
+    "areaOrder": [
+      "1013003",
+      "1013001",
+      "1013002",
+      "1013004",
+      "1013009",
+      "1013005",
+      "1013014",
+      "1013007",
+      "1013008",
+      "1013011",
+      "1013006",
+      "1013010",
+      "1013012",
+      "1013013"
+    ]
+  },
+  "11067": {
+    "name": "Điện Biên",
+    "area": {
+      "1106701": {
+        "id": "1106701",
+        "name": "Thành phố Điện Biên Phủ",
+        "name_url": "thanh-pho-dien-bien-phu"
+      },
+      "1106702": {
+        "id": "1106702",
+        "name": "Thị Xã Mường Lay",
+        "name_url": "thi-xa-muong-lay"
+      },
+      "1106703": {
+        "id": "1106703",
+        "name": "Huyện Mường Nhé",
+        "name_url": "huyen-muong-nhe"
+      },
+      "1106704": {
+        "id": "1106704",
+        "name": "Huyện Mường Chà",
+        "name_url": "huyen-muong-cha"
+      },
+      "1106705": {
+        "id": "1106705",
+        "name": "Huyện Tủa Chùa",
+        "name_url": "huyen-tua-chua"
+      },
+      "1106706": {
+        "id": "1106706",
+        "name": "Huyện Tuần Giáo",
+        "name_url": "huyen-tuan-giao"
+      },
+      "1106707": {
+        "id": "1106707",
+        "name": "Huyện Điện Biên",
+        "name_url": "huyen-dien-bien"
+      },
+      "1106708": {
+        "id": "1106708",
+        "name": "Huyện Điện Biên Đông",
+        "name_url": "huyen-dien-bien-dong"
+      },
+      "1106709": {
+        "id": "1106709",
+        "name": "Huyện Mường Ảng",
+        "name_url": "huyen-muong-ang"
+      },
+      "1106710": {
+        "id": "1106710",
+        "name": "Huyện Nậm Pồ",
+        "name_url": "huyen-nam-po"
+      }
+    },
+    "name_url": "dien-bien",
+    "id": "11067",
+    "areaOrder": [
+      "1106701",
+      "1106707",
+      "1106708",
+      "1106709",
+      "1106704",
+      "1106703",
+      "1106710",
+      "1106705",
+      "1106706",
+      "1106702"
+    ]
+  },
+  "11068": {
+    "name": "Lai Châu",
+    "area": {
+      "1106801": {
+        "id": "1106801",
+        "name": "Thành phố Lai Châu",
+        "name_url": "thanh-pho-lai-chau"
+      },
+      "1106802": {
+        "id": "1106802",
+        "name": "Huyện Tam Đường",
+        "name_url": "huyen-tam-duong"
+      },
+      "1106803": {
+        "id": "1106803",
+        "name": "Huyện Mường Tè",
+        "name_url": "huyen-muong-te"
+      },
+      "1106804": {
+        "id": "1106804",
+        "name": "Huyện Sìn Hồ",
+        "name_url": "huyen-sin-ho"
+      },
+      "1106805": {
+        "id": "1106805",
+        "name": "Huyện Phong Thổ",
+        "name_url": "huyen-phong-tho"
+      },
+      "1106806": {
+        "id": "1106806",
+        "name": "Huyện Than Uyên",
+        "name_url": "huyen-than-uyen"
+      },
+      "1106807": {
+        "id": "1106807",
+        "name": "Huyện Tân Uyên",
+        "name_url": "huyen-tan-uyen"
+      },
+      "1106808": {
+        "id": "1106808",
+        "name": "Huyện Nậm Nhùn",
+        "name_url": "huyen-nam-nhun"
+      }
+    },
+    "name_url": "lai-chau",
+    "id": "11068",
+    "areaOrder": [
+      "1106801",
+      "1106803",
+      "1106808",
+      "1106805",
+      "1106804",
+      "1106802",
+      "1106807",
+      "1106806"
+    ]
+  },
+  "11069": {
+    "name": "Lào Cai",
+    "area": {
+      "1106901": {
+        "id": "1106901",
+        "name": "Thành phố Lào Cai",
+        "name_url": "thanh-pho-lao-cai"
+      },
+      "1106902": {
+        "id": "1106902",
+        "name": "Huyện Bát Xát",
+        "name_url": "huyen-bat-xat"
+      },
+      "1106903": {
+        "id": "1106903",
+        "name": "Huyện Mường Khương",
+        "name_url": "huyen-muong-khuong"
+      },
+      "1106904": {
+        "id": "1106904",
+        "name": "Huyện Si Ma Cai",
+        "name_url": "huyen-si-ma-cai"
+      },
+      "1106905": {
+        "id": "1106905",
+        "name": "Huyện Bắc Hà",
+        "name_url": "huyen-bac-ha"
+      },
+      "1106906": {
+        "id": "1106906",
+        "name": "Huyện Bảo Thắng",
+        "name_url": "huyen-bao-thang"
+      },
+      "1106907": {
+        "id": "1106907",
+        "name": "Huyện Bảo Yên",
+        "name_url": "huyen-bao-yen"
+      },
+      "1106908": {
+        "id": "1106908",
+        "name": "Huyện Sa Pa",
+        "name_url": "huyen-sa-pa"
+      },
+      "1106909": {
+        "id": "1106909",
+        "name": "Huyện Văn Bàn",
+        "name_url": "huyen-van-ban"
+      }
+    },
+    "name_url": "lao-cai",
+    "id": "11069",
+    "areaOrder": [
+      "1106901",
+      "1106905",
+      "1106906",
+      "1106907",
+      "1106902",
+      "1106903",
+      "1106908",
+      "1106904",
+      "1106909"
+    ]
+  },
+  "11070": {
+    "name": "Sơn La",
+    "area": {
+      "1107001": {
+        "id": "1107001",
+        "name": "Thành phố Sơn La",
+        "name_url": "thanh-pho-son-la"
+      },
+      "1107002": {
+        "id": "1107002",
+        "name": "Huyện Quỳnh Nhai",
+        "name_url": "huyen-quynh-nhai"
+      },
+      "1107003": {
+        "id": "1107003",
+        "name": "Huyện Thuận Châu",
+        "name_url": "huyen-thuan-chau"
+      },
+      "1107004": {
+        "id": "1107004",
+        "name": "Huyện Mường La",
+        "name_url": "huyen-muong-la"
+      },
+      "1107005": {
+        "id": "1107005",
+        "name": "Huyện Bắc Yên",
+        "name_url": "huyen-bac-yen"
+      },
+      "1107006": {
+        "id": "1107006",
+        "name": "Huyện Phù Yên",
+        "name_url": "huyen-phu-yen"
+      },
+      "1107007": {
+        "id": "1107007",
+        "name": "Huyện Mộc Châu",
+        "name_url": "huyen-moc-chau"
+      },
+      "1107008": {
+        "id": "1107008",
+        "name": "Huyện Yên Châu",
+        "name_url": "huyen-yen-chau"
+      },
+      "1107009": {
+        "id": "1107009",
+        "name": "Huyện Mai Sơn",
+        "name_url": "huyen-mai-son"
+      },
+      "1107010": {
+        "id": "1107010",
+        "name": "Huyện Sông Mã",
+        "name_url": "huyen-song-ma"
+      },
+      "1107011": {
+        "id": "1107011",
+        "name": "Huyện Sốp Cộp",
+        "name_url": "huyen-sop-cop"
+      },
+      "1107012": {
+        "id": "1107012",
+        "name": "Huyện Vân Hồ",
+        "name_url": "huyen-van-ho"
+      }
+    },
+    "name_url": "son-la",
+    "id": "11070",
+    "areaOrder": [
+      "1107001",
+      "1107005",
+      "1107009",
+      "1107007",
+      "1107004",
+      "1107006",
+      "1107002",
+      "1107010",
+      "1107011",
+      "1107003",
+      "1107012",
+      "1107008"
+    ]
+  },
+  "11071": {
+    "name": "Yên Bái",
+    "area": {
+      "1107101": {
+        "id": "1107101",
+        "name": "Thành phố Yên Bái",
+        "name_url": "thanh-pho-yen-bai"
+      },
+      "1107102": {
+        "id": "1107102",
+        "name": "Thị xã Nghĩa Lộ",
+        "name_url": "thi-xa-nghia-lo"
+      },
+      "1107103": {
+        "id": "1107103",
+        "name": "Huyện Lục Yên",
+        "name_url": "huyen-luc-yen"
+      },
+      "1107104": {
+        "id": "1107104",
+        "name": "Huyện Văn Yên",
+        "name_url": "huyen-van-yen"
+      },
+      "1107105": {
+        "id": "1107105",
+        "name": "Huyện Mù Căng Chải",
+        "name_url": "huyen-mu-cang-chai"
+      },
+      "1107106": {
+        "id": "1107106",
+        "name": "Huyện Trấn Yên",
+        "name_url": "huyen-tran-yen"
+      },
+      "1107107": {
+        "id": "1107107",
+        "name": "Huyện Trạm Tấu",
+        "name_url": "huyen-tram-tau"
+      },
+      "1107108": {
+        "id": "1107108",
+        "name": "Huyện Văn Chấn",
+        "name_url": "huyen-van-chan"
+      },
+      "1107109": {
+        "id": "1107109",
+        "name": "Huyện Yên Bình",
+        "name_url": "huyen-yen-binh"
+      }
+    },
+    "name_url": "yen-bai",
+    "id": "11071",
+    "areaOrder": [
+      "1107101",
+      "1107103",
+      "1107105",
+      "1107107",
+      "1107106",
+      "1107108",
+      "1107104",
+      "1107109",
+      "1107102"
+    ]
+  },
+  "12000": {
+    "name": "Hà Nội",
+    "area": {
+      "12073": {
+        "id": "12073",
+        "name": "Quận Hoàn Kiếm",
+        "name_url": "quan-hoan-kiem"
+      },
+      "12074": {
+        "id": "12074",
+        "name": "Quận Ba Đình",
+        "name_url": "quan-ba-dinh"
+      },
+      "12075": {
+        "id": "12075",
+        "name": "Quận Đống Đa",
+        "name_url": "quan-dong-da"
+      },
+      "12076": {
+        "id": "12076",
+        "name": "Quận Hai Bà Trưng",
+        "name_url": "quan-hai-ba-trung"
+      },
+      "12077": {
+        "id": "12077",
+        "name": "Quận Thanh Xuân",
+        "name_url": "quan-thanh-xuan"
+      },
+      "12078": {
+        "id": "12078",
+        "name": "Quận Tây Hồ",
+        "name_url": "quan-tay-ho"
+      },
+      "12079": {
+        "id": "12079",
+        "name": "Quận Cầu Giấy",
+        "name_url": "quan-cau-giay"
+      },
+      "12080": {
+        "id": "12080",
+        "name": "Quận Hoàng Mai",
+        "name_url": "quan-hoang-mai"
+      },
+      "12081": {
+        "id": "12081",
+        "name": "Quận Long Biên",
+        "name_url": "quan-long-bien"
+      },
+      "12082": {
+        "id": "12082",
+        "name": "Huyện Đông Anh",
+        "name_url": "huyen-dong-anh"
+      },
+      "12083": {
+        "id": "12083",
+        "name": "Huyện Sóc Sơn",
+        "name_url": "huyen-soc-son"
+      },
+      "12084": {
+        "id": "12084",
+        "name": "Huyện Thanh Trì",
+        "name_url": "huyen-thanh-tri"
+      },
+      "12086": {
+        "id": "12086",
+        "name": "Quận Hà Đông",
+        "name_url": "quan-ha-dong"
+      },
+      "12087": {
+        "id": "12087",
+        "name": "Thị xã Sơn Tây",
+        "name_url": "thi-xa-son-tay"
+      },
+      "12088": {
+        "id": "12088",
+        "name": "Huyện Đan Phượng",
+        "name_url": "huyen-dan-phuong"
+      },
+      "12089": {
+        "id": "12089",
+        "name": "Huyện Hoài Đức",
+        "name_url": "huyen-hoai-duc"
+      },
+      "12090": {
+        "id": "12090",
+        "name": "Huyện Quốc Oai",
+        "name_url": "huyen-quoc-oai"
+      },
+      "12091": {
+        "id": "12091",
+        "name": "Huyện Thạch Thất",
+        "name_url": "huyen-thach-that"
+      },
+      "12092": {
+        "id": "12092",
+        "name": "Huyện Chương Mỹ",
+        "name_url": "huyen-chuong-my"
+      },
+      "12093": {
+        "id": "12093",
+        "name": "Huyện Thường Tín",
+        "name_url": "huyen-thuong-tin"
+      },
+      "12094": {
+        "id": "12094",
+        "name": "Huyện Phú Xuyên",
+        "name_url": "huyen-phu-xuyen"
+      },
+      "12121": {
+        "id": "12121",
+        "name": "Quận Nam Từ Liêm",
+        "name_url": "quan-nam-tu-liem"
+      },
+      "12122": {
+        "id": "12122",
+        "name": "Huyện Ba Vì",
+        "name_url": "huyen-ba-vi"
+      },
+      "12123": {
+        "id": "12123",
+        "name": "Huyện Gia Lâm",
+        "name_url": "huyen-gia-lam"
+      },
+      "12124": {
+        "id": "12124",
+        "name": "Huyện Mê Linh",
+        "name_url": "huyen-me-linh"
+      },
+      "12125": {
+        "id": "12125",
+        "name": "Huyện Mỹ Đức",
+        "name_url": "huyen-my-duc"
+      },
+      "12126": {
+        "id": "12126",
+        "name": "Huyện Phúc Thọ",
+        "name_url": "huyen-phuc-tho"
+      },
+      "12127": {
+        "id": "12127",
+        "name": "Huyện Thanh Oai",
+        "name_url": "huyen-thanh-oai"
+      },
+      "12128": {
+        "id": "12128",
+        "name": "Huyện Ứng Hòa",
+        "name_url": "huyen-ung-hoa"
+      },
+      "12129": {
+        "id": "12129",
+        "name": "Quận Bắc Từ Liêm",
+        "name_url": "quan-bac-tu-liem"
+      }
+    },
+    "name_url": "ha-noi",
+    "id": "12000",
+    "areaOrder": [
+      "12074",
+      "12129",
+      "12079",
+      "12075",
+      "12086",
+      "12076",
+      "12073",
+      "12080",
+      "12081",
+      "12121",
+      "12078",
+      "12077",
+      "12122",
+      "12092",
+      "12088",
+      "12082",
+      "12123",
+      "12089",
+      "12124",
+      "12125",
+      "12094",
+      "12126",
+      "12090",
+      "12083",
+      "12091",
+      "12127",
+      "12084",
+      "12093",
+      "12128",
+      "12087"
+    ]
+  },
+  "13000": {
+    "name": "Tp Hồ Chí Minh",
+    "area": {
+      "13096": {
+        "id": "13096",
+        "name": "Quận 1",
+        "name_url": "quan-1"
+      },
+      "13097": {
+        "id": "13097",
+        "name": "Quận 2",
+        "name_url": "quan-2"
+      },
+      "13098": {
+        "id": "13098",
+        "name": "Quận 3",
+        "name_url": "quan-3"
+      },
+      "13099": {
+        "id": "13099",
+        "name": "Quận 4",
+        "name_url": "quan-4"
+      },
+      "13100": {
+        "id": "13100",
+        "name": "Quận 5",
+        "name_url": "quan-5"
+      },
+      "13101": {
+        "id": "13101",
+        "name": "Quận 6",
+        "name_url": "quan-6"
+      },
+      "13102": {
+        "id": "13102",
+        "name": "Quận 7",
+        "name_url": "quan-7"
+      },
+      "13103": {
+        "id": "13103",
+        "name": "Quận 8",
+        "name_url": "quan-8"
+      },
+      "13104": {
+        "id": "13104",
+        "name": "Quận 9",
+        "name_url": "quan-9"
+      },
+      "13105": {
+        "id": "13105",
+        "name": "Quận 10",
+        "name_url": "quan-10"
+      },
+      "13106": {
+        "id": "13106",
+        "name": "Quận 11",
+        "name_url": "quan-11"
+      },
+      "13107": {
+        "id": "13107",
+        "name": "Quận 12",
+        "name_url": "quan-12"
+      },
+      "13108": {
+        "id": "13108",
+        "name": "Quận Bình Tân",
+        "name_url": "quan-binh-tan"
+      },
+      "13109": {
+        "id": "13109",
+        "name": "Quận Bình Thạnh",
+        "name_url": "quan-binh-thanh"
+      },
+      "13110": {
+        "id": "13110",
+        "name": "Quận Gò Vấp",
+        "name_url": "quan-go-vap"
+      },
+      "13111": {
+        "id": "13111",
+        "name": "Quận Phú Nhuận",
+        "name_url": "quan-phu-nhuan"
+      },
+      "13112": {
+        "id": "13112",
+        "name": "Quận Tân Bình",
+        "name_url": "quan-tan-binh"
+      },
+      "13113": {
+        "id": "13113",
+        "name": "Quận Tân Phú",
+        "name_url": "quan-tan-phu"
+      },
+      "13114": {
+        "id": "13114",
+        "name": "Quận Thủ Đức",
+        "name_url": "quan-thu-duc"
+      },
+      "13115": {
+        "id": "13115",
+        "name": "Huyện Bình Chánh",
+        "name_url": "huyen-binh-chanh"
+      },
+      "13116": {
+        "id": "13116",
+        "name": "Huyện Củ Chi",
+        "name_url": "huyen-cu-chi"
+      },
+      "13117": {
+        "id": "13117",
+        "name": "Huyện Hóc Môn",
+        "name_url": "huyen-hoc-mon"
+      },
+      "13118": {
+        "id": "13118",
+        "name": "Huyện Nhà Bè",
+        "name_url": "huyen-nha-be"
+      },
+      "13120": {
+        "id": "13120",
+        "name": "Huyện Cần Giờ",
+        "name_url": "huyen-can-gio"
+      }
+    },
+    "name_url": "tp-ho-chi-minh",
+    "id": "13000",
+    "areaOrder": [
+      "13096",
+      "13097",
+      "13098",
+      "13099",
+      "13100",
+      "13101",
+      "13102",
+      "13103",
+      "13104",
+      "13105",
+      "13106",
+      "13107",
+      "13108",
+      "13109",
+      "13110",
+      "13111",
+      "13112",
+      "13113",
+      "13114",
+      "13115",
+      "13120",
+      "13116",
+      "13117",
+      "13118"
+    ]
+  }
+}

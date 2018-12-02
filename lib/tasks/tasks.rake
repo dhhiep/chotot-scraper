@@ -44,4 +44,30 @@ namespace :tasks do
       Account.where(area_name: area_name).update_all(area_id: area.id)
     end
   end
+
+  # rake tasks:migrate_list_to_account FROM_ROW=0 to TO_ROW=5
+  task migrate_list_to_account: :environment do
+    row_number = 0
+    total      = List.count
+    from_row   = ENV['FROM_ROW'].present? ? ENV['FROM_ROW'].to_i : 1
+    to_row     = ENV['TO_ROW'].present? ? ENV['TO_ROW'].to_i : nil
+
+    List.includes(:account).find_in_batches do |list|
+      list.each do |list_item|
+        row_number += 1 # row data
+        next if row_number < from_row
+        abort if to_row && row_number > to_row
+
+        if account = list_item.account
+          account.list_id = list_item.list_id
+          account.category_id = list_item.category_id
+          account.ad_id = list_item.ad_id
+          account.category_code = list_item.category_name
+          account.save
+        end
+
+        puts "Updated on Account ##{account.try(:id)} (#{row_number}/#{total})"
+      end
+    end
+  end
 end
