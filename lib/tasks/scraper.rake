@@ -5,7 +5,7 @@ namespace :chotot do
   # heroku run:detached rake chotot:scrape RETRY=100 REGION_ID=4,5,6
   # heroku run:detached rake chotot:scrape RETRY=100 REGION_ID=7,8,9
   # heroku run:detached rake chotot:scrape RETRY=100 REGION_ID=10,11,12
-  # heroku run:detached rake chotot:scrape RETRY=100 REGION_ID=13
+  # heroku run:detached rake chotot:scrape RETRY=100 REGION_ID=13 AREA_ID=102
 
   task scrape: :environment do
     # Global variable
@@ -54,6 +54,7 @@ namespace :chotot do
       url = "#{base_url}&region=#{region.region_id}&area=#{area.area_id}&cg=#{category.ct_category_id}&o=#{offset}&page=#{page}"
       list_item = HTTParty.get(url)['ads'] rescue nil
 
+      puts "\e[33;49;1m #{ url } \e[0m"
       if list_item.blank?
         summary(uuid, category, dup_counter, offset, region, area, custom_msg, "List end at page #{page}")
         return "List end at page #{page}"
@@ -68,12 +69,16 @@ namespace :chotot do
             {
               area_name: item['area_name'],
               region_id: region.region_id,
-              area_id: area.area_id
+              area_id: area.area_id,
+              list_id: item['list_id'],
+              category_id: category.try(:id),
+              ad_id: item['ad_id'],
+              category_name: item['category']
             }
           )
 
         # Check and create list
-        if List.by_lid(item['list_id'])
+        if Account.by_lid(item['list_id'])
           # List item existed in DB, mean the account was created
           if dup_counter > max_retry
             summary(uuid, category, dup_counter, offset, region, area, custom_msg, "List Duplicated from page #{page}")
@@ -81,17 +86,6 @@ namespace :chotot do
           else
             dup_counter += 1
           end
-        elsif account
-          List.create(
-            list_id: item['list_id'],
-            account: account,
-            category: category,
-            ad_id: item['ad_id'],
-            category_name: item['category'],
-            region_id: region.region_id,
-            area_id: area.area_id,
-            area_name: item['area_name']
-          )
         end
 
         sleep 0.7
