@@ -104,7 +104,6 @@ class Account < ApplicationRecord
         FROM accounts
         WHERE address IS NOT NULL
           AND address <> ''
-          AND region_id = 13
           AND #{extra_condition}
         GROUP BY region_id, area_id
         ORDER BY region_id, area_id
