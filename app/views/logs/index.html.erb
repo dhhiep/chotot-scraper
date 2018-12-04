@@ -5,12 +5,12 @@
 
 <div class="row">
   <div class="col-sm-6">
-    <h4>Total Accounts</h4>
-    <%= render 'overview', data: Account.group_by_areas %>
+    <h4>HCM Accounts</h4>
+    <%= render 'overview', data: Account.group_by_areas(extra_condition: "region_id = 13") %>
   </div>
   <div class="col-sm-6">
-    <h4>Total New Accounts</h4>
-    <%= render 'overview', data: Account.group_by_areas(extra_condition: "status = 0 AND hide = 'f'") %>
+    <h4>Other Region Accounts</h4>
+    <%= render 'overview', data: Account.group_by_areas(extra_condition: "region_id <> 13") %>
   </div>
 </div>
 <br><br><br>
