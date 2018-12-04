@@ -54,8 +54,11 @@ class Account < ApplicationRecord
   end
 
   def self.create_by_oid(oid, extra = {})
-    account = by_oid(oid)
-    return if account
+    if account = by_oid(oid)
+      account.update(list_id: extra[:list_id]) # force update list ID to account
+      return account
+    end
+
     response = load_account_from_chotot(oid)
     return false unless response['account_id']
     response['region_id'] = extra[:region_id]
