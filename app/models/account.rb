@@ -61,12 +61,17 @@ class Account < ApplicationRecord
     response['region_id'] = extra[:region_id]
     response['area_id'] = extra[:area_id]
     response['area_name'] = extra[:area_name]
+    response['list_id'] = extra[:list_id]
+    response['category_id'] = extra[:category_id]
+    response['ad_id'] = extra[:ad_id]
+    response['category_code'] = extra[:category_name]
     location = response['location']
     if location
       response['lat'] = response['location'][0]
       response['lng'] = response['location'][1]
       response.delete('location')
     end
+
     where(account_id: response['account_id']).first_or_create(response.as_json(only: whitelist_params))
   end
 
@@ -107,10 +112,10 @@ class Account < ApplicationRecord
     end
   end
 
-  def add_list_id(lid)
+  def list_id=(lid)
     tmp = list_id.present? ? list_id.to_s[1..-2].split('|') : []
     tmp << lid
-    self.list_id = "|#{tmp.reject(&:blank?).uniq.join('|')}|"
+    write_attribute(:list_id, "|#{tmp.reject(&:blank?).uniq.join('|')}|")
   end
 
   def address_filtered
@@ -151,7 +156,7 @@ class Account < ApplicationRecord
       account_id account_oid address create_time deviation email email_verified
       avatar facebook_id facebook_token full_name lat lng long_term_facebook_token
       phone phone_verified start_time update_time is_active area_name region_id
-      area_id
+      area_id list_id category_id ad_id category_code
     ]
   end
 end

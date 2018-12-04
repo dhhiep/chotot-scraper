@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_02_132053) do
+ActiveRecord::Schema.define(version: 2018_12_04_034527) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 2018_12_02_132053) do
     t.string "category_code"
     t.index ["account_id"], name: "index_accounts_on_account_id"
     t.index ["account_oid"], name: "index_accounts_on_account_oid"
+    t.index ["list_id"], name: "index_accounts_on_list_id"
     t.index ["status"], name: "index_accounts_on_status"
     t.index ["wse_status"], name: "index_accounts_on_wse_status"
   end
