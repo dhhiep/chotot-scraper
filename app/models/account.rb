@@ -97,6 +97,30 @@ class Account < ApplicationRecord
     where("list_id LIKE '%|#{lid}|%'").any?
   end
 
+  def self.group_by_areas(extra_condition: '1 = 1')
+    sql =
+      <<-SQL
+        SELECT region_id, area_id, count(*)
+        FROM accounts
+        WHERE address IS NOT NULL
+          AND address <> ''
+          AND region_id = 13
+          AND #{extra_condition}
+        GROUP BY region_id, area_id
+        ORDER BY region_id, area_id
+      SQL
+
+    puts "extra_condition: #{sql}"
+    result = ActiveRecord::Base.connection.exec_query(sql)
+    result.rows.map do |region_id, area_id, total|
+      {
+        region: Region.find_by_region_id(region_id).try(:name),
+        area: Area.find_by_area_id(area_id).try(:name),
+        total: total
+      }
+    end
+  end
+
   def cho_tot_url
     "https://www.chotot.com/x/x/#{list_id}.htm"
   end

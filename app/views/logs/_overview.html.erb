@@ -1,0 +1,20 @@
+<div class="overview-wrapper">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Region</th>
+        <th>Area</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% data.each do |summary| %>
+        <tr>
+          <td><%= summary[:region]%></td>
+          <td><%= summary[:area]%></td>
+          <td><%= summary[:total]%></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
